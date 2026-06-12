@@ -7,11 +7,11 @@
 
 
 
-
+/* 
 @font-face {
     font-family: 'Playfairs-Italic';
     src: url(./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf)
-}
+} */
 
 @font-face {
     font-family: 'PlayfairDisplay';
@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: 'Playfairs-Italic';
-    src: url(./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf)
+    src: url(./fonts/PlayfairDisplay-MediumItalic.ttf)
 }
 
 @font-face {
@@ -1260,13 +1260,13 @@ body {
 
 }
 
-.watchesContainer{
+.watchesContainer {
     display: flex;
     flex-direction: column;
     gap: 35px;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle at center,#1a0808,#130505 50% ,#050505);
+    background: linear-gradient(89deg, #4b0101fc, #330606, #150101);
     width: 100%;
     border-radius: 30px;
     max-width: 1200px;
@@ -1274,7 +1274,7 @@ body {
     margin: 60px auto;
 }
 
-.watchesContainer h1{
+.watchesContainer h1 {
     font-family: 'Poppins';
     text-shadow: 2px 2px 10px #000000;
     font-weight: 700;
@@ -1283,21 +1283,117 @@ body {
     margin-top: 30px;
 
 }
-.watchesContainer p{
-    color: rgb(202, 230, 246);
+
+.watchesContainer p {
+    color: rgb(243, 241, 241);
     font-family: 'Thin';
- 
     font-size: 1.1rem;
 }
 
-.watch1Conts{
+.watch1Conts {
+    border: 1px solid #ffff;
+    background: linear-gradient(85deg, #803a00, #b28902, #dfb239, #c48900);
+    border-radius: 20px;
+    padding: 20px 20px 60px 20px;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 40px;
+}
+
+.watch1Info {
+    display: flex;
+    padding: 0px 0px 30px 40px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.watch1Info h2 {
+    color: #ffffff;
+    background-color: #c95101;
+    border-radius: 20px;
+    padding: 7px 10px;
+    width: 180px;
+    font-size: 1.5rem;
+    animation: Fade 2s infinite;
+    text-align: center;
+    /* text-shadow: 2px 2px 4px #000000; */
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+.watch1Info h1 {
+    color: #f9f9f9;
+    text-shadow: 2px 5px 10px #eb8e01;
+    font-size: 3.5rem;
+    margin-top: 40px;
+    /* width: 100%; */
+    white-space: nowrap;
+    font-weight: 850;
+    font-family: 'GreatVibes';
+}
+
+#gold {
+    color: rgb(255, 213, 0);
+    text-shadow: 2px 5px 10px #eb5f01;
+
+
+
+}
+
+.watch1Info h3 {
+    font-family: 'Playfairs-Italic';
+    padding-left: 50px;
+
+}
+
+.watch1Info p {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    line-height: 1.9;
+    max-width: 800px;
+    width: 100%;
+}
+
+#priceWatch {
+    font-size: 2rem;
+
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.priced {
+    position: relative;
+}
+
+#discount {
+    position: absolute;
+    left: 49%;
+    color: #38353582;
+    font-size: 1.3rem;
+    text-decoration: line-through;
+
+    text-align: center;
 }
 
 
+
+
+
+
+
+.watchesContainer img {
+    /* position: absolute; */
+    transform:translateX(100px) translateY(30px) ;
+    /* margin: 30px 0px 0px 30px; */
+    align-self: start;
+    width: 100%;
+    max-width: 650px;
+    height: 450px;
+}
 
 
 
