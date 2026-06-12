@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUXORA</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navbar & Banner -->
+    <div class="container" id="banner">
+        <nav class="navBar">
+            <div class="logo">
+                <img src="./icons/logo1.png" alt="luxora_logo" />
+            </div>
+            <div class="dropMenu">
+                <div onclick="menuBar()">≣</div>
+            </div>
+            <div class="dropMenuBox" id="menuBox">
+                <div class="dropMenuLinks">
+                    <a href="index.html">Home</a>
+                    <a href="./redirect-links/about.html">About</a>
+                    <a href="./redirect-links/categories.html" class="categories-cont">Watches</a>
+                    <a href="./redirect-links/contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="navLinks">
+                <a href="index.html">Home</a>
+                <a href="./redirect-links/about.html">About▾</a>
+                <a href="./redirect-links/categories.html" class="categories-cont">Watches▾</a>
+                <div class="contacts">
+                    <a href="#">Contact▾</a>
+
+                    <div class="lists">
+                        <a href="">+917676009657</a>
+                        <a href="">luxora_offical</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="searchInput">
+                <input type="text" id="inputDisplay" placeholder="Search  brand  new Watches.." />
+                <div class="searchLogo">🔍︎</div>
+            </div>
+
+            <div class="contLists">
+                <button id="loginBtn">
+                    <a href="./redirect-links/login.html"></a>login
+                </button>
+                <button id="carts">Carts</button>
+                <button id="more" onclick="darkMode()">More</button>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="bannerCont">
+            <h1 id="bannerHead">
+                Timeless Luxary <br /><span id="boldBlue">in Every moments.</span>
+            </h1>
+            <p id="bannerPar">
+                Preminum craftsmanship designed for modern elegence.
+            </p>
+            <p id="contPar">
+                Discover a collection of <span id="parColor">Stylish</span><span id="parColor">, Modern, </span><span
+                    id="parColor">Quality</span> watches that combine precision
+                durablity,and luxary in evey detail. It trusted and user-friendly to
+                acces our Luxora webiste.
+            </p>
+
+            <button id="orderBtn">Explore Collection</button>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <h1 id="cardHead">Luxary Collections</h1>
+    <main class="cardContainer">
+        <div class="cardsList">
+            <div class="card" id="rolex">
+                <img src="./assets/rolex.png" alt="rolexImg" />
+                <h2 class="title">ROLEX COSMOGRAPH</h2>
+                <p class="priceP">Start from ₹8499</p>
+                <p class="aboutP">Modern Green Editon</p>
+            </div>
+
+            <div class="card" id="omega">
+                <img src="./assets/omg3.png" alt="omegaImg" />
+                <h2 class="title">OMEGA COSMIC</h2>
+                <p class="priceP">Start from ₹4599</p>
+                <p class="aboutP">Black Sliver Editon</p>
+            </div>
+            <div class="card" id="rolexBlue">
+                <img src="./assets/rolex-blue.png" alt="rolexBlueImg" />
+                <h2 class="title">ROLEX BLUE</h2>
+                <p class="priceP">Start from ₹8789</p>
+                <p class="aboutP">Modern Blue Editon</p>
+            </div>
+            <div class="card" id="omg2">
+                <img src="./assets/omega-speed.png" alt="omegeSpeedImg" />
+                <h2 class="title">OMEGA SPEED</h2>
+                <p class="priceP">Start from ₹4500</p>
+                <p class="aboutP">Modern Sliver Editon</p>
+            </div>
+        </div>
+    </main>
+    <main class="cardContainer1">
+        <div class="cardsList1">
+            <div class="card1" id="patter">
+                <img src="./assets/patter_pheliipe.png " alt="patterImg" />
+                <h2 class="title1">PATTER PHELLIPEE</h2>
+                <p class="priceP1">Start from ₹7799</p>
+                <p class="aboutP1">Luxary Sliver Editon</p>
+            </div>
+            <div class="card1" id="monaco">
+                <img src="./assets/monaco.png" alt="monacoImg" />
+                <h2 class="title1">MONACO TAGE</h2>
+                <p class="priceP1">Start from ₹4889</p>
+                <p class="aboutP1">Black Strips Editon</p>
+            </div>
+            <div class="card1" id="vachreon">
+                <img src="./assets/vachreon.png" alt="vachreonImg" />
+                <h2 class="title1">VACHREON CONSTHIN</h2>
+                <p class="priceP1">Start from ₹7545</p>
+                <p class="aboutP1">Golden Blue Editon</p>
+            </div>
+            <div class="card1" id="parek">
+                <img src="./assets/Patek_Philippe.png" alt="patekImg" />
+                <h2 class="title1">PATEK PHILPEEE</h2>
+                <p class="priceP1">Start from ₹7545</p>
+                <p class="aboutP1">Golden Blue Editon</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+
+    <div class="aboutSection">
+        <div class="aboutCont">
+            <h1>About Luxora </h1>
+            <h2 id="aboutHead">
+                𓆩⟡𓆪Crafting <span id="boldBlue">Timeless</span> Luxury𓆩⟡𓆪
+            </h2>
+            <div class="bannerWatch">
+                <p id="aboutPar">
+                    At Luxora, we believe watch is more than time-it is a symbol of
+                    <span id="parColor">,precison, and individuality.</span>Our
+                    collection blends timeless craftsmanship with modern luxary to
+                    create pieces that leave a lasting impression more than a timepiece it is a reflection of <span
+                        id="parColor">style,
+                        confidence, and
+                        individuality.</span> Our collection combines timeless craftsmanship with
+                    modern luxury, carefully designed for those who appreciate elegance
+                    and precision. Every watch is crafted with attention to
+                    and <span id="parColor">a commitment to quality,creating pieces that make every moment
+                        memorable.</span>
+                </p>
+
+                <div class="watchBox">
+                    <img src="./assets/banner.png" alt="watchBanner" id="banner1" />
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutBox">
+            <div class="greenBanner">
+                <img src="./assets/watchMen.jpg" alt="watchBanner" />
+            </div>
+
+            <ul>
+                <li><span id="parColor">570+</span> Luxury Designs.</li>
+                <li>Trusted Styles.</li>
+                <li><span id="parColor">100%</span> Premium Quality.</li>
+                <li>Pure handwork.</li>
+                <li><span id="parColor">Redefined</span> design.</li>
+                <li>Precison Engineerring.</li>
+            </ul>
+        </div>
+
+        <div class="aboutContainer">
+            <div class="aboutCard">
+                <h3>PREMIUM CRAFTSMANSHIP</h3>
+                <p>Premium looks and stylish vibe.</p>
+                <img src="./assets/handcraft.png" alt="handcraftImg">
+            </div>
+
+            <div class="aboutCard">
+                <h3>ELEGANT DESIGN</h3>
+                <p>Elegence feels in every seconds.</p>
+                <img src="./assets/diamond.png" alt="diamondImg">
+
+            </div>
+            <div class="aboutCard">
+                <h3>TIMELESS PRECISON</h3>
+                <p>Integrated Style with accuarcy.</p>
+                <img src="./assets/hand-watch.png" alt="hand-watch">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="menBanner">
+        <h1>The <span id="txtColor">Luxora</span> Identity </h1>
+        <div class="suit">
+            <img src="./assets/suit.png" alt="">
+        </div>
+
+        <div class="menAbout">
+            <img src="./assets/person1.jpg" alt="" />
+            <p id="menPar">Luxora is more than a watch brand, <span id="parColor"> It is a symbol of ambition,
+                    confidence, and timeless
+                    sophistication.</span> We believe that a watch is not just an accessory but a reflection of personal
+                character
+                and achievement Every timepiece reflects a passion for refined design and a commitment to perfection.
+                Our identity is shaped by <span id="parColor"> timeless aesthetics, modern innovation, and an unwavering
+                    pursuit of quality.</span>
+                We believe that true luxury is not simply worn—it is experienced.
+
+            </p>
+        </div>
+        <div class="menAbout1">
+
+            <p id="menPar1">Our identity is rooted in <span id="parColor">precision, quality, and innovation.</span>
+                From carefully selected materials to thoughtfully crafted designs, every detail is created to deliver
+                both style and performance.
+                Luxora is dedicated to providing modern individuals with watches that <span id="parColor">embody
+                    elegance, durability, and
+                    the confidence to stand out in every moment of life.</span>
+                Every timepiece reflects a passion for refined design and a commitment to perfection. Our identity is
+                shaped by timeless aesthetics, modern innovation, and an unwavering of quality. <span id="parColor">We
+                    believe that
+                    true luxury is not simply worn—it is experienced.</span> </p>
+            <img src="./assets/person2.jpg" alt="" />
+        </div>
+
+        <div class="aboutFooter">
+            <h1>Luxary Designed For Every Moments.</h1>
+
+        </div>
+    </div>
+
+    <div class="chooseSection">
+        <h1>Why Choose<span id="styleTxt"> LUXORA</span></h1>
+        <div class="chooseCont">
+            <img src="./assets/luxoraWBg (1).png" alt="luxora_watch">
+            <p>At Luxora, we are committed to delivering more than just exceptional timepieces. Our passion for
+                quality, craftsmanship, and timeless design drives every collection we offer. By combining elegance,
+                precision, and reliability, we create watches that reflect confidence, sophistication, and lasting
+                value. Discover why Luxora is the preferred choice for individuals who appreciate true luxury and
+                attention to detail.That is why Luxora is dedicated to delivering exceptional quality, outstanding
+                customer service, and a luxury experience that exceeds expectations. </p>
+
+        </div>
+        <div class="chooseSideBar">
+            <p>Every Luxora timepiece is selected with a focus on excellence, combining refined aesthetics with
+                dependable performance. Our dedication to quality and customer satisfaction ensures that each watch
+                delivers a premium experience, making Luxora a trusted destination for those who value style, precision,
+                and sophistication.Discover the perfect balance of sophistication, quality, and performance.
+                Whether for everyday wear or special occasions,
+                Luxora watches are created to complement your lifestyle while making a statement of confidence and
+                refinement.</p>
+            <div class="chooseContainer">
+                <div class="choosenCard">
+                    <img src="./assets/Quality.png" alt="" width="70px" height="90px">
+                    <h2 class="chooseHead">Authentic Quality</h2>
+                    <p class="choosePar">Premium materials selected for lasting performance.</p>
+                </div>
+                <div class="choosenCard">
+                    <img src="./assets/fast-delivery.png" alt="" width="70px" height="70px">
+                    <h2 class="chooseHead">Fast Delivery</h2>
+                    <p class="choosePar">Secure packaging and reliable shipping for user.</p>
+                </div>
+
+                <div class="choosenCard">
+                    <img src="./assets/24-7.png" alt="" width="60px" height="60px">
+                    <h2 class="chooseHead">Customer Suport</h2>
+                    <p class="choosePar">Dedicted assistance whenever you need it.</p>
+                </div>
+
+                <div class="choosenCard">
+                    <img src="./assets/authenticity.png" alt="" width="70px" height="70px">
+                    <h2 class="chooseHead">Secure Shopping</h2>
+                    <p class="choosePar">Protected payments and safe user experience.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="mainCont">
+            <div class="wathImgs">
+                <img src="./assets/luxoraWBg2.png" alt="" id="tranformWatch">
+                <img src="./assets/luxoraWBg2.png" alt="" id="mainWatch">
+                <img src="./assets/luxoraWBg2.png" alt="" id="tranformWatch1">
+            </div>
+
+            <p>The Luxora timepiece is chosen with a commitment to excellence, combining refined aesthetics with
+                dependable performance. From premium materials to meticulous craftsmanship, we ensure that every watch
+                delivers comfort, durability, and a distinguished presence that complements both everyday moments and
+                special occasions.every detail is created to deliver both style and performance. Luxora is dedicated to
+                providing modern individuals with watches that embody elegance, durability, and the confidence to stand
+                out in every moment of life.</p>
+        </div>
+        <div class="chooseFooter">
+            <div class="chooseItems">
+                <div class="chooseBox">554+ luxary watches.</div>
+                <div class="chooseBox">100% quality Checked.</div>
+                <div class="chooseBox">10,000+ user satisfaction.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
