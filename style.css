@@ -100,7 +100,7 @@ body {
 }
 
 .container {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.886), rgba(8, 8, 8, 0.904)), rgba(0,0,0,0.75) url("./assets/Luxora_Banners.png");
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(5, 5, 5, 0.731), rgba(0, 0, 0, 0.886)),url("./assets/Luxora_Banners.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
