@@ -100,7 +100,7 @@ body {
 }
 
 .container {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.886), rgba(8, 8, 8, 0.904)), url("./assets/Luxora_Banners.png");
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.886), rgba(8, 8, 8, 0.904)), rgba(0,0,0,0.75) url("./assets/Luxora_Banners.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1437,7 +1437,7 @@ body {
     .cardContainer,
     .cardContainer1 {
         width: 100%;
-        max-width: 335px;
+        max-width: 330px;
         margin: 20px auto 40px auto;
 
         min-height: 600px;
@@ -1541,7 +1541,7 @@ body {
         width: 100%;
         /* margin: 40px  10px auto ; */
         min-height: 100vh;
-        max-width: 320px;
+        max-width: 340px;
         margin: 60px auto;
     }
 
@@ -1651,7 +1651,7 @@ body {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        max-width: 320px;
+        max-width: 340px;
         /* margin: 40px auto 20px; */
         margin: 50px auto;
         min-height: 100vh;
@@ -1747,9 +1747,9 @@ body {
 
     .chooseSection {
         display: flex;
-        margin: 50px auto;
+        margin: 60px auto;
         min-height: 150vh;
-        max-width: 350px;
+        max-width: 340px;
         width: 100%;
     }
 
