@@ -100,7 +100,7 @@ body {
 }
 
 .container {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(5, 5, 5, 0.731), rgba(0, 0, 0, 0.886)),url("./assets/Luxora_Banners.png");
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(5, 5, 5, 0.731), rgba(0, 0, 0, 0.886)), url("./assets/Luxora_Banners.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,6 +245,11 @@ body {
     font-size: 1.4rem;
 
 
+}
+
+.searchInput input::placeholder {
+    color: #767373;
+    padding-left: 30px;
 }
 
 
@@ -1297,17 +1302,24 @@ body {
     }
 
     .searchInput input {
-        width: 50vw;
-        padding: 7px;
+        width: 53vw;
+        padding: 9px;
         margin-left: 20px;
-        font-size: 0.5rem;
+        font-size: 0.6rem;
+        /* text-align: start; */
+        color: #000000;
+    }
+
+    .searchInput input::placeholder {
+        color: #767373;
+        padding-left: 10px;
     }
 
     .searchLogo {
         position: absolute;
-        top: 2px;
+        top: 2.5px;
         right: 35px;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
 
@@ -1541,7 +1553,7 @@ body {
         width: 100%;
         /* margin: 40px  10px auto ; */
         min-height: 100vh;
-        max-width: 340px;
+        max-width: 320px;
         margin: 60px auto;
     }
 
@@ -1651,7 +1663,7 @@ body {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        max-width: 340px;
+        max-width: 320px;
         /* margin: 40px auto 20px; */
         margin: 50px auto;
         min-height: 100vh;
@@ -1811,6 +1823,7 @@ body {
         align-items: center;
         justify-content: center;
         gap: 35px;
+        margin: auto;
         grid-template-columns: 1fr;
 
 
@@ -1818,7 +1831,6 @@ body {
 
     .choosenCard {
         margin: auto;
-
         width: 220px;
         height: 250px
     }
