@@ -7,11 +7,11 @@
 
 
 
-/* 
+
 @font-face {
     font-family: 'Playfairs-Italic';
     src: url(./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf)
-} */
+}
 
 @font-face {
     font-family: 'PlayfairDisplay';
@@ -551,6 +551,69 @@ body {
     }
 }
 
+@keyframes imgFade1 {
+    100% {
+        filter: drop-shadow(2px 3px 10px #001f68);
+
+    }
+
+    80% {
+        filter: drop-shadow(2px 3px 10px #000000);
+
+    }
+
+    60% {
+        filter: drop-shadow(2px 3px 10px #f0f0f0);
+
+    }
+
+    40% {
+        filter: drop-shadow(2px 3px 10px #0f002b);
+
+    }
+
+    20% {
+        filter: drop-shadow(2px 3px 10px #0293f3);
+
+
+    }
+
+    0% {
+        filter: drop-shadow(2px 3px 10px #16003b);
+    }
+}
+@keyframes imgFade2 {
+    100% {
+        filter: drop-shadow(2px 3px 10px #000105);
+
+    }
+
+    80% {
+        filter: drop-shadow(2px 3px 10px #ffffff);
+
+    }
+
+    60% {
+        filter: drop-shadow(2px 3px 10px #f6bd02);
+
+    }
+
+    40% {
+        filter: drop-shadow(2px 3px 10px #d22203);
+
+    }
+
+    20% {
+        filter: drop-shadow(2px 3px 10px #0293f3);
+
+
+    }
+
+    0% {
+        filter: drop-shadow(2px 3px 10px #16003b);
+    }
+}
+
 #orderBtn:hover {
     box-shadow: 0px 1px 62px hsl(169, 100%, 40%);
     transform: translateY(-4px) scale(1.1);
@@ -583,7 +646,7 @@ body {
     font-size: 4.5vw;
     margin-top: 40px;
     text-shadow: 2px 3px 20px rgb(0, 252, 218);
-    font-family: 'Sekyua-Regular';
+    font-family: 'GreatVibes';
     text-align: center;
 
 
@@ -1330,40 +1393,48 @@ body {
 }
 
 .watch1Conts,
-.watch2Conts {
+.watch2Conts,
+.watch3Conts {
     border: 1px solid #ffff;
-    background: radial-gradient(circle at center, #7d5f18cc, #491200, #000000);
+    background: radial-gradient(circle at 75% 30%, #ac7f14cc, #491200 35%, #000000 75%);
     border-radius: 20px;
-    /* padding: 40px 0px 40px 40px; */
+    /* padding: 40px 0px 40px 50px; */
+    box-shadow: 2px 3px 30px #f72b07;
     width: 100%;
     max-width: 1100px;
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 60px;
+    margin: 70px;
 }
 
-.watch1Info {
+.watch1Info,
+.watch2Info,
+.watch3Info {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px 20px 50px;
-    flex-direction: column;
-    gap: 30px;
+    padding: 20px 0px 0px 70px;
+
+    gap: 32px;
 }
 
-.watch1Info h2 ,.watch2Info h2,.watch3Info{
+
+.watch1Info h2,
+.watch2Info h2,
+.watch3Info h2 {
     color: #ffffff;
-    background-color: #f89501;
+    background-color: #f93a00;
     border-radius: 10px;
     padding: 5px 5px;
     width: 120px;
     font-size: 1rem;
     animation: Fade 2s infinite;
-    text-align: center;
+    text-align: start;
     margin: 30px;
     /* text-shadow: 2px 2px 4px #000000; */
     font-weight: bold;
@@ -1373,8 +1444,8 @@ body {
 .watch1Info h1 {
     color: #ffffff;
     text-shadow: 2px 5px 10px #eb8e01;
-    font-size: 3.2rem;
-    white-space: nowrap;
+    font-size: 3rem;
+    /* white-space: nowrap; */
     font-weight: 850;
     font-family: 'GreatVibes';
 }
@@ -1387,10 +1458,10 @@ body {
 
 }
 
-.watch1Info h3 {
+.watch1Info h3,
+.watch3Info h3 {
     font-family: 'Playfairs-Italic';
     text-align: center;
-    /* padding-left: 50px; */
 
 }
 
@@ -1404,18 +1475,21 @@ body {
     width: 100%;
 }
 
-#priceWatch {
+#priceWatch,
+#priceWatch1,
+#priceWatch2 {
     font-size: 2.6rem;
     color: #fffb01;
     font-weight: bolder;
     text-align: center;
-
     font-family: 'NotoSerif';
 
 }
 
 
-#discount {
+#discount,
+#discount1,
+#discount2 {
 
     margin-left: 50px;
     text-align: start;
@@ -1427,7 +1501,9 @@ body {
     /* text-align: start; */
 }
 
-.feautureLists {
+.feautureLists,
+.feautureLists1,
+.feautureLists2 {
     display: flex;
     margin: 30px 0px 0px 20px;
     gap: 25px;
@@ -1435,7 +1511,9 @@ body {
 
 }
 
-.feautureLists li {
+.feautureLists li,
+.feautureLists1 li,
+.feautureLists2 li {
     font-family: 'Poppins';
     font-weight: bold;
     background: linear-gradient(135deg, #ff5500d9, #f2b91c, #fa7d00);
@@ -1445,27 +1523,31 @@ body {
     font-size: 1.2rem;
 }
 
-.feautureLists li::marker {
-    color: #ff2f00;
+.feautureLists li::marker,
+.feautureLists1 li::marker,
+.feautureLists2 li::marker {
+    color: #4b0000;
 
 
 }
 
 
-.watchesContainer img {
+.watch1Conts img {
     /* position: absolute; */
     filter: drop-shadow(2px 5px 20px #f6a337);
     animation: imgFade 4s linear 3s infinite normal;
-    transform: translateX(100px) translateY(30px);
-    align-self: start;
+    margin-top: 60px;
+    align-self: flex-start;
     width: 100%;
-    margin-top: 50px;
+
     max-width: 650px;
     height: 450px;
 }
 
 
-#exploreBtn {
+#exploreBtn,
+#exploreBtn1,
+#exploreBtn2 {
     padding: 10px;
     border: none;
 
@@ -1477,7 +1559,7 @@ body {
     background: linear-gradient(157deg, #110000, #cd0606e9, #ff9e43, #4a0000);
     border: 1px solid rgb(244, 238, 235);
     width: 100%;
-    margin: 40px auto;
+    margin: 40px 0px 40px 30px;
     max-width: 200px;
     animation: Fade 2s infinite;
 }
@@ -1494,86 +1576,152 @@ body {
 
 .watch2Conts {
     background: radial-gradient(circle at 75% 50%, #0f5a4a, #031411 35%, #050505 85%);
-    text-align: center;
+    /* text-align: center; */
 
 }
 
-.watch2Info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px 0px 80px;
 
-    gap: 20px;
-}
+
 
 .watch2Info h1 {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     font-size: 2.2rem;
     text-shadow: 2px 3px 10px #000000;
 }
-.watch2Info h3{
+
+.watch2Info h3 {
     font-size: 1.5rem;
     text-align: center;
     font-family: 'GreatVibes';
 }
-.watch2Info p{
+
+.watch2Info p {
     font-family: 'Poppins';
     line-height: 1.9;
     text-align: start;
     font-size: 1.1rem;
 }
-.priceGrp{
-    margin-top: 20px;
+
+.priceGrp {
+    margin-top: 40px;
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
-#priceWatch1{
-    font-size: 2.6rem;
-    color: #0ed5ef;
-    font-family: 'NotoSerif';
-}
-#discount1{
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-    color: #c8c8c8b0;
-    text-decoration: line-through;
-}
 
-#exploreBtn{
-    background: linear-gradient(157deg, #d80b0b, #cda506e9, #b56d01, #fc6405);
-    
-}
+#priceWatch1 {
 
-#exploreBtn{
-    background: linear-gradient(157deg, #e70303, #ffcd05e9, #b56d01, #782e00);
-
+    color: #82f0ff;
 
 }
 
+#exploreBtn1 {
+    background: linear-gradient(157deg, #002249, #03bef2e9, #10015f, #000000);
+    animation: colorfade 2s infinite normal;
+
+}
+
+#exploreBtn1:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 20px #00354e;
+    transform: translateY(-10px) scale(1.1);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: linear-gradient(37deg, #002249, #14002de9, #3e1edb, #000000);
 
 
 
+}
+
+.feautureLists1 li {
+
+    background: linear-gradient(135deg, #00255b, #06a9ce, #021b42);
+}
+
+
+#imperialWatch {
+    /* width: 580px;
+    height: 430px; */
+    width: 100%;
+    max-width: 670px;
+    margin-bottom: 70px;
+    align-self: center;
+    height: 470px;
+    animation: imgFade1 5s ease-in-out infinite normal;
+
+}
 
 
 
+#imperialWatch:hover,
+#royalGoldImg:hover,
+#crownImg:hover {
+
+    cursor: pointer;
+    transform: translateY(10px) scale(1.1);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.watch3Conts {
+
+    background: radial-gradient(circle at 75% 50%, #ba4450, #3f0c13 35%, #0a0a0a 85%);
+
+}
+
+
+#crownImg {
+    width: 100%;
+    max-width: 670px;
+    /* margin-bottom: 70px; */
+     animation: imgFade2 4s ease-in-out infinite normal;
+
+    align-self: center;
+    height: 480px;
+
+}
+
+.watch3Info h1 {
+    white-space: nowrap;
+    font-family: 'GreatVibes';
+    color: #efb8e9;
+    font-size: 3rem;
+}
+
+.watch3Info h3 {
+    text-align: center;
+
+}
+
+.watch3Info p {
+    text-align: start;
+    font-family: 'Poppins';
+    line-height: 1.9;
+    width: 100%;
+    max-width: 600px;
+}
+
+#priceWatch2 {
+    color: #ff7700;
+}
+
+.feautureLists2 li {
+    background: linear-gradient(135deg, #000000, #5a023b, #2d013b);
+}
+
+#exploreBtn2{
+    background: linear-gradient(135deg,#18001f,#f3038f,#000315);
+   
+
+}
+#exploreBtn2:hover{
+    background: linear-gradient(15deg,#580371,#a21469,#011065);
+    cursor: pointer;
+    box-shadow: 2px 2px 20px #fde4a9;
+    transform: translateY(-5px) scale(1.1);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
