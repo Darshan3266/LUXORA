@@ -1783,7 +1783,6 @@ body {
     .container {
         width: 100%;
         max-width: 375px;
-
         background-position: 45% center;
         background-attachment: scroll;
         background-repeat: no-repeat;
@@ -2418,7 +2417,8 @@ body {
     }
 
     .watch1Conts,
-    .watch2Conts {
+    .watch2Conts,
+    .watch3Conts {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2429,7 +2429,8 @@ body {
     }
 
     .watch1Info,
-    .watch2Info {
+    .watch2Info,
+    .watch3Info {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2440,18 +2441,21 @@ body {
     }
 
     #royalGoldImg,
-    #imperialWatch {
+    #imperialWatch,
+    #crownImg {
         display: none;
     }
 
     #royalGoldMobile,
-    #chronoMobile {
+    #chronoMobile,
+    #crownMobile {
         display: block;
 
     }
 
     .watch1Info h2,
-    .watch2Info h2 {
+    .watch2Info h2,
+    .watch3Info h2 {
         font-size: 1rem;
         align-self: center;
         /* margin: 30px; */
@@ -2462,21 +2466,23 @@ body {
     .watch1Info h1 {
         align-self: center;
         font-size: 2.3rem;
-
         align-items: center;
         text-align: center;
         /* margin: 0px 80px 0px 0px ; */
     }
 
-    .watch1Info h3 {
+    .watch1Info h3,
+    .watch2Info h3 {
         font-size: 1rem;
-        margin-top: 10px;
+        margin-top: 20px;
 
 
     }
 
+
     .watch1Info p,
-    .watch2Info p {
+    .watch2Info p,
+    .watch3Info p {
         font-size: 1rem;
         width: 290px;
         padding: 10px;
@@ -2484,32 +2490,55 @@ body {
         text-align: start;
     }
 
-
-
-    #royalGoldMobile {
-        align-self: center;
-        margin: 10px 0px 0px 30px;
-        width: 100%;
-        filter: drop-shadow(2px 5px 20px #f6a337);
-        animation: imgFade 4s linear 3s infinite normal;
-        max-width: 330px;
-        height: 230px;
-
+    .watch2Info h1 {
+        font-size: 1.5rem;
+        width: 250px;
     }
 
-    #royalGoldMobile:hover,
-    #chronoMobile:hover{
-        cursor: pointer;
-        transform: translateY(10px) scale(1.1);
-        transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
 
-    #chronoMobile {
-        /* width: 100%; */
-        margin-top: 30px;
-        width: 420px;
-        height: 300px;
-    }
+    #royalGoldMobile,
+    #chronoMobile,
+    #crownMobile{
+    align-self: center;
+    margin: 10px auto;
+    width: 100%;
+    filter: drop-shadow(2px 5px 20px #f6a337);
+    overflow: hidden;
+    animation: imgFade 4s linear 3s infinite normal;
+    width: 100%;
+    max-width: 270px;
+    height: 220px;
+
+}
+
+#chronoMobile {
+    width: 100%;
+    max-width: 280px;
+    height: 200px;
+    animation: imgFade1 5s ease-in-out infinite normal;
+
+}
+
+#royalGoldMobile:hover,
+#chronoMobile:hover,
+#crownMobile:hover {
+    cursor: pointer;
+    transform: translateY(10px) scale(1.1);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#chronoMobile {
+
+    margin-top: 30px;
+    width: 420px;
+    height: 300px;
+}
+
+#crownMobile {
+    margin-top: 30px;
+    width: 420px;
+    height: 350px
+}
 
 
 
