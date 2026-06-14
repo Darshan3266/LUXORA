@@ -2,10 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* outline: 1px solid rgb(255, 0, 0); */
+    /* overflow: hidden; */
+    /* outline: 1px solid rgb(255, 199, 199); */
 }
-
-
 
 
 @font-face {
@@ -94,7 +93,7 @@ body {
     scroll-behavior: smooth;
     background: linear-gradient(155deg, #000000, #012c38);
     color: white;
-    background-repeat: no-repeat;
+    
 
 
 }
@@ -129,6 +128,8 @@ body {
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    max-width: 1400px;
+
     z-index: 999;
     top: 0;
     left: 0;
@@ -138,9 +139,6 @@ body {
 .navLinks {
     display: flex;
     gap: 35px;
-
-
-
 
 
 }
@@ -1372,6 +1370,7 @@ body {
     width: 100%;
     /* overflow: hidden; */
     /* margin: 40px auto; */
+    margin: auto;
     border-radius: 30px;
     max-width: 1200px;
     min-height: 100vh;
@@ -1783,7 +1782,7 @@ body {
 
     .container {
         width: 100%;
-        max-width: 360px;
+        max-width: 375px;
 
         background-position: 45% center;
         background-attachment: scroll;
@@ -1982,6 +1981,7 @@ body {
 
     .card,
     .card1 {
+        overflow: hidden;
         /* display: none; */
         height: 240px;
 
@@ -2298,7 +2298,8 @@ body {
     .chooseCont img {
         margin: 0;
         height: 280px;
-        width: 320px;
+        width: 100%;
+        max-width: 320px;
     }
 
     .chooseCont p {
@@ -2422,8 +2423,8 @@ body {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        margin: 20px;
-        max-width: 330px;
+        margin: 20px auto;
+        max-width: 300px;
     }
 
     .watch1Info {
