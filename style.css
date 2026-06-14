@@ -582,6 +582,7 @@ body {
         filter: drop-shadow(2px 3px 10px #16003b);
     }
 }
+
 @keyframes imgFade2 {
     100% {
         filter: drop-shadow(2px 3px 10px #000105);
@@ -1366,10 +1367,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(89deg, #4b0101fc, #330606, #150101);
+    background: radial-gradient(circle at center, #4b0101fc, #561010, #150101);
+    /* background: radial-gradient(circle at 75% 50%, #0f5a4a, #031411 35%, #050505 85%); */
     width: 100%;
-    overflow: hidden;
-    margin: 60px auto;
+    /* overflow: hidden; */
+    /* margin: 40px auto; */
     border-radius: 30px;
     max-width: 1200px;
     min-height: 100vh;
@@ -1418,9 +1420,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px 0px 70px;
-
-    gap: 32px;
+    padding-left:70px;
+    gap: 25px;
 }
 
 
@@ -1435,7 +1436,7 @@ body {
     font-size: 1rem;
     animation: Fade 2s infinite;
     text-align: start;
-    margin: 30px;
+    margin-top: 30px;
     /* text-shadow: 2px 2px 4px #000000; */
     font-weight: bold;
     font-family: 'Poppins';
@@ -1539,11 +1540,13 @@ body {
     margin-top: 60px;
     align-self: flex-start;
     width: 100%;
-
     max-width: 650px;
     height: 450px;
 }
 
+#royalGoldMobile {
+    display: none;
+}
 
 #exploreBtn,
 #exploreBtn1,
@@ -1616,7 +1619,7 @@ body {
 }
 
 #exploreBtn1 {
-    background: linear-gradient(157deg, #002249, #03bef2e9, #10015f, #000000);
+    background: linear-gradient(135deg, #00261d, #04afdfe9, #01435f, #000000);
     animation: colorfade 2s infinite normal;
 
 }
@@ -1649,6 +1652,9 @@ body {
     animation: imgFade1 5s ease-in-out infinite normal;
 
 }
+#ChronoMobile{
+    display: none;
+}
 
 
 
@@ -1672,13 +1678,15 @@ body {
     width: 100%;
     max-width: 670px;
     /* margin-bottom: 70px; */
-     animation: imgFade2 4s ease-in-out infinite normal;
+    animation: imgFade2 4s ease-in-out infinite normal;
 
     align-self: center;
     height: 480px;
 
 }
-
+#crownMobile{
+    display: none;
+}
 .watch3Info h1 {
     white-space: nowrap;
     font-family: 'GreatVibes';
@@ -1707,13 +1715,14 @@ body {
     background: linear-gradient(135deg, #000000, #5a023b, #2d013b);
 }
 
-#exploreBtn2{
-    background: linear-gradient(135deg,#18001f,#f3038f,#000315);
-   
+#exploreBtn2 {
+    background: linear-gradient(135deg, #18001f, #f3038f, #000315);
+
 
 }
-#exploreBtn2:hover{
-    background: linear-gradient(15deg,#580371,#a21469,#011065);
+
+#exploreBtn2:hover {
+    background: linear-gradient(15deg, #580371, #a21469, #011065);
     cursor: pointer;
     box-shadow: 2px 2px 20px #fde4a9;
     transform: translateY(-5px) scale(1.1);
@@ -2374,6 +2383,89 @@ body {
         display: flex;
         flex-direction: column;
         padding: 5px 10px;
+    }
+
+    .watchesContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        /* margin: 0;
+        padding: 0; */
+    }
+
+    .watchesContainer h1 {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 30px;
+
+    }
+
+    .watchesContainer p {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1rem;
+
+    }
+
+    .watch1Conts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 340px;
+    }
+    .watch1Info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding-left: 0;
+        /* padding: 0; */
+        /* gap: 5px; */
+    }
+
+    #royalGoldImg {
+        display: none;
+    }
+      #royalGoldMobile{
+        display: block;
+
+    }
+    .watch1Info h2{
+        font-size: 1rem;
+        align-self: center;
+        /* margin: 30px; */
+        
+
+    }
+    .watch1Info h1{
+        align-self: center;
+        font-size:2.3rem;
+
+        align-items: center;
+        text-align: center;
+        /* margin: 0px 80px 0px 0px ; */
+    }
+    .watch1Info h3{
+        font-size: 1rem;
+        margin-top: 10px;
+        
+
+    }
+    .watch1Info p{
+        font-size: 1rem;
+        width: 290px;
+        padding: 10px;
+        margin:20px 0px 0px 30px;
+        text-align: start;
+    }
+
+    .watch1Conts img{
+        align-self: center;
+        margin: 10px 0px 0px 30px;
+        width: 480px;
+        height: 380px;
     }
 
 
