@@ -93,7 +93,7 @@ body {
     scroll-behavior: smooth;
     background: linear-gradient(155deg, #000000, #012c38);
     color: white;
-    
+
 
 
 }
@@ -1652,7 +1652,7 @@ body {
 
 }
 
-#ChronoMobile {
+#chronoMobile {
     display: none;
 }
 
@@ -2417,17 +2417,19 @@ body {
 
     }
 
-    .watch1Conts {
+    .watch1Conts,
+    .watch2Conts {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        margin: 20px auto;
-        max-width: 300px;
+        margin: 30px auto;
+        max-width: 330px;
     }
 
-    .watch1Info {
+    .watch1Info,
+    .watch2Info {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2437,16 +2439,19 @@ body {
         /* gap: 5px; */
     }
 
-    #royalGoldImg {
+    #royalGoldImg,
+    #imperialWatch {
         display: none;
     }
 
-    #royalGoldMobile {
+    #royalGoldMobile,
+    #chronoMobile {
         display: block;
 
     }
 
-    .watch1Info h2 {
+    .watch1Info h2,
+    .watch2Info h2 {
         font-size: 1rem;
         align-self: center;
         /* margin: 30px; */
@@ -2470,7 +2475,8 @@ body {
 
     }
 
-    .watch1Info p {
+    .watch1Info p,
+    .watch2Info p {
         font-size: 1rem;
         width: 290px;
         padding: 10px;
@@ -2478,13 +2484,33 @@ body {
         text-align: start;
     }
 
-    .watch1Conts img {
+
+
+    #royalGoldMobile {
         align-self: center;
         margin: 10px 0px 0px 30px;
         width: 100%;
+        filter: drop-shadow(2px 5px 20px #f6a337);
+        animation: imgFade 4s linear 3s infinite normal;
         max-width: 330px;
         height: 230px;
+
     }
+
+    #royalGoldMobile:hover,
+    #chronoMobile:hover{
+        cursor: pointer;
+        transform: translateY(10px) scale(1.1);
+        transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    #chronoMobile {
+        /* width: 100%; */
+        margin-top: 30px;
+        width: 420px;
+        height: 300px;
+    }
+
 
 
 
