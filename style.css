@@ -276,7 +276,7 @@ body {
 }
 
 .searchInput input::placeholder {
-    color: #595656;
+    color: #737070;
     font-weight: 500;
     font-family: 'Poppins';
     padding-left: 18px;
@@ -1399,7 +1399,7 @@ body {
     width: 100%;
     /* overflow: hidden; */
     /* margin: 40px auto; */
-    margin: 6 0px auto;
+    margin: 60px auto;
     border-radius: 30px;
     max-width: 1200px;
     min-height: 100vh;
