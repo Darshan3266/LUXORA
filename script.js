@@ -12,3 +12,15 @@ function menuBar() {
 
 }
 
+
+const scrollbtn=document.getElementById("scrollBtn");
+
+window.addEventListener("scroll",()=>{
+  if(window.scrollY>300){
+    scrollbtn.style.display="block";
+
+  }
+  else{
+    scrollbtn.style.display="none";
+  }
+})
