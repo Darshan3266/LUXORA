@@ -1058,13 +1058,13 @@ body {
     font-family: 'GreatVibes';
     text-align: center;
     margin: 40px;
-    text-shadow: 2px 3px 5px #ff4000;
+    text-shadow: 2px 3px 5px #28e5efa1;
     font-size: 3.5vw;
 }
 
 #txtColor {
-    color: #00001b;
-    text-shadow: 2px 5px 7px #fffdfd;
+    color: #050051;
+    
 }
 
 
@@ -1188,7 +1188,7 @@ body {
 
 
 .chooseCont img {
-    /* animation: imgShadow 3s ease-in-out infinite; */
+    animation: imgShadow 3s ease-in-out infinite;
     filter: drop-shadow(2px 10px 10px #ff0000dd);
     /* filter: drop-shadow(2px 10px 10px #ff0000dd); */
     margin: 30px 0px 0px 20px;
@@ -1645,8 +1645,8 @@ body {
     height: 430px; */
     width: 100%;
     max-width: 670px;
-    margin-bottom: 70px;
     align-self: center;
+    margin-bottom: 40px;
     height: 470px;
     animation: imgFade1 5s ease-in-out infinite normal;
 
@@ -1819,10 +1819,10 @@ body {
 
     .searchInput input {
         /* width: 53vw; */
-        width: 200px;
+        width: 180px;
         padding: 9px;
-        margin-left: 20px;
-        font-size: 0.6rem;
+        margin-left: 15px;
+        font-size: 0.5rem;
         /* text-align: start; */
         color: #000000;
     }
@@ -1918,7 +1918,7 @@ body {
     .bannerCont {
         justify-content: center;
         align-items: center;
-        padding: 10px 20px 0px 70px;
+        padding: 10px 0px 0px 60px;
 
     }
 
@@ -1931,7 +1931,8 @@ body {
 
     #bannerPar {
         color: rgb(255, 255, 255);
-        font-size: 0.9rem;
+        font-size: 14px;
+        width: 250px;
     }
 
     #contPar {
@@ -2296,7 +2297,7 @@ body {
 
     .chooseCont img {
         margin: 0;
-        height: 280px;
+        height: 230px;
         width: 100%;
         max-width: 320px;
     }
@@ -2404,7 +2405,7 @@ body {
 
     .watchesContainer h1 {
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         margin-top: 30px;
 
     }
@@ -2424,7 +2425,7 @@ body {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        margin: 30px auto;
+        margin: 20px auto;
         max-width: 330px;
     }
 
@@ -2472,9 +2473,10 @@ body {
     }
 
     .watch1Info h3,
-    .watch2Info h3 {
+    .watch2Info h3,
+    .watch3Info h3 {
         font-size: 1rem;
-        margin-top: 20px;
+        margin-top: 12px;
 
 
     }
@@ -2491,54 +2493,69 @@ body {
     }
 
     .watch2Info h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         width: 250px;
     }
 
 
     #royalGoldMobile,
     #chronoMobile,
-    #crownMobile{
-    align-self: center;
-    margin: 10px auto;
-    width: 100%;
-    filter: drop-shadow(2px 5px 20px #f6a337);
-    overflow: hidden;
-    animation: imgFade 4s linear 3s infinite normal;
-    width: 100%;
-    max-width: 270px;
-    height: 220px;
+    #crownMobile {
+        align-self: center;
+        margin: 10px auto;
+        width: 100%;
+        filter: drop-shadow(2px 5px 20px #f6a337);
+        overflow: hidden;
 
-}
 
-#chronoMobile {
-    width: 100%;
-    max-width: 280px;
-    height: 200px;
-    animation: imgFade1 5s ease-in-out infinite normal;
+    }
 
-}
+    #royalGoldMobile {
+        width: 100%;
+        max-width: 300px;
+        height: 220px;
+        animation: imgFade 5s ease-in-out infinite normal;
+        margin-top: 30px;
 
-#royalGoldMobile:hover,
-#chronoMobile:hover,
-#crownMobile:hover {
-    cursor: pointer;
-    transform: translateY(10px) scale(1.1);
-    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+    }
 
-#chronoMobile {
+    #chronoMobile {
+        width: 100%;
+        max-width: 320px;
+        height: 220px;
+        animation: imgFade1 5s ease-in-out infinite normal;
+        margin-top: 30px;
 
-    margin-top: 30px;
-    width: 420px;
-    height: 300px;
-}
+    }
 
-#crownMobile {
-    margin-top: 30px;
-    width: 420px;
-    height: 350px
-}
+    #crownMobile {
+        width: 100%;
+        max-width: 320px;
+        height: 220px;
+        animation: imgFade1 5s ease-in-out infinite normal;
+        margin-top: 30px;
+
+    }
+
+    #royalGoldMobile:hover,
+    #chronoMobile:hover,
+    #crownMobile:hover {
+        cursor: pointer;
+        transform: translateY(10px) scale(1.1);
+        transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .feautureLists li,
+    .feautureLists1 li,
+    .feautureLists2 li {
+  
+        padding: 5px 8px;
+        font-size: 16px;
+    }
+
+    .watch3Info h1{
+        font-size: 1.8em;
+    }
 
 
 
