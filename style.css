@@ -688,7 +688,7 @@ body {
     align-items: center;
     max-width: 1200px;
     min-height: 70vh;
-    margin: 70px auto;
+    margin: 300px auto;
     background: linear-gradient(136deg, #00171c, #00252b, #001442f3);
     z-index: 999;
     transition: 2s ease-in;
@@ -1883,7 +1883,19 @@ body {
 }
 
 
+/* animation */
+.fade-up{
+    opacity: 0;
+    transform: translateY(80px) translateZ(30px);
+    transition:all 1s ease
+}
 
+
+
+.fade-up.show{
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
