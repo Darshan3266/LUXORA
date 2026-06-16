@@ -1886,7 +1886,7 @@ body {
 /* animation */
 .fade-up{
     opacity: 0;
-    transform: translateY(80px) translateZ(30px);
+    transform: translateY(100px) translateZ(20px);
     transition:all 1s ease
 }
 
