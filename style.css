@@ -833,7 +833,8 @@ body {
 
 #omg2 img {
     width: 170px;
-    height: 200px;
+    height: 190px;
+    margin-bottom: 10px;
     filter: drop-shadow(2px 8px 20px rgb(3, 250, 233));
 
 
@@ -1783,7 +1784,7 @@ body {
     display: flex;
     /* align-items: center; */
     gap: 50px;
-    margin-right:30px ;
+    margin-right: 30px;
 
 }
 
@@ -1815,10 +1816,12 @@ body {
     font-size: 15px;
     font-family: 'Poppins';
 }
-.footerContainer a:hover{
+
+.footerContainer a:hover {
     cursor: pointer;
     color: #c6b6b6ac;
 }
+
 .leftCont {
 
     align-items: center;
@@ -1843,64 +1846,90 @@ body {
 }
 
 
-.botttomLinks{
+.botttomLinks {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
 }
-.botttomLinks h3{
+
+.botttomLinks h3 {
     font-family: 'Thin';
     font-size: 1.3rem;
 
 }
 
-.logoImg{
+.logoImg {
     display: flex;
     margin-top: 20px;
     align-items: center;
 }
-.botttomLinks img:hover{
+
+.botttomLinks img:hover {
     cursor: pointer;
     opacity: 0.5;
 }
-.botttomLinks img{
+
+.botttomLinks img {
     height: 50px;
     width: 50px;
 }
 
-#ytImg ,#facebookImg{
+#ytImg,
+#facebookImg {
     height: 70px;
     width: 70px;
 }
 
 
-.btmConts p{
+.btmConts p {
     text-align: center;
-    font-family:'Thin';
+    font-family: 'Thin';
     margin-top: 10px;
 }
 
 
 /* animation */
-.fade-up{
+.fade-up {
     opacity: 0;
     transform: translateY(100px) translateZ(20px);
-    transition:all 1s ease
+    transition: all 1s ease
 }
 
 
 
-.fade-up.show{
+.fade-up.show {
     opacity: 1;
     transform: translateY(0);
 }
 
 
 
+#suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-width: 320px;
+    overflow: hidden;
+    background-color: white;
+    font-size: 1.2rem;
+    display: flex;
+    color: #000000;
+}
+#suggestBox{
+    display: flex;
+    flex-direction: column;
+}
 
-
+#suggestions img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
 
 
 
@@ -2174,7 +2203,7 @@ body {
     #omg2 img {
         margin-bottom: 5px;
         width: 120px;
-        height: 140px;
+        height: 130px;
 
     }
 
@@ -2699,7 +2728,8 @@ body {
     .watch3Info h1 {
         font-size: 1.8em;
     }
-    .footerContainer{
+
+    .footerContainer {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2707,27 +2737,32 @@ body {
         max-width: 375px;
         flex-direction: column;
     }
-    .footerConts{
+
+    .footerConts {
         display: flex;
         justify-content: center;
         gap: 30px;
         margin-left: 30px;
         flex-direction: column;
     }
-    .leftCont{
+
+    .leftCont {
         width: 100%;
         max-width: 300px;
     }
-    .leftCont img{
-       margin-left: 30px;
+
+    .leftCont img {
+        margin-left: 30px;
     }
-    .leftCont p{
+
+    .leftCont p {
         width: 100%;
         text-align: center;
         max-width: 250px;
         /* max-width: 300px; */
     }
-    .botttomLinks{
+
+    .botttomLinks {
         justify-content: center;
     }
 
