@@ -1904,35 +1904,42 @@ body {
     transform: translateY(0);
 }
 
-
+#image{
+    height: 300px;
+    width: 220px;
+}
 
 #suggestions {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     border-radius: 10px;
     margin-top: 10px;
-    max-width: 320px;
-    overflow: hidden;
-    background-color: white;
+    max-width: 280px;
+    background:linear-gradient(35deg,#00192e,#043df9,#080015);
     font-size: 1.2rem;
-    display: flex;
-    color: #000000;
+    box-shadow: 2px 3px 30px #03d4a079;
+
+    color: #ffffff;
 }
-#suggestBox{
-    display: flex;
-    flex-direction: column;
-}
+
+
 
 #suggestions img {
-    display: block;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 
-
+.itemBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* flex-direction: column; */
+}
 
 
 

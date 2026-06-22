@@ -69,7 +69,7 @@ const products = [
     name: "Rolex Submariner",
     price: 12500,
     category: "Diving",
-    image: "images/submariner.jpg",
+    image: "/assets/rolex.png",
     about: "An iconic luxury diving watch known for its timeless design and durability."
   },
 
@@ -89,7 +89,7 @@ const products = [
     name: "Patek Philippe Nautilus",
     price: 35000,
     category: "Luxury Sports",
-    image: "assets/rolex1.png",
+    image: "/assets/rolex1.png",
     about: "A highly sought-after luxury sports watch."
   },
 
@@ -267,21 +267,36 @@ const suggest = document.getElementById("suggestions");
 
 searchInput.addEventListener("input", () => {
 
+
   const searchValues = searchInput.value.toLowerCase();
-  const results = products.slice(0, 5).filter(p => p.name.toLowerCase().includes(searchValues));
   suggest.innerHTML = "";
   if (searchValues === "") {
     return
 
   }
 
-  results.forEach(product => {
+  const results = products.filter(p => p.name.toLowerCase().includes(searchValues));
+
+
+  results.slice(0, 5).forEach(product => {
     const itemBox = document.createElement("div");
+    itemBox.classList.add("itemBox")
     const itemImg = document.createElement("img")
-    itemBox.textContent = product.name;
+    itemImg.classList.add("itemImg")
+
+    itemBox.append(itemImg)
+
+    const itemName = document.createElement("p");
+    itemName.textContent = product.name;
     itemImg.src = "assets/rolex1.png"
-    suggest.appendChild(itemImg)
+    itemBox.addEventListener("click", () => {
+      window.location.href = `./searchBar/searchProducts.html?id=${product.id} `
+      suggest.innerHTML = ""
+    })
+
+    itemBox.appendChild(itemName)
     suggest.appendChild(itemBox);
+
 
 
 
@@ -289,9 +304,9 @@ searchInput.addEventListener("input", () => {
 
 
 
-
 });
-suggest.innerHTML = ""
+  const searchBnt=document.getElementById("searchBtn");
+
 
 
 
