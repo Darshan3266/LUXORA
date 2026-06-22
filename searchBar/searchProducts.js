@@ -202,11 +202,11 @@ const parms = new URLSearchParams(window.location.search);
 const getId = parms.get("id");
 
 if (getId) {
-    const product = products.find(item => 
+    const product = products.find(item =>
         item.id == getId
     );
 
-    document.getElementById("image").src = product.image;
+    // document.getElementById("image").src = product.image;
     document.getElementById("brand").textContent = product.brand;
     document.getElementById("name").textContent = product.name;
     document.getElementById("price").textContent = product.price;
@@ -215,6 +215,32 @@ if (getId) {
 }
 
 
-else{
+else {
+    const results = JSON.parse(localStorage.getItem("products1"));
+    console.log(results);
+    const container = document.getElementById("productsConatainer");
 
+
+    results.forEach(product => {
+        const card = document.createElement("div");
+    //     card.innerHTML = `<img src="${product.image}">
+    // <h2>${product.name}</h2>
+    // <p>${product.price}</p>
+    // <p>${product.about}</p>`;
+            card.innerHTML = `<img src="${product.image}">
+           <h2>${product.brand}</h2>
+            <h3>${product.name}</3>
+             <p>${product.price}</div>
+              <p>${product.category}</p>
+               <p>${product.about}</p>;`
+
+
+        container.appendChild(card)
+    }
+
+
+
+    )
 }
+
+

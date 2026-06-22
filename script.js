@@ -305,7 +305,25 @@ searchInput.addEventListener("input", () => {
 
 
 });
-  const searchBnt=document.getElementById("searchBtn");
+const searchBtn = document.getElementById("searchBtn");
+searchBtn.addEventListener("click", () => {
+  const searchValues = searchInput.value.trim().toLowerCase()
+  if (searchValues === "") {
+    alert("Invalid Inputs");
+    return
+  }
+  const products1=products.filter(item=>item.name.toLowerCase().includes(searchValues));
+  if(products1.length>0){
+    localStorage.setItem("products1",JSON.stringify(products1));
+    window.location.href=`./searchBar/searchProducts.html`
+  }
+  else{
+    alert("Sry!!No watches found.")
+  }
+
+
+})
+
 
 
 
