@@ -1,4 +1,3 @@
-// console.log("js");
 
 
 //dropmenu btn for mobile responivenss
@@ -30,8 +29,6 @@ window.addEventListener("scroll", () => {
 
 //fade scroll animation
 const fadeConts = document.querySelectorAll(".fade-up");
-console.log(fadeConts);
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -308,21 +305,61 @@ searchInput.addEventListener("input", () => {
 const searchBtn = document.getElementById("searchBtn");
 searchBtn.addEventListener("click", () => {
   const searchValues = searchInput.value.trim().toLowerCase()
-  if (searchValues === "") {
+  if (searchValues === "" || searchValues.length<2) {
     alert("Invalid Inputs");
     return
   }
   const products1=products.filter(item=>item.name.toLowerCase().includes(searchValues));
+  
   if(products1.length>0){
     localStorage.setItem("products1",JSON.stringify(products1));
     window.location.href=`./searchBar/searchProducts.html`
   }
   else{
-    alert("Sry!!No watches found.")
+
+  
+    alert("Sry!! No watches found.")
   }
 
 
 })
+
+const viewBtn=document.getElementById("viewAllBtn");
+viewBtn.addEventListener("click",()=>{
+  window.location.href=`productsLists/products.html`
+})
+
+
+
+const cards=document.querySelectorAll(".card");
+
+cards.forEach((card)=>{
+  card.addEventListener("click",()=>{
+    const id=card.dataset.id;
+  // window.location.href=`products/products.html?id=${id}`;
+      window.location.href = `./redirect-links/product-details.html?id=${id} `
+
+
+    
+  })
+})
+
+const cards1=document.querySelectorAll(".card1");
+
+cards1.forEach((card1)=>{
+  card1.addEventListener("click",()=>{
+    const id1=card1.dataset.id;
+  // window.location.href=`products/products.html?id=${id}`;
+      window.location.href = `./redirect-links/product-details.html?id=${id1} `
+
+
+    
+  })
+})
+
+
+
+
 
 
 

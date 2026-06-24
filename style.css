@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     /* overflow: hidden; */
-    /* outline: 1px solid rgb(255, 199, 199); */
+    /* outline: 1px solid rgb(237, 20, 20); */
 }
 
 
@@ -95,6 +95,7 @@ html {
 }
 
 body {
+    
     background: linear-gradient(155deg, #000000, #012c38);
     color: white;
 
@@ -667,8 +668,50 @@ body {
 }
 
 
+
+
 /* Cards section */
 
+@keyframes goldSine {
+    from{
+        box-shadow:  2px 2px 15px #ffd700;
+    }
+    to{
+        box-shadow:  2px 3px 17px #ffa200;
+
+    }
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* margin: 10px; */
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#viewAllBtn{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg,#2401c0,#08a8dd,#00c7b3);
+    margin:0px 60px 0px auto;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #f0f0f0;
+    animation: goldSine 2s infinite ;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+#viewAllBtn:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+    background: linear-gradient(135deg,#9e08d9,#070bf0,#25000e);
+
+
+}
 #cardHead {
     color: white;
     font-size: 4.5vw;
@@ -680,6 +723,7 @@ body {
 
 }
 
+
 .cardContainer,
 .cardContainer1 {
 
@@ -688,7 +732,7 @@ body {
     align-items: center;
     max-width: 1200px;
     min-height: 70vh;
-    margin: 300px auto;
+    margin: 50px auto;
     background: linear-gradient(136deg, #00171c, #00252b, #001442f3);
     z-index: 999;
     transition: 2s ease-in;
@@ -1792,7 +1836,7 @@ body {
     display: flex;
 
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     margin-top: 30px;
 }
 
@@ -1939,6 +1983,12 @@ body {
     align-items: center;
     gap: 10px;
     /* flex-direction: column; */
+}
+.itemBox:hover{
+    background:#0061f1;
+    cursor: pointer;
+
+
 }
 
 

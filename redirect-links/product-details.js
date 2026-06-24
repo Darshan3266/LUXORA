@@ -1,6 +1,5 @@
 const products = [
 
-
     {
         id: 1,
         brand: "Rolex",
@@ -10,7 +9,6 @@ const products = [
         image: "/assets/rolex.png",
         about: "An iconic luxury diving watch known for its timeless design and durability."
     },
-
     {
         id: 2,
         brand: "Omega",
@@ -197,56 +195,36 @@ const products = [
 
 ];
 
+const param = new URLSearchParams(window.location.search);
+const id = Number(param.get("id"));
+const product = products.find(item =>
+    item.id === id
+);
 
-const parms = new URLSearchParams(window.location.search);
-const getId = parms.get("id");
-
-if (getId) {
-    const product = products.find(item =>
-        item.id == getId
-    );
-
-    // document.getElementById("image").src = product.image;
-    document.getElementById("brand").textContent = product.brand;
-    document.getElementById("name").textContent = product.name;
-    document.getElementById("price").textContent = product.price;
-    document.getElementById("categories").textContent = product.category;
-    document.getElementById("about").textContent = product.about;
-}
-
-
-else {
-    const results = JSON.parse(localStorage.getItem("products1"));
-    console.log(results);
-    const container = document.getElementById("productsConatainer");
-
-
-    results.forEach(product => {
-        const card = document.createElement("div");
-        card.classList.add("card");
-        card.innerHTML = `<img src="${product.image}">
+const cont = document.getElementById("productDetails");
+cont.innerHTML = `
+           <img src="${product.image}">
            <h2>${product.brand}</h2>
             <h3>${product.name}</3>
              <p>${product.price}</div>
               <p>${product.category}</p>
-               <p>${product.about}</p>;`
+               <p>${product.about}</p>`
 
 
-        container.appendChild(card);
-        card.addEventListener("click", () => {
+const param1 = new URLSearchParams(window.location.search);
+const id1 = Number(param.get("id1"));
+const product1 = products.find(item =>
+    item.id === id1
+);
 
-            window.location.href = `/searchBar/searchProducts.html?id=${product.id}`
-            container.appendChild(card);
-        })
-
-
-
-    }
-
-
-    )
-}
-
+const cont1 = document.getElementById("productDetails1");
+cont1.innerHTML = `
+           <img src="${product1.image}">
+           <h2>${product1.brand}</h2>
+            <h3>${product1.name}</3>
+             <p>${product1.price}</div>
+              <p>${product1.category}</p>
+               <p>${product1.about}</p>;`
 
 
 
