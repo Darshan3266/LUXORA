@@ -255,8 +255,8 @@ body {
 .searchInput input {
     padding: 10px;
     position: relative;
-    margin-right: 20px;
-    width: 280px;
+    margin: auto;
+    width: 310px;
     font-size: 13px;
     border-radius: 18px;
     border: none;
@@ -267,7 +267,7 @@ body {
 
 .searchLogo {
     position: absolute;
-    right: 40px;
+    right: 20px;
     bottom: 5px;
     color: rgba(70, 68, 68, 0.847);
     cursor: pointer;
@@ -1964,7 +1964,7 @@ body {
     border-radius: 10px;
     /* border: 2px solid #c2a6e4de; */
     margin-top: 10px;
-    max-width: 280px;
+    max-width: 320px;
     /* background:linear-gradient(135deg,#026067,#060762,#00648f,#020202); */
     background:linear-gradient(135deg,#026067,#060762,#00648f,#020202);
     /* background-color: #ffd700; */
@@ -1989,7 +1989,7 @@ body {
 .itemBox{
     display: flex;
     align-items: center;
-    /* gap: 10px; */
+    gap: 10px;
     border-radius: 10px;
     border: 1px solid #f0f0f049;
     /* flex-direction: column; */

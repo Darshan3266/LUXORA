@@ -6,7 +6,6 @@ const products = [
         price: 12500,
         category: "Diving",
         image: "/productsLists/products_assets/rolex_submariner1.png",
-      
         about: "An iconic luxury diving watch known for its timeless design and durability."
     },
 
@@ -215,6 +214,9 @@ if (getId) {
     document.getElementById("price").textContent = product.price;
     document.getElementById("categories").textContent = product.category;
     document.getElementById("about").textContent = product.about;
+    document.getElementById("about").textContent = product.about;
+    document.getElementById("cartBtn").textContent =`🛒`;
+    document.getElementById("wishBtn").textContent =`❤`;
 }
 
 

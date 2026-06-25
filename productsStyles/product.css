@@ -27,3 +27,13 @@ body {
     width: 1200px;
     margin-top: 40px;
 }
+.products{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 4fr 3fr;
+}
+
+.containerBox{
+    display: flex;
+}
