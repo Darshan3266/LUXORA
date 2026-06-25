@@ -58,201 +58,204 @@ fadeConts.forEach((elements) => {
 
 
 const products = [
+    {
+        id: 1,
+        brand: "Rolex",
+        name: "Rolex Submariner",
+        price: 12500,
+        category: "Diving",
+        image: "/productsLists/products_assets/rolex_submariner1.png",
+      
+        about: "An iconic luxury diving watch known for its timeless design and durability."
+    },
+
+    {
+        id: 2,
+        brand: "Omega",
+        name: "Omega Speedmaster Moonwatch",
+        price: 7800,  
+        category: "Chronograph",
+        image: "/productsLists/products_assets/omega_speedmaster2.png",
+
+       
+        about: "The legendary Moonwatch worn during NASA missions."
+    },
+
+    {
+        id: 3,
+        brand: "Patek Philippe",
+        name: "Patek Philippe Nautilus",
+        price: 35000,
+        category: "Luxury Sports",
+        image: "/productsLists/products_assets/Patek philpee3.png",
 
 
-  {
-    id: 1,
-    brand: "Rolex",
-    name: "Rolex Submariner",
-    price: 12500,
-    category: "Diving",
-    image: "/assets/rolex.png",
-    about: "An iconic luxury diving watch known for its timeless design and durability."
-  },
+        about: "A highly sought-after luxury sports watch."
+    },
 
-  {
-    id: 2,
-    brand: "Omega",
-    name: "Omega Speedmaster Moonwatch",
-    price: 7800,
-    category: "Chronograph",
-    image: "images/speedmaster.jpg",
-    about: "The legendary Moonwatch worn during NASA missions."
-  },
+    {
+        id: 4,
+        brand: "TAG Heuer",
+        name: "TAG Heuer Monaco",
+        price: 8500,
+        category: "Chronograph",
+        image: "/productsLists/products_assets/tag heuer4.png",
+        about: "A distinctive square-shaped chronograph inspired by motorsport."
+    },
 
-  {
-    id: 3,
-    brand: "Patek Philippe",
-    name: "Patek Philippe Nautilus",
-    price: 35000,
-    category: "Luxury Sports",
-    image: "/assets/rolex1.png",
-    about: "A highly sought-after luxury sports watch."
-  },
+    {
+        id: 5,
+        brand: "Audemars Piguet",
+        name: "Royal Oak",
+        price: 42000,
+        category: "Luxury Sports",
+        image: "/productsLists/products_assets/audemars piguet5.png",
+        about: "Famous for its octagonal bezel and premium finish."
+    },
 
-  {
-    id: 4,
-    brand: "TAG Heuer",
-    name: "TAG Heuer Monaco",
-    price: 8500,
-    category: "Chronograph",
-    image: "images/monaco.jpg",
-    about: "A distinctive square-shaped chronograph inspired by motorsport."
-  },
+    {
+        id: 6,
+        brand: "Cartier",
+        name: "Cartier Santos",
+        price: 7200,
+        category: "Classic",
+        image: "/productsLists/products_assets/cartier6.png",
+        about: "A classic luxury watch with aviation heritage."
+    },
 
-  {
-    id: 5,
-    brand: "Audemars Piguet",
-    name: "Royal Oak",
-    price: 42000,
-    category: "Luxury Sports",
-    image: "images/royaloak.jpg",
-    about: "Famous for its octagonal bezel and premium finish."
-  },
+    {
+        id: 7,
+        brand: "Rolex",
+        name: "Rolex Daytona",
+        price: 18500,
+        category: "Chronograph",
+        image: "/productsLists/products_assets/rolex daytona7.png",
+        about: "One of the world's most desirable racing watches."
+    },
 
-  {
-    id: 6,
-    brand: "Cartier",
-    name: "Cartier Santos",
-    price: 7200,
-    category: "Classic",
-    image: "images/santos.jpg",
-    about: "A classic luxury watch with aviation heritage."
-  },
+    // Luxora Watches
 
-  {
-    id: 7,
-    brand: "Rolex",
-    name: "Rolex Daytona",
-    price: 18500,
-    category: "Chronograph",
-    image: "images/daytona.jpg",
-    about: "One of the world's most desirable racing watches."
-  },
+    {
+        id: 8,
+        brand: "Luxora",
+        name: "Luxora Royal Gold",
+        price: 5500,
+        category: "Classic",
+        image: "/productsLists/products_assets/luxoraGold8.png",
+        about: "A premium gold-finished timepiece crafted for elegance."
+    },
 
-  // Luxora Watches
+    {
+        id: 9,
+        brand: "Luxora",
+        name: "Luxora Midnight Crown",
+        price: 4800,
+        category: "Luxury Sports",
+        image: "/productsLists/products_assets/luxoraMidnight9.png",
+        about: "A bold black luxury watch designed for modern style."
+    },
 
-  {
-    id: 8,
-    brand: "Luxora",
-    name: "Luxora Royal Gold",
-    price: 5500,
-    category: "Classic",
-    image: "images/royal-gold.jpg",
-    about: "A premium gold-finished timepiece crafted for elegance."
-  },
+    {
+        id: 10,
+        brand: "Luxora",
+        name: "Luxora Imperial Chrono",
+        price: 6200,
+        category: "Chronograph",
+        image: "/productsLists/products_assets/luxorachrono10.png",
+        about: "A sophisticated chronograph with luxury styling."
+    },
 
-  {
-    id: 9,
-    brand: "Luxora",
-    name: "Luxora Midnight Crown",
-    price: 4800,
-    category: "Luxury Sports",
-    image: "images/midnight-crown.jpg",
-    about: "A bold black luxury watch designed for modern style."
-  },
+    {
+        id: 11,
+        brand: "Omega",
+        name: "Omega Seamaster Diver 300M",
+        price: 6200,
+        category: "Diving",
+        image: "/productsLists/products_assets/omegaspeedmaster11.png",
+        about: "A premium diving watch famous for ocean heritage."
+    },
 
-  {
-    id: 10,
-    brand: "Luxora",
-    name: "Luxora Imperial Chrono",
-    price: 6200,
-    category: "Chronograph",
-    image: "images/imperial-chrono.jpg",
-    about: "A sophisticated chronograph with luxury styling."
-  },
+    // Products of cards
 
-  {
-    id: 11,
-    brand: "Omega",
-    name: "Omega Seamaster Diver 300M",
-    price: 6200,
-    category: "Diving",
-    image: "images/seamaster.jpg",
-    about: "A premium diving watch famous for ocean heritage."
-  },
+    {
+        id: 12,
+        brand: "Rolex",
+        name: "Rolex Cosmograph",
+        price: 8499,
+        category: "Chronograph",
+        image: "/productsLists/products_assets/rolexcosmgraph12.png",
+        about: "Modern green edition inspired by luxury motorsport."
+    },
 
-  // Products of cards
+    {
+        id: 13,
+        brand: "Omega",
+        name: "Omega Cosmic",
+        price: 4659,
+        category: "Classic",
+        image: "/productsLists/products_assets/omegacosmic13.png",
+        about: "Elegant black and silver watch for everyday luxury."
+    },
 
-  {
-    id: 12,
-    brand: "Rolex",
-    name: "Rolex Cosmograph",
-    price: 8499,
-    category: "Chronograph",
-    image: "images/rolex-cosmograph.png",
-    about: "Modern green edition inspired by luxury motorsport."
-  },
+    {
+        id: 14,
+        brand: "Rolex",
+        name: "Rolex Blue",
+        price: 8789,
+        category: "Luxury Sports",
+        image: "/productsLists/products_assets/rolexblue14.png",
+        about: "A striking blue edition with premium craftsmanship."
+    },
 
-  {
-    id: 13,
-    brand: "Omega",
-    name: "Omega Cosmic",
-    price: 4659,
-    category: "Classic",
-    image: "images/omega-cosmic.png",
-    about: "Elegant black and silver watch for everyday luxury."
-  },
+    {
+        id: 15,
+        brand: "Omega",
+        name: "Omega Speed",
+        price: 4660,
+        category: "Chronograph",
+        image: "/productsLists/products_assets/omegspeed15.png",
+        about: "Modern silver edition with a sporty appearance."
+    },
 
-  {
-    id: 14,
-    brand: "Rolex",
-    name: "Rolex Blue",
-    price: 8789,
-    category: "Luxury Sports",
-    image: "images/rolex-blue.png",
-    about: "A striking blue edition with premium craftsmanship."
-  },
+    {
+        id: 16,
+        brand: "Patek Philippe",
+        name: "Patek Philippe Black",
+        price: 7799,
+        category: "Classic",
+        image: "/productsLists/products_assets/patekblack16.png",
+        about: "Luxury silver edition with timeless Swiss design."
+    },
 
-  {
-    id: 15,
-    brand: "Omega",
-    name: "Omega Speed",
-    price: 4660,
-    category: "Chronograph",
-    image: "images/omega-speed.png",
-    about: "Modern silver edition with a sporty appearance."
-  },
+    {
+        id: 17,
+        brand: "TAG Heuer",
+        name: "Monaco Black Edition",
+        price: 4890,
+        category: "Chronograph",
+        image: "/productsLists/products_assets/monocblack17.png",
+        about: "Black striped edition inspired by racing heritage."
+    },
 
-  {
-    id: 16,
-    brand: "Patek Philippe",
-    name: "Patek Philippe Black",
-    price: 7799,
-    category: "Classic",
-    image: "images/patek-black.png",
-    about: "Luxury silver edition with timeless Swiss design."
-  },
+    {
+        id: 18,
+        brand: "Vacheron Constantin",
+        name: "Vacheron Constantin Blue",
+        price: 7545,
+        category: "Luxury Sports",
+        image: "/productsLists/products_assets/vacheron constanin18.png",
+        about: "Golden blue edition representing fine Swiss craftsmanship."
+    },
 
-  {
-    id: 17,
-    brand: "TAG Heuer",
-    name: "Monaco Black Edition",
-    price: 4890,
-    category: "Chronograph",
-    image: "images/monaco-black.png",
-    about: "Black striped edition inspired by racing heritage."
-  },
-
-  {
-    id: 18,
-    brand: "Vacheron Constantin",
-    name: "Vacheron Constantin Blue",
-    price: 7545,
-    category: "Luxury Sports",
-    image: "images/vacheron-blue.png",
-    about: "Golden blue edition representing fine Swiss craftsmanship."
-  },
-
-  {
-    id: 19,
-    brand: "Patek Philippe",
-    name: "Patek Philippe Silver",
-    price: 7545,
-    category: "Classic",
-    image: "images/patek-silver.png",
-    about: "Golden silver edition with elegant and refined styling."
-  }
+    {
+        id: 19,
+        brand: "Patek Philippe",
+        name: "Patek Philippe Silver",
+        price: 7545,
+        category: "Classic",
+        image: "/productsLists/products_assets/pateksliver19.png",
+        about: "Golden silver edition with elegant and refined styling."
+    }
 
 ];
 
@@ -274,10 +277,28 @@ searchInput.addEventListener("input", () => {
 
   const results = products.filter(p => p.name.toLowerCase().includes(searchValues));
 
+  
+
 
   results.slice(0, 5).forEach(product => {
     const itemBox = document.createElement("div");
-    itemBox.classList.add("itemBox")
+    itemBox.classList.add("itemBox");
+    if(product.name.includes("Luxora")){
+ 
+      itemBox.style.background='linear-gradient(135deg, #ff831d, #f9bf00, #ffd560, #6e4d00)';
+      itemBox.addEventListener("mouseover",()=>{
+      itemBox.style.background='linear-gradient(135deg, #ff1d1d, #f4be0b, #e06100, #6e4d00)';
+
+      })
+      itemBox.addEventListener("mouseout",()=>{
+      itemBox.style.background='linear-gradient(135deg, #ff831d, #f4be0b, #ffd560, #6e4d00)';
+   
+
+      })
+      
+ 
+         
+    }
     const itemImg = document.createElement("img")
     itemImg.classList.add("itemImg")
 
@@ -285,7 +306,7 @@ searchInput.addEventListener("input", () => {
 
     const itemName = document.createElement("p");
     itemName.textContent = product.name;
-    itemImg.src = "assets/rolex1.png"
+    itemImg.src = `${product.image}`
     itemBox.addEventListener("click", () => {
       window.location.href = `./searchBar/searchProducts.html?id=${product.id} `
       suggest.innerHTML = ""

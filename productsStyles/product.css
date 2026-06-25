@@ -5,12 +5,13 @@
 }
 
 body {
-    background:linear-gradient(130deg,#EDF1F5,#0145F2);
+    background:linear-gradient(130deg,#EDF1F5,#6baadd);
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    /* height: 100vh; */
+    min-height: 100vh;
 }
 
 
@@ -20,9 +21,9 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #0145F2;
-    height: 200px;
+    background-color: #eae69e;
+    min-height: 250px;
     /* width: 100%; */
     width: 1200px;
-    margin-top: 10px;
+    margin-top: 40px;
 }

@@ -1,21 +1,24 @@
 const products = [
-
     {
         id: 1,
         brand: "Rolex",
         name: "Rolex Submariner",
         price: 12500,
         category: "Diving",
-        image: "/assets/rolex.png",
+        image: "/productsLists/products_assets/rolex_submariner1.png",
+      
         about: "An iconic luxury diving watch known for its timeless design and durability."
     },
+
     {
         id: 2,
         brand: "Omega",
         name: "Omega Speedmaster Moonwatch",
-        price: 7800,
+        price: 7800,  
         category: "Chronograph",
-        image: "images/speedmaster.jpg",
+        image: "/productsLists/products_assets/omega_speedmaster2.png",
+
+       
         about: "The legendary Moonwatch worn during NASA missions."
     },
 
@@ -25,7 +28,9 @@ const products = [
         name: "Patek Philippe Nautilus",
         price: 35000,
         category: "Luxury Sports",
-        image: "/assets/rolex1.png",
+        image: "/productsLists/products_assets/Patek philpee3.png",
+
+
         about: "A highly sought-after luxury sports watch."
     },
 
@@ -35,7 +40,7 @@ const products = [
         name: "TAG Heuer Monaco",
         price: 8500,
         category: "Chronograph",
-        image: "images/monaco.jpg",
+        image: "/productsLists/products_assets/tag heuer4.png",
         about: "A distinctive square-shaped chronograph inspired by motorsport."
     },
 
@@ -45,7 +50,7 @@ const products = [
         name: "Royal Oak",
         price: 42000,
         category: "Luxury Sports",
-        image: "images/royaloak.jpg",
+        image: "/productsLists/products_assets/audemars piguet5.png",
         about: "Famous for its octagonal bezel and premium finish."
     },
 
@@ -55,7 +60,7 @@ const products = [
         name: "Cartier Santos",
         price: 7200,
         category: "Classic",
-        image: "images/santos.jpg",
+        image: "/productsLists/products_assets/cartier6.png",
         about: "A classic luxury watch with aviation heritage."
     },
 
@@ -65,7 +70,7 @@ const products = [
         name: "Rolex Daytona",
         price: 18500,
         category: "Chronograph",
-        image: "images/daytona.jpg",
+        image: "/productsLists/products_assets/rolex daytona7.png",
         about: "One of the world's most desirable racing watches."
     },
 
@@ -77,7 +82,7 @@ const products = [
         name: "Luxora Royal Gold",
         price: 5500,
         category: "Classic",
-        image: "images/royal-gold.jpg",
+        image: "/productsLists/products_assets/luxoraGold8.png",
         about: "A premium gold-finished timepiece crafted for elegance."
     },
 
@@ -87,7 +92,7 @@ const products = [
         name: "Luxora Midnight Crown",
         price: 4800,
         category: "Luxury Sports",
-        image: "images/midnight-crown.jpg",
+        image: "/productsLists/products_assets/luxoraMidnight9.png",
         about: "A bold black luxury watch designed for modern style."
     },
 
@@ -97,7 +102,7 @@ const products = [
         name: "Luxora Imperial Chrono",
         price: 6200,
         category: "Chronograph",
-        image: "images/imperial-chrono.jpg",
+        image: "/productsLists/products_assets/luxorachrono10.png",
         about: "A sophisticated chronograph with luxury styling."
     },
 
@@ -107,7 +112,7 @@ const products = [
         name: "Omega Seamaster Diver 300M",
         price: 6200,
         category: "Diving",
-        image: "images/seamaster.jpg",
+        image: "/productsLists/products_assets/omegaspeedmaster11.png",
         about: "A premium diving watch famous for ocean heritage."
     },
 
@@ -119,7 +124,7 @@ const products = [
         name: "Rolex Cosmograph",
         price: 8499,
         category: "Chronograph",
-        image: "images/rolex-cosmograph.png",
+        image: "/productsLists/products_assets/rolexcosmgraph12.png",
         about: "Modern green edition inspired by luxury motorsport."
     },
 
@@ -129,7 +134,7 @@ const products = [
         name: "Omega Cosmic",
         price: 4659,
         category: "Classic",
-        image: "images/omega-cosmic.png",
+        image: "/productsLists/products_assets/omegacosmic13.png",
         about: "Elegant black and silver watch for everyday luxury."
     },
 
@@ -139,7 +144,7 @@ const products = [
         name: "Rolex Blue",
         price: 8789,
         category: "Luxury Sports",
-        image: "images/rolex-blue.png",
+        image: "/productsLists/products_assets/rolexblue14.png",
         about: "A striking blue edition with premium craftsmanship."
     },
 
@@ -149,7 +154,7 @@ const products = [
         name: "Omega Speed",
         price: 4660,
         category: "Chronograph",
-        image: "images/omega-speed.png",
+        image: "/productsLists/products_assets/omegspeed15.png",
         about: "Modern silver edition with a sporty appearance."
     },
 
@@ -159,7 +164,7 @@ const products = [
         name: "Patek Philippe Black",
         price: 7799,
         category: "Classic",
-        image: "images/patek-black.png",
+        image: "/productsLists/products_assets/patekblack16.png",
         about: "Luxury silver edition with timeless Swiss design."
     },
 
@@ -169,7 +174,7 @@ const products = [
         name: "Monaco Black Edition",
         price: 4890,
         category: "Chronograph",
-        image: "images/monaco-black.png",
+        image: "/productsLists/products_assets/monocblack17.png",
         about: "Black striped edition inspired by racing heritage."
     },
 
@@ -179,7 +184,7 @@ const products = [
         name: "Vacheron Constantin Blue",
         price: 7545,
         category: "Luxury Sports",
-        image: "images/vacheron-blue.png",
+        image: "/productsLists/products_assets/vacheron constanin18.png",
         about: "Golden blue edition representing fine Swiss craftsmanship."
     },
 
@@ -189,7 +194,7 @@ const products = [
         name: "Patek Philippe Silver",
         price: 7545,
         category: "Classic",
-        image: "images/patek-silver.png",
+        image: "/productsLists/products_assets/pateksliver19.png",
         about: "Golden silver edition with elegant and refined styling."
     }
 
@@ -205,7 +210,7 @@ const product = products.forEach(p => {
 
 
     card.innerHTML = `
-   
+            <img src="${p.image}">
            <h2>${p.brand}</h2>
             <h3>${p.name}</3>
              <p>${p.price}</div>
