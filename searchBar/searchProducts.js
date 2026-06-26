@@ -4,13 +4,17 @@ const products = [
         brand: "Rolex",
         name: "Rolex Submariner",
         price: 12500,
+        taxTxt: `Inclusive of all taxes`,
         category: "Diving",
+        collection: "Submariner",
+        availabilty: "In Stock",
         image: "../productsLists/Watch_assets/1.jpeg",
         sideImg: "../productsLists/products_assets/rolex_submariner1.png",
         about: "An iconic luxury diving watch known for its timeless design and durability.",
         ratings: "⭐⭐⭐⭐⭐",
-        cartButton:"Add to Cart",
-        buyButton:"Buy Now"
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now"
     },
 
     {
@@ -21,7 +25,9 @@ const products = [
         category: "Chronograph",
         image: "../productsLists/Watch_assets/2.jpeg",
         about: "The legendary Moonwatch worn during NASA missions.",
-        ratings: "⭐⭐⭐⭐⭐"
+        ratings: "⭐⭐⭐⭐⭐",
+        ratingsNo: "4.8(124 reviews)"
+
 
     },
 
@@ -204,6 +210,8 @@ const products = [
 ];
 
 
+
+
 const parms = new URLSearchParams(window.location.search);
 const getId = parms.get("id");
 
@@ -211,20 +219,30 @@ if (getId) {
     const product = products.find(item =>
         item.id == getId
     );
+
+    // products.filter(product.price.join(","))
+
     document.getElementById("sideImg").src = product.sideImg;
-    document.getElementById("image").src = product.image;
+    document.getElementById("watchimage").src = product.image;
     document.getElementById("brand").textContent = product.brand;
     document.getElementById("name").textContent = product.name;
-    document.getElementById("price").textContent = product.price;
-    document.getElementById("categories").textContent = product.category;
+    document.getElementById("price").textContent = ` ₹ ${product.price.toLocaleString()}`
+
+    document.getElementById("taxTxt").textContent = ` ${product.taxTxt}`
+    document.getElementById("categories").textContent = `Cateogry: ${product.category}`;
+    document.getElementById("collection").textContent = `Collection: ${product.collection}`;
+    document.getElementById("availabilty").textContent = `Avaliablity: ${product.availabilty}`;
     document.getElementById("about").textContent = product.about;
     document.getElementById("addToCart").textContent = product.cartButton;
     document.getElementById("buyNow").textContent = product.buyButton;
-
     document.getElementById("ratings").textContent = product.ratings;
+    document.getElementById("ratingsNo").textContent = product.ratingsNo;
     document.getElementById("cartBtn").textContent = `🛒`;
     document.getElementById("wishBtn").textContent = `❤`;
-}
+
+  
+
+    }
 
 
 else {
