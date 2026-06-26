@@ -5,20 +5,24 @@ const products = [
         name: "Rolex Submariner",
         price: 12500,
         category: "Diving",
-        image: "/productsLists/products_assets/rolex_submariner1.png",
-        about: "An iconic luxury diving watch known for its timeless design and durability."
+        image: "../productsLists/Watch_assets/1.jpeg",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        about: "An iconic luxury diving watch known for its timeless design and durability.",
+        ratings: "⭐⭐⭐⭐⭐",
+        cartButton:"Add to Cart",
+        buyButton:"Buy Now"
     },
 
     {
         id: 2,
         brand: "Omega",
         name: "Omega Speedmaster Moonwatch",
-        price: 7800,  
+        price: 7800,
         category: "Chronograph",
-        image: "/productsLists/products_assets/omega_speedmaster2.png",
+        image: "../productsLists/Watch_assets/2.jpeg",
+        about: "The legendary Moonwatch worn during NASA missions.",
+        ratings: "⭐⭐⭐⭐⭐"
 
-       
-        about: "The legendary Moonwatch worn during NASA missions."
     },
 
     {
@@ -27,7 +31,7 @@ const products = [
         name: "Patek Philippe Nautilus",
         price: 35000,
         category: "Luxury Sports",
-        image: "/productsLists/products_assets/Patek philpee3.png",
+        image: "/productsLists/Watch_assets/3.jpeg",
 
 
         about: "A highly sought-after luxury sports watch."
@@ -207,16 +211,19 @@ if (getId) {
     const product = products.find(item =>
         item.id == getId
     );
-
+    document.getElementById("sideImg").src = product.sideImg;
     document.getElementById("image").src = product.image;
     document.getElementById("brand").textContent = product.brand;
     document.getElementById("name").textContent = product.name;
     document.getElementById("price").textContent = product.price;
     document.getElementById("categories").textContent = product.category;
     document.getElementById("about").textContent = product.about;
-    document.getElementById("about").textContent = product.about;
-    document.getElementById("cartBtn").textContent =`🛒`;
-    document.getElementById("wishBtn").textContent =`❤`;
+    document.getElementById("addToCart").textContent = product.cartButton;
+    document.getElementById("buyNow").textContent = product.buyButton;
+
+    document.getElementById("ratings").textContent = product.ratings;
+    document.getElementById("cartBtn").textContent = `🛒`;
+    document.getElementById("wishBtn").textContent = `❤`;
 }
 
 
@@ -240,15 +247,15 @@ else {
 
         container.appendChild(card);
 
-      
+
         card.addEventListener("click", () => {
 
             window.location.href = `/searchBar/searchProducts.html?id=${product.id}`
             container.appendChild(card);
         })
 
-         
-         
+
+
 
 
     }
@@ -261,3 +268,7 @@ else {
 
 
 
+const backBtn = document.getElementById("backBtn");
+backBtn.addEventListener("click", () => {
+    window.location.href = "../index.html"
+})
