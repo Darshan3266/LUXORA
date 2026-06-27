@@ -1,7 +1,9 @@
+
+
 const products = [
     {
         id: 1,
-        brand: "Rolex",
+        brand: "/assets/rolex logo.png",
         name: "Rolex Submariner",
         price: 12500,
         taxTxt: `Inclusive of all taxes`,
@@ -11,10 +13,24 @@ const products = [
         image: "../productsLists/Watch_assets/1.jpeg",
         sideImg: "../productsLists/products_assets/rolex_submariner1.png",
         about: "An iconic luxury diving watch known for its timeless design and durability.",
-        ratings: "⭐⭐⭐⭐⭐",
+        ratings: "⭐⭐⭐⭐",
         ratingsNo: "4.8 (124 reviews)",
         cartButton: "Add to Cart",
-        buyButton: "Buy Now"
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Oystersteel",
+            strapMaterial: "Oyster Bracelet",
+            waterResistance: "300m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Swiss Made",
+            "Diving Bezel",
+            "Chronometer Certified",
+            "Scratch Resistant"
+        ]
     },
 
     {
@@ -25,7 +41,7 @@ const products = [
         category: "Chronograph",
         image: "../productsLists/Watch_assets/2.jpeg",
         about: "The legendary Moonwatch worn during NASA missions.",
-        ratings: "⭐⭐⭐⭐⭐",
+        ratings: "⭐⭐⭐⭐",
         ratingsNo: "4.8(124 reviews)"
 
 
@@ -212,6 +228,7 @@ const products = [
 
 
 
+
 const parms = new URLSearchParams(window.location.search);
 const getId = parms.get("id");
 
@@ -224,25 +241,26 @@ if (getId) {
 
     document.getElementById("sideImg").src = product.sideImg;
     document.getElementById("watchimage").src = product.image;
-    document.getElementById("brand").textContent = product.brand;
+    document.getElementById("brand").src = product.brand;
     document.getElementById("name").textContent = product.name;
     document.getElementById("price").textContent = ` ₹ ${product.price.toLocaleString()}`
-
     document.getElementById("taxTxt").textContent = ` ${product.taxTxt}`
-    document.getElementById("categories").textContent = `Cateogry: ${product.category}`;
-    document.getElementById("collection").textContent = `Collection: ${product.collection}`;
-    document.getElementById("availabilty").textContent = `Avaliablity: ${product.availabilty}`;
+    document.getElementById("categories").textContent = `${product.category}`;
+    document.getElementById("collection").textContent = `${product.collection}`;
+    document.getElementById("availabilty").textContent = `${product.availabilty}`;
     document.getElementById("about").textContent = product.about;
     document.getElementById("addToCart").textContent = product.cartButton;
     document.getElementById("buyNow").textContent = product.buyButton;
-    document.getElementById("ratings").textContent = product.ratings;
+    document.getElementById("ratings").textContent= product.ratings;
     document.getElementById("ratingsNo").textContent = product.ratingsNo;
     document.getElementById("cartBtn").textContent = `🛒`;
     document.getElementById("wishBtn").textContent = `❤`;
 
-  
 
-    }
+
+
+
+}
 
 
 else {
@@ -253,6 +271,7 @@ else {
 
 
     results.forEach(product => {
+
         const card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = `<img src="${product.image}">
@@ -282,6 +301,19 @@ else {
     )
 }
 
+const infoContainer=document.getElementById("productInfo");
+products.forEach(cont=>{
+    const box=document.createElement("div");
+   box.innerHTML=`
+   Movement: ${cont.specifications.movement}
+  Case Material: ${cont.specifications.caseMaterial}
+  Glass: ${cont.specifications.glass}
+  Strap Material:  ${cont.specifications.strapMaterial}
+  Water Resistance: ${cont.specifications.waterResistance}
+   
+   `
+   infoContainer.appendChild(box)
+})
 
 
 
@@ -289,4 +321,16 @@ else {
 const backBtn = document.getElementById("backBtn");
 backBtn.addEventListener("click", () => {
     window.location.href = "../index.html"
+})
+
+const homePar = document.getElementById("home");
+window.addEventListener("scroll", () => {
+
+    if (window.scrollX > 100) {
+        homePar.style.display = "block"
+    }
+
+    else {
+        homePar.style.display = "none"
+    }
 })
