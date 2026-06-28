@@ -95,7 +95,7 @@ html {
 }
 
 body {
-    
+
     background: linear-gradient(155deg, #000000, #012c38);
     color: white;
 
@@ -267,7 +267,7 @@ body {
 
 .searchLogo {
     position: absolute;
-    right: 20px;
+    right: 30px;
     bottom: 5px;
     color: rgba(70, 68, 68, 0.847);
     cursor: pointer;
@@ -334,10 +334,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    height: 100vh;
-    /* top right bottom left */
-    padding: 80px 0 0 120px;
+    /* height: 100vh; */
+    width: 100%;
+    max-width: 700px;
+    /* background: #000315; */
+    min-height: 500px;
+    margin: 50px 0px 0px 90px;
+    padding: 80px 0 0 50px;
 
 
 }
@@ -673,15 +676,17 @@ body {
 /* Cards section */
 
 @keyframes goldSine {
-    from{
-        box-shadow:  2px 2px 15px #ffd700;
+    from {
+        box-shadow: 2px 2px 15px #ffd700;
     }
-    to{
-        box-shadow:  2px 3px 17px #ffa200;
+
+    to {
+        box-shadow: 2px 3px 17px #ffa200;
 
     }
 }
-.contents{
+
+.contents {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -689,29 +694,31 @@ body {
     padding-right: 20px;
     justify-content: center;
     align-items: center;
-    
+
 }
-#viewAllBtn{
+
+#viewAllBtn {
     padding: 10px 25px;
     border-radius: 10px;
     border: none;
-    background: linear-gradient(135deg,#2401c0,#08a8dd,#00c7b3);
-    margin:0px 60px 0px auto;
+    background: linear-gradient(135deg, #2401c0, #08a8dd, #00c7b3);
+    margin: 0px 60px 0px auto;
     font-family: 'Poppins';
     font-weight: bold;
     color: #f0f0f0;
-    animation: goldSine 2s infinite ;
+    animation: goldSine 2s infinite;
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 }
 
-#viewAllBtn:hover{
+#viewAllBtn:hover {
     transform: translateY(-8px);
     cursor: pointer;
-    background: linear-gradient(135deg,#9e08d9,#070bf0,#25000e);
+    background: linear-gradient(135deg, #9e08d9, #070bf0, #25000e);
 
 
 }
+
 #cardHead {
     color: white;
     font-size: 4.5vw;
@@ -1117,7 +1124,6 @@ body {
 .menBanner {
     display: flex;
     position: relative;
-
     flex-direction: column;
     justify-content: center;
     background: linear-gradient(135deg, #1a003c, #004ebc, #013247, #0076a4, #00171c);
@@ -1948,7 +1954,7 @@ body {
     transform: translateY(0);
 }
 
-#image{
+#image {
     height: 300px;
     width: 220px;
 }
@@ -1966,7 +1972,7 @@ body {
     margin-top: 10px;
     max-width: 320px;
     /* background:linear-gradient(135deg,#026067,#060762,#00648f,#020202); */
-    background:linear-gradient(135deg,#026067,#060762,#00648f,#020202);
+    background: linear-gradient(135deg, #026067, #060762, #00648f, #020202);
     /* background-color: #ffd700; */
     font-size: 1.2rem;
     box-shadow: 2px 3px 30px #03d4a079;
@@ -1981,12 +1987,13 @@ body {
     height: 80px;
 } */
 
-#suggestions img{
+#suggestions img {
     width: 70px;
     height: 80px;
     object-fit: contain;
 }
-.itemBox{
+
+.itemBox {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1994,9 +2001,10 @@ body {
     border: 1px solid #f0f0f049;
     /* flex-direction: column; */
 }
-.itemBox:hover{
+
+.itemBox:hover {
     /* background:linear-gradient(135deg,#00447b,#001925,#021824); */
-    background:linear-gradient(135deg,#13a1ab,#0f13e3,#0384bb,#000b15);
+    background: linear-gradient(135deg, #13a1ab, #0f13e3, #0384bb, #000b15);
 
     /* background:linear-gradient(135deg,#0a04a0c8,#1e61a0,#000930,#00111b); */
 
@@ -2078,7 +2086,7 @@ body {
     .searchLogo {
         position: absolute;
         top: 2.5px;
-        right: 35px;
+        right: 20px;
         font-size: 1rem;
     }
 
@@ -2159,11 +2167,21 @@ body {
     }
 
     .bannerCont {
+        display: flex;
+        gap: 5px;
         justify-content: center;
         align-items: center;
-        padding: 10px 0px 0px 60px;
+        width: 100%;
+        max-width: 300px;
+        /* background-color: #00122c; */
+        height: 450px;
+        margin: 90px 0px 0px 30px;
+        padding:50px 0px 0px 30px
+       
+
 
     }
+ 
 
     #bannerHead {
         font-size: 8vw;
@@ -2174,12 +2192,12 @@ body {
 
     #bannerPar {
         color: rgb(255, 255, 255);
-        font-size: 14px;
+        font-size: 15px;
         width: 250px;
     }
 
     #contPar {
-        font-size: 12px;
+        font-size: 13px;
         width: 250px;
     }
 
