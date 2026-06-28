@@ -341,7 +341,7 @@ searchBtn.addEventListener("click", () => {
 
   if (products1.length > 0) {
     localStorage.setItem("products1", JSON.stringify(products1));
-    window.location.href = `./searchBar/searchProducts.html`
+    window.location.href = `./searchBar/resultsSearch.html`
   }
   else {
 

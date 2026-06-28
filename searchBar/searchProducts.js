@@ -6,13 +6,13 @@ const products = [
         brand: "/assets/rolex logo.png",
         name: "Rolex Submariner",
         price: 12500,
+        about: "An iconic luxury diving watch known for its timeless design and durability.",
         taxTxt: `Inclusive of all taxes`,
         category: "Diving",
         collection: "Submariner",
         availabilty: "In Stock",
         image: "../productsLists/Watch_assets/1.jpeg",
         sideImg: "../productsLists/products_assets/rolex_submariner1.png",
-        about: "An iconic luxury diving watch known for its timeless design and durability.",
         ratings: "⭐⭐⭐⭐",
         ratingsNo: "4.8 (124 reviews)",
         cartButton: "Add to Cart",
@@ -29,7 +29,8 @@ const products = [
             "Swiss Made",
             "Diving Bezel",
             "Chronometer Certified",
-            "Scratch Resistant"
+            "Scratch Resistant",
+            "Preminum Quality"
         ]
     },
 
@@ -41,8 +42,28 @@ const products = [
         category: "Chronograph",
         image: "../productsLists/Watch_assets/2.jpeg",
         about: "The legendary Moonwatch worn during NASA missions.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
         ratings: "⭐⭐⭐⭐",
-        ratingsNo: "4.8(124 reviews)"
+        ratingsNo: "4.7 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Manual-Winding",
+            caseMaterial: "Stainless Steel",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "50m",
+            glass: "Hesalite Crystal"
+        },
+
+        features: [
+            "Moonwatch Heritage",
+            "Chronograph Function",
+            "Swiss Made",
+            "Premium Finish",
+            "Preminum Quality"
+
+        ]
+
 
 
     },
@@ -54,9 +75,29 @@ const products = [
         price: 35000,
         category: "Luxury Sports",
         image: "/productsLists/Watch_assets/3.jpeg",
+        about: "A highly sought-after luxury sports watch.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Steel",
+            strapMaterial: "Integrated Bracelet",
+            waterResistance: "120m",
+            glass: "Sapphire Crystal"
+        },
 
+        features: [
+            "Luxury Sports Design",
+            "Swiss Made",
+            "Premium Finish",
+            "Elegant Styling",
+            "Preminum Quality"
 
-        about: "A highly sought-after luxury sports watch."
+        ]
+
     },
 
     {
@@ -65,8 +106,30 @@ const products = [
         name: "TAG Heuer Monaco",
         price: 8500,
         category: "Chronograph",
-        image: "/productsLists/products_assets/tag heuer4.png",
-        about: "A distinctive square-shaped chronograph inspired by motorsport."
+        image: "../productsLists/Watch_assets/4.jpeg",
+        about: "A distinctive square-shaped chronograph inspired by motorsport.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic Chronograph",
+            caseMaterial: "Steel",
+            strapMaterial: "Leather Strap",
+            waterResistance: "100m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Motorsport Heritage",
+            "Square Dial Design",
+            "Chronograph Function",
+            "Swiss Made",
+            "Preminum Quality"
+
+        ]
+
     },
 
     {
@@ -75,8 +138,29 @@ const products = [
         name: "Royal Oak",
         price: 42000,
         category: "Luxury Sports",
-        image: "/productsLists/products_assets/audemars piguet5.png",
-        about: "Famous for its octagonal bezel and premium finish."
+        image: "../productsLists/Watch_assets/5.jpeg",
+        about: "Famous for its octagonal bezel and premium finish.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Steel",
+            strapMaterial: "Integrated Bracelet",
+            waterResistance: "50m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Octagonal Bezel",
+            "Swiss Made",
+            "Luxury Sports Design",
+            "Premium Finish",
+            "Preminum Quality"
+
+        ]
     },
 
     {
@@ -85,18 +169,44 @@ const products = [
         name: "Cartier Santos",
         price: 7200,
         category: "Classic",
-        image: "/productsLists/products_assets/cartier6.png",
-        about: "A classic luxury watch with aviation heritage."
+        image: "../productsLists/Watch_assets/6.jpeg",
+        about: "A classic luxury watch with aviation heritage.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Steel",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "100m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Classic Design",
+            "Aviation Heritage",
+            "Swiss Made",
+            "Scratch Resistant",
+            "Preminum Quality"
+
+        ]
     },
 
     {
         id: 7,
-        brand: "Rolex",
+        brand: "/assets/rolex logo.png",
         name: "Rolex Daytona",
         price: 18500,
         category: "Chronograph",
-        image: "/productsLists/products_assets/rolex daytona7.png",
-        about: "One of the world's most desirable racing watches."
+        image: "../productsLists/Watch_assets/7.jpeg",
+        about: "One of the world's most desirable racing watches.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
     },
 
     // Luxora Watches
@@ -107,8 +217,30 @@ const products = [
         name: "Luxora Royal Gold",
         price: 5500,
         category: "Classic",
-        image: "/productsLists/products_assets/luxoraGold8.png",
-        about: "A premium gold-finished timepiece crafted for elegance."
+        image: "../productsLists/Watch_assets/8.jpeg",
+        about: "A premium gold-finished timepiece crafted for elegance.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic Chronograph",
+            caseMaterial: "Oystersteel",
+            strapMaterial: "Oyster Bracelet",
+            waterResistance: "100m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Racing Heritage",
+            "Chronograph Function",
+            "Swiss Made",
+            "Chronometer Certified",
+            "Preminum Quality"
+
+        ]
+
     },
 
     {
@@ -117,8 +249,30 @@ const products = [
         name: "Luxora Midnight Crown",
         price: 4800,
         category: "Luxury Sports",
-        image: "/productsLists/products_assets/luxoraMidnight9.png",
-        about: "A bold black luxury watch designed for modern style."
+        image: "../productsLists/Watch_assets/9.jpeg",
+        about: "A bold black luxury watch designed for modern style.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Stainless Steel",
+            strapMaterial: "Premium Steel Bracelet",
+            waterResistance: "100m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Premium Finish",
+            "Scratch Resistant",
+            "5-Year Warranty",
+            "Luxury Design",
+            "Preminum Quality"
+
+        ]
+
     },
 
     {
@@ -127,8 +281,30 @@ const products = [
         name: "Luxora Imperial Chrono",
         price: 6200,
         category: "Chronograph",
-        image: "/productsLists/products_assets/luxorachrono10.png",
-        about: "A sophisticated chronograph with luxury styling."
+        image: "../productsLists/Watch_assets/10.jpeg",
+        about: "A sophisticated chronograph with luxury styling.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Stainless Steel",
+            strapMaterial: "Premium Steel Bracelet",
+            waterResistance: "100m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Premium Finish",
+            "Scratch Resistant",
+            "5-Year Warranty",
+            "Luxury Design",
+            "Preminum Quality"
+
+        ]
+
     },
 
     {
@@ -137,19 +313,63 @@ const products = [
         name: "Omega Seamaster Diver 300M",
         price: 6200,
         category: "Diving",
-        image: "/productsLists/products_assets/omegaspeedmaster11.png",
-        about: "A premium diving watch famous for ocean heritage."
+        image: "../productsLists/Watch_assets/11.jpeg",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        about: "A premium diving watch famous for ocean heritage.",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Steel",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "300m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Professional Diving Watch",
+            "Helium Escape Valve",
+            "Swiss Made",
+            "Chronometer Certified",
+            "Preminum Quality"
+
+        ]
+
     },
 
     // Products of cards
 
     {
         id: 12,
-        brand: "Rolex",
+        brand: "/assets/rolex logo.png",
         name: "Rolex Cosmograph",
         price: 8499,
         category: "Chronograph",
-        image: "/productsLists/products_assets/rolexcosmgraph12.png",
+        image: "../productsLists/Watch_assets/12.jpeg",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic Chronograph",
+            caseMaterial: "Oystersteel",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "100m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Motorsport Inspired",
+            "Chronograph Function",
+            "Swiss Made",
+            "Premium Finish",
+            "Preminum Quality"
+
+        ],
+
         about: "Modern green edition inspired by luxury motorsport."
     },
 
@@ -159,18 +379,61 @@ const products = [
         name: "Omega Cosmic",
         price: 4659,
         category: "Classic",
-        image: "/productsLists/products_assets/omegacosmic13.png",
-        about: "Elegant black and silver watch for everyday luxury."
+        image: "../productsLists/Watch_assets/13.jpeg",
+        about: "Elegant black and silver watch for everyday luxury.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Steel",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "50m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Classic Design",
+            "Swiss Made",
+            "Elegant Styling",
+            "Scratch Resistant",
+            "Preminum Quality"
+
+        ]
     },
 
     {
         id: 14,
-        brand: "Rolex",
+        brand: "/assets/rolex logo.png",
+
         name: "Rolex Blue",
         price: 8789,
         category: "Luxury Sports",
-        image: "/productsLists/products_assets/rolexblue14.png",
-        about: "A striking blue edition with premium craftsmanship."
+        image: "../productsLists/Watch_assets/14.jpeg",
+        about: "A striking blue edition with premium craftsmanship.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now", specifications: {
+            movement: "Automatic",
+            caseMaterial: "Oystersteel",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "100m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Luxury Sports Design",
+            "Swiss Made",
+            "Premium Finish",
+            "Scratch Resistant",
+            "Preminum Quality"
+
+        ]
+
     },
 
     {
@@ -179,8 +442,29 @@ const products = [
         name: "Omega Speed",
         price: 4660,
         category: "Chronograph",
-        image: "/productsLists/products_assets/omegspeed15.png",
-        about: "Modern silver edition with a sporty appearance."
+        image: "../productsLists/Watch_assets/15.jpeg",
+        about: "Modern silver edition with a sporty appearance.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic Chronograph",
+            caseMaterial: "Steel",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "100m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Chronograph Function",
+            "Sporty Design",
+            "Swiss Made",
+            "Premium Finish",
+            "Preminum Quality"
+
+        ]
     },
 
     {
@@ -189,8 +473,29 @@ const products = [
         name: "Patek Philippe Black",
         price: 7799,
         category: "Classic",
-        image: "/productsLists/products_assets/patekblack16.png",
-        about: "Luxury silver edition with timeless Swiss design."
+        image: "../productsLists/Watch_assets/16.jpeg",
+        about: "Luxury silver edition with timeless Swiss design.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Steel",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "120m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Elegant Styling",
+            "Swiss Made",
+            "Luxury Finish",
+            "Scratch Resistant",
+            "Preminum Quality"
+
+        ]
     },
 
     {
@@ -199,8 +504,29 @@ const products = [
         name: "Monaco Black Edition",
         price: 4890,
         category: "Chronograph",
-        image: "/productsLists/products_assets/monocblack17.png",
-        about: "Black striped edition inspired by racing heritage."
+        image: "../productsLists/Watch_assets/17.jpeg",
+        about: "Black striped edition inspired by racing heritage.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic Chronograph",
+            caseMaterial: "Steel",
+            strapMaterial: "Leather Strap",
+            waterResistance: "100m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Racing Heritage",
+            "Chronograph Function",
+            "Square Dial Design",
+            "Swiss Made",
+            "Preminum Quality"
+
+        ]
     },
 
     {
@@ -209,8 +535,29 @@ const products = [
         name: "Vacheron Constantin Blue",
         price: 7545,
         category: "Luxury Sports",
-        image: "/productsLists/products_assets/vacheron constanin18.png",
-        about: "Golden blue edition representing fine Swiss craftsmanship."
+        image: "../productsLists/Watch_assets/18.jpeg",
+        about: "Golden blue edition representing fine Swiss craftsmanship.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "18K Gold",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "150m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Fine Swiss Craftsmanship",
+            "Luxury Sports Design",
+            "Swiss Made",
+            "Premium Finish",
+            "Preminum Quality"
+
+        ]
     },
 
     {
@@ -219,14 +566,32 @@ const products = [
         name: "Patek Philippe Silver",
         price: 7545,
         category: "Classic",
-        image: "/productsLists/products_assets/pateksliver19.png",
-        about: "Golden silver edition with elegant and refined styling."
+        image: "../productsLists/Watch_assets/19.jpeg",
+        about: "Golden silver edition with elegant and refined styling.",
+        sideImg: "../productsLists/products_assets/rolex_submariner1.png",
+        ratings: "⭐⭐⭐⭐",
+        ratingsNo: "4.8 (124 reviews)",
+        cartButton: "Add to Cart",
+        buyButton: "Buy Now",
+        specifications: {
+            movement: "Automatic",
+            caseMaterial: "Steel",
+            strapMaterial: "Steel Bracelet",
+            waterResistance: "120m",
+            glass: "Sapphire Crystal"
+        },
+
+        features: [
+            "Timeless Design",
+            "Swiss Made",
+            "Elegant Styling",
+            "Premium Finish",
+            "Preminum Quality"
+
+        ]
     }
 
 ];
-
-
-
 
 
 const parms = new URLSearchParams(window.location.search);
@@ -237,7 +602,6 @@ if (getId) {
         item.id == getId
     );
 
-    // products.filter(product.price.join(","))
 
     document.getElementById("sideImg").src = product.sideImg;
     document.getElementById("watchimage").src = product.image;
@@ -251,86 +615,61 @@ if (getId) {
     document.getElementById("about").textContent = product.about;
     document.getElementById("addToCart").textContent = product.cartButton;
     document.getElementById("buyNow").textContent = product.buyButton;
-    document.getElementById("ratings").textContent= product.ratings;
+    document.getElementById("ratings").textContent = product.ratings;
     document.getElementById("ratingsNo").textContent = product.ratingsNo;
     document.getElementById("cartBtn").textContent = `🛒`;
     document.getElementById("wishBtn").textContent = `❤`;
 
 
+    const backBtn = document.getElementById("backBtn");
+    backBtn.addEventListener("click", () => {
+        window.location.href = "../index.html"
+    })
+
+    const homePar = document.getElementById("home");
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 220) {
+            homePar.style.display = "none"
+        }
+        else {
+            homePar.style.display = "block"
+        }
 
 
-
-}
-
-
-else {
-    const results = JSON.parse(localStorage.getItem("products1"));
-    const container = document.getElementById("productsConatainer");
+    })
 
 
+    const infoContainer = document.getElementById("productInfo");
+    const infoContainer1 = document.getElementById("productInfo1");
 
-
-    results.forEach(product => {
-
-        const card = document.createElement("div");
-        card.classList.add("card");
-        card.innerHTML = `<img src="${product.image}">
-           <h2>${product.brand}</h2>
-            <h3>${product.name}</3>
-             <p>${product.price}</div>
-              <p>${product.category}</p>
-               <p>${product.about}</p>`
-
-
-        container.appendChild(card);
-
-
-        card.addEventListener("click", () => {
-
-            window.location.href = `/searchBar/searchProducts.html?id=${product.id}`
-            container.appendChild(card);
-        })
-
-
-
-
-
-    }
-
-
-    )
-}
-
-const infoContainer=document.getElementById("productInfo");
-products.forEach(cont=>{
-    const box=document.createElement("div");
-   box.innerHTML=`
-   Movement: ${cont.specifications.movement}
-  Case Material: ${cont.specifications.caseMaterial}
-  Glass: ${cont.specifications.glass}
-  Strap Material:  ${cont.specifications.strapMaterial}
-  Water Resistance: ${cont.specifications.waterResistance}
-   
+    const box = document.createElement("div");
+    const box1 = document.createElement("div");
+    box.innerHTML = `
+        <h2>SPECIFICATIONS</h2>
+        <div class="specItems"> <span class="speclabel"> Movement:</span>  <span class="specValue"> ${product.specifications.movement}<span>
+        
+ 
+  <p>Case Material${product.specifications.caseMaterial}</p>
+  <p>Glass: ${product.specifications.glass}</p>
+ <p> Strap Material:  ${product.specifications.strapMaterial}</p>
+ <p> Water Resistance: ${product.specifications.waterResistance}</p></div>
    `
-   infoContainer.appendChild(box)
-})
+    box1.innerHTML = `
+        <h2>FEATURES</h2>
+        <h3>
+            ${product.features[0]}</h3>
+            <h3> ${product.features[1]}</h3>
+         <h3>${product.features[2]}</h3>
+        <h3>${product.features[3]}</h3>
+         <h3> ${product.features[4]}</h3>
+
+   `
+    infoContainer.appendChild(box);
+    infoContainer1.appendChild(box1);
+}
 
 
 
 
-const backBtn = document.getElementById("backBtn");
-backBtn.addEventListener("click", () => {
-    window.location.href = "../index.html"
-})
-
-const homePar = document.getElementById("home");
-window.addEventListener("scroll", () => {
-
-    if (window.scrollX > 100) {
-        homePar.style.display = "block"
-    }
-
-    else {
-        homePar.style.display = "none"
-    }
-})
