@@ -471,44 +471,37 @@ body {
     width: 200px;
 }
 
-
-.conts {
-
-
-    width: 100%;
-    max-width: 1200px;
-}
-
-.product {
+.product{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 40px;
-}
-
-#productInfo {
-
-    gap: 40px;
     width: 100%;
-    max-width: 400px;
-    background-color: #eaedf7;
+    padding: 40px 0px 0px 50px;
+    background-color: #005eff;
+    margin: 30px;
+    max-width: 950px;
 }
-
-#productInfo div {
+.productInfo{
     display: flex;
     flex-direction: column;
-
- 
-    padding: 20px;
-}
-
-#productInfo div h2 {
-    color: #000000;
+    gap: 30px;
 
 }
+
+.specbox,.specbox1{
+    display: flex;
+    width: 370px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+  
+}
+
 .specItems{
     display: flex;
-    white-space: nowrap;
-   
+    justify-content: center;
+    align-items: self-start;
+    gap: 50px;
+}
+.speclabel.specValue{
+    text-align: center;
 }

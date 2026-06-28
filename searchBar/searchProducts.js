@@ -645,25 +645,37 @@ if (getId) {
     const infoContainer1 = document.getElementById("productInfo1");
 
     const box = document.createElement("div");
+    box.classList.add("specbox")
     const box1 = document.createElement("div");
+    box1.classList.add("specbox1")
+
     box.innerHTML = `
-        <h2>SPECIFICATIONS</h2>
-        <div class="specItems"> <span class="speclabel"> Movement:</span>  <span class="specValue"> ${product.specifications.movement}<span>
+        <h3>SPECIFICATIONS</h3>
+        <div class="specItems"> <span class="speclabel"> Movement:</span>  
+        <span class="specValue"> ${product.specifications.movement}<span></div>
+
+        <div class="specItems"> <span class="speclabel"> Case Material:</span>  
+        <span class="specValue"> ${product.specifications.caseMaterial}<span></div>
         
- 
-  <p>Case Material${product.specifications.caseMaterial}</p>
-  <p>Glass: ${product.specifications.glass}</p>
- <p> Strap Material:  ${product.specifications.strapMaterial}</p>
- <p> Water Resistance: ${product.specifications.waterResistance}</p></div>
+        <div class="specItems"> <span class="speclabel">Glass:</span>  
+        <span class="specValue"> ${product.specifications.glass}<span></div>
+        
+        <div class="specItems"> <span class="speclabel"> Strap Material:</span>  
+        <span class="specValue"> ${product.specifications.strapMaterial}<span></div>
+        
+        <div class="specItems"> <span class="speclabel"> Water Resistance:</span>  
+        <span class="specValue"> ${product.specifications.waterResistance}<span></div>
+        
+
    `
     box1.innerHTML = `
-        <h2>FEATURES</h2>
-        <h3>
-            ${product.features[0]}</h3>
-            <h3> ${product.features[1]}</h3>
-         <h3>${product.features[2]}</h3>
-        <h3>${product.features[3]}</h3>
-         <h3> ${product.features[4]}</h3>
+        <h3>FEATURES</h3>
+        <p>
+            ${product.features[0]}</p>
+            <p> ${product.features[1]}</p>
+         <p>${product.features[2]}</p>
+        <p>${product.features[3]}</h3>
+         <p> ${product.features[4]}</p>
 
    `
     infoContainer.appendChild(box);
