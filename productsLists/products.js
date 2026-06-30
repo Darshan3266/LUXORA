@@ -658,14 +658,13 @@ const product = products.forEach(p => {
 
 
     card.innerHTML = ` 
-            <img src="${p.image}">
+            <img id="productImg"  src="${p.image}">
             <div>
             <img src="${p.brand}">
             <h2>${p.name}</h2>
-             <p>${p.price}</p>
-              <p>${p.category}</p>
-               <p>${p.about}</p>
-               <p>${p.ratings}</p>
+             <p id="pricePar">₹ ${p.price.toLocaleString()}</p>
+              <p id="categoryPar">${p.category}</p>
+               <p id="aboutPar">${p.about}</p>
                </div>`
 
  

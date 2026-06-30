@@ -6,7 +6,7 @@
 
 body {
     /* background:linear-gradient(130deg,#EDF1F5,#6baadd); */
-    background: #ffffff;
+    background: #fdffff;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -86,6 +86,42 @@ body {
     src: url(/fonts/Poppins-ExtraBoldItalic.ttf);
 }
 
+
+
+@font-face {
+    font-family: 'Poppins-Extra';
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+
+    font-family: 'Poppins-Extra-Bold';
+    src: url(./fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+
+    font-family: 'TrioKannada-Italic';
+    src: url(./fonts/TiroKannada-Italic.ttf);
+}
+
+@font-face {
+
+    font-family: 'TrioKannada-Regular';
+    src: url(./fonts/TiroKannada-Regular.ttf);
+}
+
+@font-face {
+
+    font-family: 'Playwrite-varaible';
+    src: url(./fonts/PlaywriteIE-VariableFont_wght.ttf);
+}
+
+@font-face {
+
+    font-family: 'PoppinsMedium';
+    src: url(./fonts/Poppins-Medium.ttf);
+}
 
 
 #backBtn {
@@ -389,15 +425,17 @@ body {
     font-size: 14px;
     text-align: start;
 }
-.luxoraBody{
- background-color: #f5f5f4;
 
-   
+.luxoraBody {
+    background-color: #f5f5f4;
+
+
 }
 
-.txtColor{
+.txtColor {
     color: white;
 }
+
 .productBtns div {
     display: flex;
     gap: 20px;
@@ -457,6 +495,8 @@ body {
     width: 1100px;
     border-radius: 8px;
     background-color: #024970;
+    background-size: 600% 600%;
+    animation: bgFade 10s ease-in-out infinite;
     justify-content: center;
     align-items: center;
 
@@ -494,7 +534,7 @@ body {
     width: 200px;
 }
 
-.product{
+.product {
     display: flex;
     width: 100%;
     padding: 40px 0px 0px 50px;
@@ -502,36 +542,39 @@ body {
     margin: 30px;
     max-width: 950px;
 }
-.productInfo{
+
+.productInfo {
     display: flex;
     flex-direction: column;
     gap: 30px;
 
 }
 
-.specbox,.specbox1{
+.specbox,
+.specbox1 {
     display: flex;
     width: 370px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:20px;
-  
+    gap: 20px;
+
 }
 
-.specItems{
+.specItems {
     display: flex;
     justify-content: center;
     align-items: self-start;
     gap: 50px;
 }
-.speclabel.specValue{
+
+.speclabel.specValue {
     text-align: center;
 }
 
 /* Products Styles */
 
-.productsCont{
+.productsCont {
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -541,35 +584,171 @@ body {
 
 
 
-.card{
+@keyframes bgFade {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 100%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+
+
+    }
+
+    75% {
+        background-position: 50% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+
+
+}
+
+.card {
     display: flex;
-    background: linear-gradient(135deg,#04211c,#48999b,#002e2a);
+    justify-content: start;
+    align-items: center;
+    background: linear-gradient(135deg, #000100, #4e989a, #00182e);
+    background-size: 600% 600%;
     /* background: #073e55; */
+    animation: bgFade 10s ease-in-out infinite;
+    /* animation: cardFade 3s  ease-in-out infinite; */
     border-radius: 5px 60px 60px 5px;
     box-shadow: 2px 2px 10px #49c5ea;
     color: white;
     height: 350px;
-    gap: 30px;
+    transition: all 0.4s ease-out;
+    gap: 40px;
     padding: 30px;
-    border: 1px solid #000000;
+    border: 5px solid #00a3c067;
 }
-.card div{
+
+.card:hover {
+    cursor: pointer;
+    
+    background: linear-gradient(135deg, #012f31, #4bdfdf, #174168);
+   
+}
+
+.card div {
     display: flex;
+    padding-bottom: 40px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     flex-direction: column;
-    /* margin: 40px; */
-}
-.card img{
-    filter: drop-shadow(2px 4px 5px #d0d0d0);
-    object-fit: contain;
-    height: 300px;
-    width: 300px;
+    margin: 20px 0px 0px 50px;
+    /* margin-top: 20px; */
 
 }
-#productHead{
+
+#productImg {
+    animation: whiteFade 10s ease-out infinite ;
+
+    filter: drop-shadow(2px 4px 5px #fffdfd);
+    object-fit: contain;
+    height: 300px;
+    max-width: 300px;
+    width: 100%;
+
+}
+
+@keyframes whiteFade {
+    0%{
+    filter: drop-shadow(2px 4px 5px #fffdfd);
+
+    }
+    25%{
+    filter: drop-shadow(2px 4px 5px #08b1ff);
+
+    }
+    50%{
+    filter: drop-shadow(2px 4px 5px #f9d6d6);
+
+    }
+    75%{
+    filter: drop-shadow(2px 4px 5px #efb2b2);
+
+        
+    }
+    100%{
+    filter: drop-shadow(2px 4px 5px #fffdfd);
+
+    }
+    
+}
+
+@keyframes cardFade {
+    from {
+        border: 2px solid #000235;
+
+
+
+    }
+
+    to {
+        border: 3px solid #002998;
+
+
+
+    }
+}
+
+
+.card div img {
+    object-fit: contain;
+    height: 60px;
+    width: 60px;
+}
+
+#productHead {
     margin-top: 15px;
+    text-shadow: 2px 1px 3px #048f99;
+
     font-size: 3rem;
     font-family: 'GreatVibes';
+}
+
+.card h2 {
+    font-family: 'GreatVibes';
+    font-size: 2.5rem;
+    text-shadow: 2px 1px 3px #000000;
+
+}
+
+.card h2::first-letter {
+    font-size: 3.3rem;
+    color: #e7e2de;
+}
+
+#pricePar {
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: 'Poppins-bold';
+    font-weight: bolder;
+}
+
+#pricePar::first-letter {
+    color: #00192b;
+}
+
+#categoryPar {
+    font-family: 'Playfairs-Italic';
+    font-size: 1.2rem;
+}
+
+#aboutPar {
+    color: #dfdddd;
+    font-weight: 300;
+    text-align: center;
+    width: 300px;
+    line-height: 1.7;
+    font-family: 'Thin';
 }

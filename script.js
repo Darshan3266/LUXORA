@@ -29,17 +29,23 @@ window.addEventListener("scroll", () => {
 
 //fade scroll animation
 const fadeConts = document.querySelectorAll(".fade-up");
+const fadeContsLeft = document.querySelectorAll(".fadeLeft");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
 
       entry.target.classList.add("show");
+      entry.target.classList.add("showLeft");
     }
   });
 }, {
   threshold: 0.3
 })
 fadeConts.forEach((elements) => {
+  observer.observe(elements);
+
+});
+fadeContsLeft.forEach((elements) => {
   observer.observe(elements);
 
 });
