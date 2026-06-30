@@ -6,7 +6,7 @@ const products = [
         price: 12500,
         category: "Diving",
         image: "/productsLists/products_assets/rolex_submariner1.png",
-      
+
         about: "An iconic luxury diving watch known for its timeless design and durability."
     },
 
@@ -14,11 +14,11 @@ const products = [
         id: 2,
         brand: "Omega",
         name: "Omega Speedmaster Moonwatch",
-        price: 7800,  
+        price: 7800,
         category: "Chronograph",
         image: "/productsLists/products_assets/omega_speedmaster2.png",
 
-       
+
         about: "The legendary Moonwatch worn during NASA missions."
     },
 
@@ -29,7 +29,6 @@ const products = [
         price: 35000,
         category: "Luxury Sports",
         image: "/productsLists/products_assets/Patek philpee3.png",
-
 
         about: "A highly sought-after luxury sports watch."
     },
@@ -164,7 +163,7 @@ const products = [
         name: "Patek Philippe Black",
         price: 7799,
         category: "Classic",
-        image: "/productsLists/products_assets/patekblack16.png",
+        image: "/productsLists/products_assets/.png",
         about: "Luxury silver edition with timeless Swiss design."
     },
 
@@ -174,7 +173,7 @@ const products = [
         name: "Monaco Black Edition",
         price: 4890,
         category: "Chronograph",
-        image: "/productsLists/products_assets/monocblack17.png",
+        image: "/productsLists/products_assets/.png",
         about: "Black striped edition inspired by racing heritage."
     },
 
@@ -205,26 +204,35 @@ const products = [
 
 const product = products.forEach(p => {
     const productsCont = document.getElementById("productsCont");
+
+
+
     const card = document.createElement("div");
+
     card.classList.add("card");
 
 
-    card.innerHTML = `
+    card.innerHTML = ` 
             <img src="${p.image}">
-           <h2>${p.brand}</h2>
-            <h3>${p.name}</3>
-             <p>${p.price}</div>
+            <div>
+            <h2>${p.name}</h2>
+             <p>${p.price}</p>
               <p>${p.category}</p>
-               <p>${p.about}</p>`
+               <p>${p.about}</p>
+               </div>`
 
-    productsCont.appendChild(card);
+ 
     card.addEventListener("click", () => {
-    //   window.location.href = `./searchBar/searchProducts.html?id=${p.id} `
-      window.location.href=`/searchBar/searchProducts.html?id=${p.id}`
-        productsCont.appendChild(card)
-        
+        //   window.location.href = `./searchBar/searchProducts.html?id=${p.id} `
+        window.location.href = `/searchBar/searchProducts.html?id=${p.id}`
+       
+
 
     });
+  
+
+        productsCont.appendChild(card);
+        
 
 });
 

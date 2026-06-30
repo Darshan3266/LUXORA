@@ -1975,9 +1975,9 @@ body {
     margin-top: 10px;
     max-width: 320px;
     /* background:linear-gradient(135deg,#026067,#060762,#00648f,#020202); */
-    background: linear-gradient(135deg, #026067, #060762, #00648f, #020202);
+    background: linear-gradient(135deg, #15494d, #184170, #024640, #020202);
     /* background-color: #ffd700; */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     box-shadow: 2px 3px 30px #03d4a079;
     color: #ffffff;
     transition: 1ms ease-in-out;
@@ -1992,6 +1992,7 @@ body {
 
 #suggestions img {
     width: 70px;
+    filter: drop-shadow(2px 3px 2px rgb(13, 13, 13));
     height: 80px;
     object-fit: contain;
 }
@@ -2004,10 +2005,19 @@ body {
     border: 1px solid #f0f0f049;
     /* flex-direction: column; */
 }
-
+.goldTxt{
+    color: #fff5d4;
+   
+    font-size: 1.2rem;
+   
+    font-family: 'GreatVibes';
+    font-weight: bold;
+}
 .itemBox:hover {
     /* background:linear-gradient(135deg,#00447b,#001925,#021824); */
-    background: linear-gradient(135deg, #13a1ab, #0f13e3, #0384bb, #000b15);
+    background: linear-gradient(135deg, #13a1ab, #010241, #0384bb, #000b15);
+    /* background: linear-gradient(135deg, #043336, #0a0b29, #1a4457, #020202); */
+
 
     /* background:linear-gradient(135deg,#0a04a0c8,#1e61a0,#000930,#00111b); */
 

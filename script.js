@@ -302,9 +302,10 @@ searchInput.addEventListener("input", () => {
     suggest.appendChild(itemBox);
      if (product.name.includes("Luxora")) {
       const goldPar = document.createElement("p");
+      goldPar.classList.add("goldTxt")
       goldPar.textContent = `#Editon Watch`
 
-      itemBox.style.background = 'linear-gradient(135deg, #ff831d, #f9bf00, #ffd560, #6e4d00)';
+      itemBox.style.background ="linear-gradient(345deg, #8b4104, #f4be0b, #e5be4f, #281c00)";
       itemBox.addEventListener("mouseover", () => {
         itemBox.style.background = 'linear-gradient(135deg, #ff1d1d, #f4be0b, #e06100, #6e4d00)';
 
