@@ -1974,8 +1974,9 @@ body {
     /* border: 2px solid #c2a6e4de; */
     margin-top: 10px;
     max-width: 320px;
-    /* background:linear-gradient(135deg,#026067,#060762,#00648f,#020202); */
-    background: linear-gradient(135deg, #15494d, #184170, #024640, #020202);
+    background: linear-gradient(135deg,#66a7e8,#010d27,#094454,#b1d4f8);
+
+
     /* background-color: #ffd700; */
     font-size: 1.1rem;
     box-shadow: 2px 3px 30px #03d4a079;
@@ -1992,8 +1993,8 @@ body {
 
 #suggestions img {
     width: 70px;
-    filter: drop-shadow(2px 3px 2px rgb(13, 13, 13));
-    height: 80px;
+    filter: drop-shadow(2px 3px 5px #fffafa);
+    height: 75px;
     object-fit: contain;
 }
 
