@@ -162,7 +162,7 @@ body {
 
 .container {
 
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(5, 5, 5, 0.731), rgba(0, 0, 0, 0.886)), url("./assets/Luxora_Banners.png");
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(5, 5, 5, 0.731), rgba(0, 0, 0, 0.886)), url("./assets/Luxora_Banners.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -857,8 +857,9 @@ body {
 
 
 
-.card:hover {
-    transform: translateY(-10px) scale(1.1);
+.card:hover,
+.cardUp:hover {
+    transform: translateY(-15px) scale(1.1);
     box-shadow: 2px 8px 35px #1303ec90;
     position: relative;
     background: linear-gradient(135deg, #00262b, #001939f3, #00c4dacb);
@@ -2116,8 +2117,8 @@ body {
 @media (max-width:568px) {
 
     .container {
-        width: 100%;
-        max-width: 375px;
+        /* width: 100%;
+        max-width: 475px; */
         background-position: 45% center;
         background-attachment: scroll;
         background-repeat: no-repeat;
