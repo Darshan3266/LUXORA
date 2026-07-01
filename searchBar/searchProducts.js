@@ -678,15 +678,19 @@ if (getId) {
     })
 
     const homePar = document.getElementById("home");
+    const backBtns=document.getElementById("backBtn")
     const cartBtn = document.getElementById("cartBtn")
 
     window.addEventListener("scroll", () => {
 
         if (window.scrollY > 200) {
             homePar.style.display = "none"
-            cartBtn.style.transform = "translateX(30px)";
-            cartBtn.style.height = "30px"
-            cartBtn.style.width = "30px"
+            cartBtn.style.transform = "translateX(40px)";
+            cartBtn.style.height = "33px"
+            cartBtn.style.width = "33px"
+            backBtns.style.transform = "translateX(-20px)";
+            backBtns.style.height = "30px"
+            backBtns.style.width = "30px"
 
 
         }
@@ -695,6 +699,9 @@ if (getId) {
             cartBtn.style.transform = "translateX(0)";
             cartBtn.style.height = "40px";
             cartBtn.style.width = "40px"
+            backBtns.style.transform = "translateX(0)";
+            backBtns.style.height = "40px";
+            backBtns.style.width = "40px"
 
         }
 
