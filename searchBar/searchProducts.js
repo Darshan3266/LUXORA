@@ -678,14 +678,24 @@ if (getId) {
     })
 
     const homePar = document.getElementById("home");
+    const cartBtn = document.getElementById("cartBtn")
 
     window.addEventListener("scroll", () => {
 
-        if (window.scrollY > 220) {
+        if (window.scrollY > 200) {
             homePar.style.display = "none"
+            cartBtn.style.transform = "translateX(30px)";
+            cartBtn.style.height = "30px"
+            cartBtn.style.width = "30px"
+
+
         }
         else {
             homePar.style.display = "block"
+            cartBtn.style.transform = "translateX(0)";
+            cartBtn.style.height = "40px";
+            cartBtn.style.width = "40px"
+
         }
 
 
@@ -706,31 +716,36 @@ if (getId) {
 
     box.innerHTML = `
         <h3>SPECIFICATIONS</h3>
-        <div class="specItems"> <span class="speclabel"> Movement:</span>  
+        <div class="itemBox">
+        <span class="speclabel"> Movement:</span>  
         <span class="specValue"> ${product.specifications.movement}<span></div>
 
-        <div class="specItems"> <span class="speclabel"> Case Material:</span>  
+         <div class="itemBox">
+        <span class="speclabel"> Case Material:</span>  
         <span class="specValue"> ${product.specifications.caseMaterial}<span></div>
         
-        <div class="specItems"> <span class="speclabel">Glass:</span>  
-        <span class="specValue"> ${product.specifications.glass}<span></div>
+          <div class="itemBox">
+      <span class="speclabel">Glass:</span>
+       <span class="specValue"> ${product.specifications.glass}<span></div>
         
-        <div class="specItems"> <span class="speclabel"> Strap Material:</span>  
-        <span class="specValue"> ${product.specifications.strapMaterial}<span></div>
+          <div class="itemBox">
+       <span class="speclabel"> Strap Material:</span>
+          <span class="specValue"> ${product.specifications.strapMaterial}<span></div>
         
-        <div class="specItems"> <span class="speclabel"> Water Resistance:</span>  
-        <span class="specValue"> ${product.specifications.waterResistance}<span></div>
+          <div class="itemBox">
+        <span class="speclabel"> Water Resistance:</span>  
+         <span class="specValue"> ${product.specifications.waterResistance}<span></div>
         
 
    `
     box1.innerHTML = `
         <h3>FEATURES</h3>
         <p>
-            ${product.features[0]}</p>
-            <p> ${product.features[1]}</p>
-         <p>${product.features[2]}</p>
-        <p>${product.features[3]}</h3>
-         <p> ${product.features[4]}</p>
+           <span> ✓</span>  ${product.features[0]}</p>
+            <p>   <span> ✓</span> ${product.features[1]}</p>
+         <p> <span> ✓</span> ${product.features[2]}</p>
+        <p>  <span> ✓</span> ${product.features[3]}</h3>
+         <p>  <span> ✓</span>  ${product.features[4]}</p>
 
    `
     infoContainer.appendChild(box);
