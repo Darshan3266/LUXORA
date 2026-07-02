@@ -678,7 +678,7 @@ if (getId) {
     })
 
     const homePar = document.getElementById("home");
-    const backBtns=document.getElementById("backBtn")
+    const backBtns = document.getElementById("backBtn")
     const cartBtn = document.getElementById("cartBtn")
 
     window.addEventListener("scroll", () => {
@@ -759,6 +759,97 @@ if (getId) {
     infoContainer1.appendChild(box1);
 }
 
+
+
+
+
+
+
+
+
+
+const ratingBtns = document.querySelectorAll(".ratingBtns");
+
+
+console.log(ratingBtns);
+
+
+ratingBtns.forEach(rating => {
+    const stars = rating.querySelectorAll(".star");
+    let currentRate = 0;
+
+
+
+
+
+    stars.forEach(star => {
+        star.addEventListener("click", () => {
+
+
+
+            const value = Number(star.dataset.value)
+            if (currentRate === value) {
+                currentRate = 0
+            }
+            else {
+                currentRate = value;
+                // console.log(currentRate)
+
+            }
+            stars.forEach((s, index) => {
+                if (index < currentRate) {
+                    s.src = "../assets/ratingFilled.png";
+
+                }
+                else {
+                    s.src = "../assets/4star rating.png"
+                }
+            })
+          
+            // const submitBtn = document.getElementById("submitBtn");
+            // submitBtn.addEventListener("click", () => {
+            //      const nameInput = document.getElementById("userName");
+            //      const userBox = document.getElementById("userBox");
+            //      console.log(userBox);
+
+
+
+            //     // nameInput.value = ""
+            //     // console.log(stars);
+
+            //     const feedBackBox=document.createElement("div");
+            //     feedBackBox.innerHTML=`
+            //     <h1>${nameInput.value}</h1>`
+            //     userBox.appendChild(feedBackBox)
+
+
+
+            //     // console.log(currentRate);
+
+
+
+            // })
+        })
+    })
+    //   const submitBtn = document.getElementById("submitBtn");
+
+    //         submitBtn.addEventListener("click", () => {
+    //             const userBox = document.getElementById("userBox")
+    //             const valueUser = document.getElementById("userName").value;
+    //             console.log(stars);
+                
+    //             // console.log(valueUser);
+    //             const box = document.createElement("div");
+    //             box.innerHTML = `<h1>${valueUser}</h1>
+    //             <img src="${}">`
+    //             userBox.appendChild(box)
+                
+
+
+    //         })
+
+
+})
 
 
 

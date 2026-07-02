@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+
 }
 
 @font-face {
@@ -159,8 +159,8 @@ body {
 
 
 .boxCont {
-   
-   
+
+
     width: 100%;
     max-width: 1200px;
     height: 530px;
@@ -499,7 +499,7 @@ body {
     color: #ffffff;
     width: 1100px;
     border-radius: 8px;
-    background: linear-gradient(135deg,#01113f,#0894df,#002118);
+    background: linear-gradient(135deg, #01113f, #0894df, #002118);
     background-size: 400% 400%;
     animation: bgFade 10s ease-in infinite;
     justify-content: center;
@@ -521,6 +521,18 @@ body {
     text-align: center;
     gap: 20px;
 
+}
+
+.ratingBtns {
+    display: flex;
+
+}
+
+
+.star {
+    height: 30px;
+    filter: drop-shadow(2px 4px 2px rgb(0, 152, 152));
+    width: 30px;
 }
 
 .box img {
@@ -554,14 +566,15 @@ body {
     max-width: 950px;
 }
 
-.itemBox{
+.itemBox {
     display: flex;
     justify-content: space-between;
     width: 400px;
     gap: 30px;
 }
 
-.specbox,.specbox1{
+.specbox,
+.specbox1 {
     display: flex;
     justify-content: center;
     font-family: 'Poppins';
@@ -570,16 +583,19 @@ body {
     margin-left: 30px;
     font-size: 14px;
 }
-.specbox1 p{
+
+.specbox1 p {
     font-family: 'Poppins';
 }
 
-.specbox1 span{
+.specbox1 span {
     color: #00ffc8;
     padding-right: 10px;
     font-weight: bolder;
 }
-.speclabel,.specValue{
+
+.speclabel,
+.specValue {
     /* text-align: left; */
     width: 350px;
 
@@ -652,9 +668,9 @@ body {
 
 .card:hover {
     cursor: pointer;
-    
+
     background: linear-gradient(135deg, #012f31, #4bdfdf, #174168);
-   
+
 }
 
 .card div {
@@ -670,7 +686,7 @@ body {
 }
 
 #productImg {
-    animation: whiteFade 10s ease-out infinite ;
+    animation: whiteFade 10s ease-out infinite;
 
     filter: drop-shadow(2px 4px 5px #fffdfd);
     object-fit: contain;
@@ -681,28 +697,32 @@ body {
 }
 
 @keyframes whiteFade {
-    0%{
-    filter: drop-shadow(2px 4px 5px #fffdfd);
+    0% {
+        filter: drop-shadow(2px 4px 5px #fffdfd);
 
     }
-    25%{
-    filter: drop-shadow(2px 4px 5px #08b1ff);
+
+    25% {
+        filter: drop-shadow(2px 4px 5px #08b1ff);
 
     }
-    50%{
-    filter: drop-shadow(2px 4px 5px #f9d6d6);
+
+    50% {
+        filter: drop-shadow(2px 4px 5px #f9d6d6);
 
     }
-    75%{
-    filter: drop-shadow(2px 4px 5px #efb2b2);
 
-        
-    }
-    100%{
-    filter: drop-shadow(2px 4px 5px #fffdfd);
+    75% {
+        filter: drop-shadow(2px 4px 5px #efb2b2);
+
 
     }
-    
+
+    100% {
+        filter: drop-shadow(2px 4px 5px #fffdfd);
+
+    }
+
 }
 
 @keyframes cardFade {

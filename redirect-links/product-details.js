@@ -660,21 +660,3 @@ cont.innerHTML = `
                <p>${product.about}</p>`
 
 
-const param1 = new URLSearchParams(window.location.search);
-const id1 = Number(param.get("id1"));
-const product1 = products.find(item =>
-    item.id === id1
-);
-
-const cont1 = document.getElementById("productDetails1");
-cont1.innerHTML = `
-           <img src="${product1.image}">
-           <img src="${product1.brand}">
-            <h3>${product1.name}</3>
-             <p>${product1.price}</div>
-              <p>${product1.category}</p>
-               <p>${product1.about}</p>;`
-
-
-
-

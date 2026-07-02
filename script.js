@@ -827,7 +827,7 @@ const cards1 = document.querySelectorAll(".card1");
 
 cards1.forEach((card1) => {
   card1.addEventListener("click", () => {
-    const id1 = card1.dataset.id;
+    const id1 = card1.dataset.id;    
     // window.location.href=`products/products.html?id=${id}`;
     window.location.href = `./redirect-links/product-details.html?id=${id1} `
 

@@ -400,7 +400,9 @@ body {
 #bannerPar {
     color: rgb(255, 255, 255);
     font-family: 'Poppins-Extra';
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 370px;
     align-self: flex-start;
     margin-top: 10px;
 
@@ -415,7 +417,7 @@ body {
 
     font-size: 14px;
     width: 100%;
-    max-width: 480px;
+    max-width: 450px;
     font-family: 'Thin';
 
 
