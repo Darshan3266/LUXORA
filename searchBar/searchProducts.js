@@ -773,13 +773,9 @@ const ratingBtns = document.querySelectorAll(".ratingBtns");
 
 console.log(ratingBtns);
 
-
+let currentRate = 0;
 ratingBtns.forEach(rating => {
     const stars = rating.querySelectorAll(".star");
-    let currentRate = 0;
-
-
-
 
 
     stars.forEach(star => {
@@ -787,7 +783,9 @@ ratingBtns.forEach(rating => {
 
 
 
-            const value = Number(star.dataset.value)
+            const value = Number(star.dataset.value);
+            console.log(value);
+
             if (currentRate === value) {
                 currentRate = 0
             }
@@ -805,48 +803,37 @@ ratingBtns.forEach(rating => {
                     s.src = "../assets/4star rating.png"
                 }
             })
-          
-            // const submitBtn = document.getElementById("submitBtn");
-            // submitBtn.addEventListener("click", () => {
-            //      const nameInput = document.getElementById("userName");
-            //      const userBox = document.getElementById("userBox");
-            //      console.log(userBox);
-
-
-
-            //     // nameInput.value = ""
-            //     // console.log(stars);
-
-            //     const feedBackBox=document.createElement("div");
-            //     feedBackBox.innerHTML=`
-            //     <h1>${nameInput.value}</h1>`
-            //     userBox.appendChild(feedBackBox)
-
-
-
-            //     // console.log(currentRate);
-
 
 
             // })
         })
     })
-    //   const submitBtn = document.getElementById("submitBtn");
+    const submitBtn = document.getElementById("submitBtn");
 
-    //         submitBtn.addEventListener("click", () => {
-    //             const userBox = document.getElementById("userBox")
-    //             const valueUser = document.getElementById("userName").value;
-    //             console.log(stars);
-                
-    //             // console.log(valueUser);
-    //             const box = document.createElement("div");
-    //             box.innerHTML = `<h1>${valueUser}</h1>
-    //             <img src="${}">`
-    //             userBox.appendChild(box)
-                
+    submitBtn.addEventListener("click", () => {
+        let ratingCount = "";
+        for (let i = 0; i < currentRate; i++) {
+
+            ratingCount += `<img src="../assets/ratingFilled.png" width="20">`
+
+        }
+        const userBox = document.getElementById("userBox")
+        const valueUser = document.getElementById("userName").value;
+        console.log(stars);
+
+        // console.log(valueUser);
+
+        const box = document.createElement("div");
+        box.innerHTML = `<h1>${valueUser}</h1>
+            
+           <div>${ratingCount}</div>`
+        userBox.appendChild(box);
 
 
-    //         })
+
+
+
+    })
 
 
 })
