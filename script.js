@@ -727,10 +727,14 @@ searchInput.addEventListener("input", () => {
 
   const results = products.filter(p => p.name.toLowerCase().includes(searchValues));
 
+  
+
 
 
 
   results.slice(0, 5).forEach(product => {
+
+  
     const itemBox = document.createElement("div");
     itemBox.classList.add("itemBox");
 

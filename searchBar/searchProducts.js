@@ -1,4 +1,5 @@
 
+
 const products = [
     {
         id: 1,
@@ -802,7 +803,22 @@ ratingBtns.forEach(rating => {
                 else {
                     s.src = "../assets/4star rating.png"
                 }
-            })
+            });
+            const ratingTxts = [
+                "",
+                "Not Good",
+                "Fair",
+                "Good",
+                "Very Good",
+                "Excelent",
+
+            ];
+            currentRate = Number(star.dataset.value)
+            const rating = ratingTxts[currentRate];
+            const ratingsMsg = document.getElementById("ratingsMsg")
+            ratingsMsg.innerHTML=`<p>${rating}</p>`
+
+
 
 
             // })
@@ -816,15 +832,23 @@ ratingBtns.forEach(rating => {
 
             ratingCount += `<img src="../assets/ratingFilled.png" width="20">`
 
-        }
-        const userBox = document.getElementById("userBox")
-        const valueUser = document.getElementById("userName").value;
-        console.log(stars);
 
-        // console.log(valueUser);
+        }
+
+
+        const userBox = document.getElementById("userBox");
+        const userInput = document.getElementById("userName");
+        const userTxtBox = document.getElementById("textBox").value;
+
+
+
+
 
         const box = document.createElement("div");
-        box.innerHTML = `<h1>${valueUser}</h1>
+        box.innerHTML = `
+           <img src="../assets/user_profile.png" width="20px" height="20px">
+        <h1>${userInput.value}</h1>
+     
             
            <div>${ratingCount}</div>`
         userBox.appendChild(box);
@@ -834,6 +858,7 @@ ratingBtns.forEach(rating => {
 
 
     })
+
 
 
 })
