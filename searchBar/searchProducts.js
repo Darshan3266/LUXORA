@@ -1,5 +1,4 @@
 
-
 const products = [
     {
         id: 1,
@@ -645,15 +644,14 @@ const products = [
 
 ];
 
-
 const parms = new URLSearchParams(window.location.search);
 const getId = parms.get("id");
 
 if (getId) {
+
     const product = products.find(item =>
         item.id == getId
     );
-
 
     document.getElementById("sideImg").src = product.sideImg;
     document.getElementById("watchimage").src = product.image;
@@ -760,39 +758,20 @@ if (getId) {
     infoContainer1.appendChild(box1);
 }
 
-
-
-
-
-
-
-
-
-
 const ratingBtns = document.querySelectorAll(".ratingBtns");
-
-
-console.log(ratingBtns);
 
 let currentRate = 0;
 ratingBtns.forEach(rating => {
     const stars = rating.querySelectorAll(".star");
-
-
     stars.forEach(star => {
         star.addEventListener("click", () => {
-
-
-
             const value = Number(star.dataset.value);
-            console.log(value);
-
             if (currentRate === value) {
                 currentRate = 0
             }
             else {
                 currentRate = value;
-                // console.log(currentRate)
+
 
             }
             stars.forEach((s, index) => {
@@ -803,30 +782,40 @@ ratingBtns.forEach(rating => {
                 else {
                     s.src = "../assets/4star rating.png"
                 }
+                 const ratingTxts = [
+                    "",
+                    "Not Good",
+                    "Fair",
+                    "Good",
+                    "Very Good",
+                    "Excelent",
+
+                ];
+
+                const rating = ratingTxts[currentRate];
+                const ratingsMsg = document.getElementById("ratingsMsg")
+                ratingsMsg.innerHTML = `<p>${rating}</p>`
+
+                
+
+
+               
             });
-            const ratingTxts = [
-                "",
-                "Not Good",
-                "Fair",
-                "Good",
-                "Very Good",
-                "Excelent",
-
-            ];
-            currentRate = Number(star.dataset.value)
-            const rating = ratingTxts[currentRate];
-            const ratingsMsg = document.getElementById("ratingsMsg")
-            ratingsMsg.innerHTML=`<p>${rating}</p>`
 
 
 
 
-            // })
+
+
         })
     })
     const submitBtn = document.getElementById("submitBtn");
 
     submitBtn.addEventListener("click", () => {
+        
+
+
+
         let ratingCount = "";
         for (let i = 0; i < currentRate; i++) {
 
@@ -835,33 +824,61 @@ ratingBtns.forEach(rating => {
 
         }
 
-
         const userBox = document.getElementById("userBox");
         const userInput = document.getElementById("userName");
         const userTxtBox = document.getElementById("textBox").value;
+        const errorMsg = document.getElementById("errorMsg")
+        errorMsg.innerHTML = ""
 
+        if (userInput.value.trim() === "" || currentRate === 0) {
 
+            const err = document.createElement("p");
+            err.innerHTML = "INVAILD INPUTS TRY TO FILL ALL FIELDS";
+            errorMsg.appendChild(err);
 
+        }
 
-
-        const box = document.createElement("div");
-        box.innerHTML = `
+        else {
+            const box = document.createElement("div");
+            box.innerHTML = `
            <img src="../assets/user_profile.png" width="20px" height="20px">
-        <h1>${userInput.value}</h1>
+        <h2>${userInput.value}</h2>
      
             
-           <div>${ratingCount}</div>`
-        userBox.appendChild(box);
+           <p>${ratingCount}</p>
+
+           
+           <p>${userTxtBox}</p>
+           `
+
+            userBox.appendChild(box);
+            const reveiws={
+                name:userInput.value,
+                comment:userBox.value,
+                rating:currentRate
+            }
+            localStorage.setItem("revies",JSON.stringify(reveiws));
+            userInput.value = "";
+            document.getElementById("textBox").value = "";
+            currentRate = 0
+            errorMsg.innerHTML = "";
+            ratingsMsg.innerHTML=""
+
+            stars.forEach(star => {
+                star.src = "../assets/4star rating.png"
+
+            })
 
 
 
+        }
 
 
     })
 
 
-
 })
+
 
 
 

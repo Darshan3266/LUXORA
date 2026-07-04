@@ -544,6 +544,9 @@ body {
     font-family: 'Poppins';
     font-size: 1.2rem;
 }
+#errorMsg{
+    color: red;
+}
 
 .box p {
     font-family: 'Thin';

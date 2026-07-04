@@ -124,8 +124,10 @@
     <div class="feedbackForm">
         <h1>Feedback Form</h1>
         <div class="feedbackDetail">
+            <p id="errorMsg"></p>
+
             <label for="">Name:</label>
-            <input type="text" placeholder="Enter your Name" id="userName" >
+            <input type="text" placeholder="Enter your Name" id="userName">
             <div class="ratingBtns">
              
                         <img src="../assets/4star rating.png" alt="" class="star" data-value="1">
@@ -136,7 +138,8 @@
                         <div id="ratingsMsg"></div>
                         <!-- <img src="../assets/ratingFilled.png" alt=""> -->
             </div>
-            <textarea name="feedBack" id="textBox" placeholder="Submit your experience..."></textarea>
+            <textarea name="feedBack" id="textBox" placeholder="Share your experience.(optional)"></textarea>
+
             <button type="submit"  id="submitBtn">Submit</button>
 
 
