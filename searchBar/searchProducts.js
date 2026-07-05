@@ -783,12 +783,12 @@ ratingBtns.forEach(rating => {
                     s.src = "../assets/4star rating.png"
                 }
                  const ratingTxts = [
-                    "",
-                    "Not Good",
-                    "Fair",
-                    "Good",
-                    "Very Good",
-                    "Excelent",
+                    "Give Ratings",
+                    "Not Good🙁",
+                    "Fair😐",
+                    "Good🙂",
+                    "Very Good😘",
+                    "Excelent😍",
 
                 ];
 
@@ -833,12 +833,13 @@ ratingBtns.forEach(rating => {
         if (userInput.value.trim() === "" || currentRate === 0) {
 
             const err = document.createElement("p");
-            err.innerHTML = "INVAILD INPUTS TRY TO FILL ALL FIELDS";
+            err.innerHTML = "Invaild Inputs!! try to fill all fileds";
             errorMsg.appendChild(err);
 
         }
 
         else {
+            
             const box = document.createElement("div");
             box.innerHTML = `
            <img src="../assets/user_profile.png" width="20px" height="20px">
@@ -852,12 +853,15 @@ ratingBtns.forEach(rating => {
            `
 
             userBox.appendChild(box);
-            const reveiws={
-                name:userInput.value,
-                comment:userBox.value,
-                rating:currentRate
-            }
-            localStorage.setItem("revies",JSON.stringify(reveiws));
+          const msgBox=document.createElement("div");
+          msgBox.innerHTML="Thank you for your feedback";
+          msgBox.classList.add("popup")
+          document.body.appendChild(msgBox);
+          setTimeout(()=>{
+            msgBox.remove();
+          },2200)
+
+           
             userInput.value = "";
             document.getElementById("textBox").value = "";
             currentRate = 0
