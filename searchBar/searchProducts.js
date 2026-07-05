@@ -782,7 +782,7 @@ ratingBtns.forEach(rating => {
                 else {
                     s.src = "../assets/4star rating.png"
                 }
-                 const ratingTxts = [
+                const ratingTxts = [
                     "Give Ratings",
                     "Not Good🙁",
                     "Fair😐",
@@ -796,10 +796,10 @@ ratingBtns.forEach(rating => {
                 const ratingsMsg = document.getElementById("ratingsMsg")
                 ratingsMsg.innerHTML = `<p>${rating}</p>`
 
-                
 
 
-               
+
+
             });
 
 
@@ -812,7 +812,7 @@ ratingBtns.forEach(rating => {
     const submitBtn = document.getElementById("submitBtn");
 
     submitBtn.addEventListener("click", () => {
-        
+
 
 
 
@@ -839,34 +839,33 @@ ratingBtns.forEach(rating => {
         }
 
         else {
-            
+   
             const box = document.createElement("div");
             box.innerHTML = `
-           <img src="../assets/user_profile.png" width="20px" height="20px">
-        <h2>${userInput.value}</h2>
+            <div class="conts">
+           <img src="../assets/user_profile.png" width="40px" height="40px">
+              <h3>${userInput.value}</h3></div>
+              <div class="downConts">
+          <p>${ratingCount}</p>
      
-            
-           <p>${ratingCount}</p>
-
-           
-           <p>${userTxtBox}</p>
+           <p>${userTxtBox}</p></div>
            `
 
             userBox.appendChild(box);
-          const msgBox=document.createElement("div");
-          msgBox.innerHTML="Thank you for your feedback";
-          msgBox.classList.add("popup")
-          document.body.appendChild(msgBox);
-          setTimeout(()=>{
-            msgBox.remove();
-          },2200)
+            const msgBox = document.createElement("div");
+            msgBox.innerHTML = "Thank you for your feedback😍";
+            msgBox.classList.add("popup")
+            document.body.appendChild(msgBox);
+            setTimeout(() => {
+                msgBox.remove();
+            }, 2900)
 
-           
+
             userInput.value = "";
             document.getElementById("textBox").value = "";
             currentRate = 0
             errorMsg.innerHTML = "";
-            ratingsMsg.innerHTML=""
+            ratingsMsg.innerHTML = ""
 
             stars.forEach(star => {
                 star.src = "../assets/4star rating.png"

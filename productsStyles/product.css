@@ -8,10 +8,9 @@ body {
     /* background:linear-gradient(130deg,#EDF1F5,#6baadd); */
     background: #f4f9f9;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    /* align-items: center;
+    justify-content: center; */
 
 }
 
@@ -163,7 +162,7 @@ body {
 
     width: 100%;
     max-width: 1200px;
-    height: 530px;
+    height: 540px;
     background: #f5f5f4;
     border: 1px solid #002e38;
     margin: 15px auto;
@@ -203,7 +202,7 @@ body {
     margin-bottom: 20px;
     width: 380px;
     background: #f8f8f6;
-    min-height: 450px;
+    min-height: 400px;
     box-shadow: 2px 3px 10px #d0d0d6;
     border-radius: 8px;
     border: 1px solid #c7c4c4be;
@@ -598,20 +597,29 @@ body {
     /* color: #000000; */
 }
 
+.feedBackContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   border-top: 1px solid rgb(75, 71, 75);
+    margin: 40px;
+    gap: 30px;
+    max-width: 1100px;
+}
 
 .feedbackForm {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: self-start;
     justify-content: center;
-    border-top: 1px solid #000000;
     width: 100%;
+    margin: 40px;
     max-width: 1200px;
     /* margin-bottom: 20px; */
 }
 
 .feedbackForm h1 {
-    margin-top: 20px;
     font-family: 'GreatVibes';
     font-size: 2.5rem;
 }
@@ -619,26 +627,33 @@ body {
 .feedbackDetails {
     display: flex;
     width: 100%;
-
     color: white;
     max-width: 450px;
     min-height: 430px;
     align-items: center;
     flex-direction: column;
     background: #002d3f;
+    z-index: 222;
     border-radius: 5px;
+    margin-top: 20px;
     gap: 15px;
+    /* transition: 0.5s ease-in-out; */
 }
-
+.feedbackDetails:hover{
+    background-color: #023942;
+}
 .popup{
     position: fixed;
-    top:50%;
-    left: 40%;
-    transition: 0.5s ease-in;
-    right: 100%;
-    background: rgba(0.1,0.1,0.1,0.1);
-    backdrop-filter: blur(4px);
-    background-color: red;
+    top:20%;
+    left: 10%;
+    transition:3s ease-in;
+    /* transform: translate(-50%,-50%); */
+    background: rgba(0,0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    background-color: #51ff00;
+    font-weight: bold;
+    border: 1px solid white;
+    z-index: 999;
     height: 40px;
     text-align: center;
     width: 300px;
@@ -689,9 +704,9 @@ body {
     padding: 12px 0px 0px 20px;
 }
 
-.ratingBtns div {
+/* .ratingBtns div {
     min-height: 10px;
-}
+} */
 
 #ratingsMsg {
     text-align: center;
@@ -706,9 +721,10 @@ body {
 
 
 #submitBtn{
-    background-color: #eca200;
+    background-color: #ec6e00;
     margin-top: 10px;
     width: 100%;
+    font-weight: bold;
     max-width: 300px;
     padding: 10px;
     border: none;
@@ -717,14 +733,42 @@ body {
     color: #ffffff;
 }
 
+#submitBtn:hover{
+    cursor: pointer;
+    background-color: #e63407;
 
+}
 
-.userBox div{
+.boxContainer {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: white;
+    background-color: #001a4e;
+    width: 100%;
+    padding: 20px;
     margin-top: 40px;
+    border-radius: 10px;
+    max-width: 450px;
+    min-height: 500px;
+  
+
 }
 
 
+.conts{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 30px;
+   
+}
+.conts img{
+    border-radius: 50%;
+}
 
+.downConts{
+    margin-top: 20px;
+}
 
 /* Products Styles */
 
@@ -869,7 +913,7 @@ body {
 #productHead {
     margin-top: 15px;
     text-shadow: 2px 1px 3px #048f99;
-
+ text-align: center;
     font-size: 3rem;
     font-family: 'GreatVibes';
 }
