@@ -644,6 +644,7 @@ const products = [
 ];
 
 
+
 const parms = new URLSearchParams(window.location.search);
 const getId = parms.get("id");
 
@@ -655,7 +656,7 @@ if (getId) {
 
 else {
     const results = JSON.parse(localStorage.getItem("products1"));
-    const container = document.getElementById("productsConatainer");
+    const container = document.getElementById("productsCont");
 
 
 
@@ -664,12 +665,14 @@ else {
 
         const card = document.createElement("div");
         card.classList.add("card");
-        card.innerHTML = `<img src="${product.image}">
-           <h2>${product.brand}</h2>
-            <h3>${product.name}</3>
-             <p>${product.price}</div>
-              <p>${product.category}</p>
-               <p>${product.about}</p>`
+        card.innerHTML = `<img  id="productImg" src="${product.image}">
+        <div>
+           <img src="${product.brand}">
+            <h2>${product.name}</h2>
+             <p id="pricePar">₹ ${product.price.toLocaleString()}</p>
+              <p id="categoryPar">${product.category}</p>
+               <p id="aboutPar">${product.about}</p>
+               </div>`
 
 
         container.appendChild(card);

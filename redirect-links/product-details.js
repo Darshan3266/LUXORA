@@ -172,7 +172,7 @@ const products = [
 
   {
     id: 6,
-    brand:"/assets/cartier.png",
+    brand: "/assets/cariter.png",
     name: "Cartier Santos",
     price: 7200,
     taxTxt: `Inclusive of all taxes`,

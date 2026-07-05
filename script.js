@@ -135,7 +135,7 @@ const products = [
     id: 3,
     brand: "/assets/patek philppe logo.png",
     name: "Patek Philippe",
-    price: 35000,
+    price: 3500,
     taxTxt: `Inclusive of all taxes`,
     category: "Luxury Sports",
     collection: "Prestige Collection",
@@ -713,8 +713,6 @@ const products = [
 const searchInput = document.getElementById("inputDisplay");
 const suggest = document.getElementById("suggestions");
 
-
-
 searchInput.addEventListener("input", () => {
 
 
@@ -726,10 +724,6 @@ searchInput.addEventListener("input", () => {
   }
 
   const results = products.filter(p => p.name.toLowerCase().includes(searchValues));
-
-  
-
-
 
 
   results.slice(0, 5).forEach(product => {
@@ -772,12 +766,7 @@ searchInput.addEventListener("input", () => {
 
       itemBox.appendChild(goldPar);
 
-
     }
-
-
-
-
 
 
   });
@@ -796,7 +785,7 @@ searchBtn.addEventListener("click", () => {
 
   if (products1.length > 0) {
     localStorage.setItem("products1", JSON.stringify(products1));
-    window.location.href = `./searchBar/resultsSearch.html`
+    window.location.href = `./searchBar/resultsSearch.html`;
   }
   else {
 
@@ -820,7 +809,9 @@ cards.forEach((card) => {
   card.addEventListener("click", () => {
     const id = card.dataset.id;
     // window.location.href=`products/products.html?id=${id}`;
-    window.location.href = `./redirect-links/product-details.html?id=${id} `
+    // window.location.href = `./redirect-links/product-details.html?id=${id} `
+      window.location.href = `./searchBar/searchProducts.html?id=${id} `
+
 
 
 
@@ -833,7 +824,9 @@ cards1.forEach((card1) => {
   card1.addEventListener("click", () => {
     const id1 = card1.dataset.id;    
     // window.location.href=`products/products.html?id=${id}`;
-    window.location.href = `./redirect-links/product-details.html?id=${id1} `
+    // window.location.href = `./redirect-links/product-details.html?id=${id1} `
+      window.location.href = `./searchBar/searchProducts.html?id=${id1} `
+
 
 
 
@@ -844,7 +837,21 @@ cards1.forEach((card1) => {
 
 
 
+const exploreBtn=document.querySelectorAll(".exploreBtn");
 
+
+exploreBtn.forEach((btns)=>{
+btns.addEventListener("click",()=>{
+    const ids3 = btns.dataset.id;    
+
+      window.location.href = `./searchBar/searchProducts.html?id=${ids3} `
+
+
+
+
+})
+
+})
 
 
 
