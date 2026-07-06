@@ -671,6 +671,30 @@ if (getId) {
     document.getElementById("wishBtn").textContent = `❤`;
 
 
+  const addCartBtn = document.getElementById("addToCart");
+    addCartBtn.addEventListener("click", () => {
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const checkExits = cart.find(item => 
+            item.id === product.id)
+
+        if (checkExits) {
+            alert(`${product.name} Alredy in Cart🛒`);
+            return;
+            
+        }
+        cart.push(product);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert(`${product.name} Product added to cart✔`);
+        // console.log(cart);
+
+
+    })
+
+
     const backBtn = document.getElementById("backBtn");
     backBtn.addEventListener("click", () => {
         window.location.href = "../index.html"
@@ -691,7 +715,6 @@ if (getId) {
             backBtns.style.height = "30px"
             backBtns.style.width = "30px"
 
-
         }
         else {
             homePar.style.display = "block"
@@ -703,7 +726,6 @@ if (getId) {
             backBtns.style.width = "40px"
 
         }
-
 
     })
 
@@ -756,6 +778,10 @@ if (getId) {
    `
     infoContainer.appendChild(box);
     infoContainer1.appendChild(box1);
+
+
+
+  
 }
 
 const ratingBtns = document.querySelectorAll(".ratingBtns");
@@ -796,16 +822,7 @@ ratingBtns.forEach(rating => {
                 const ratingsMsg = document.getElementById("ratingsMsg")
                 ratingsMsg.innerHTML = `<p>${rating}</p>`
 
-
-
-
-
             });
-
-
-
-
-
 
         })
     })
@@ -818,12 +835,9 @@ ratingBtns.forEach(rating => {
 
         let ratingCount = "";
         for (let i = 0; i < currentRate; i++) {
-
             ratingCount += `<img src="../assets/ratingFilled.png" width="20">`
 
-
         }
-
         const userBox = document.getElementById("userBox");
         const userInput = document.getElementById("userName");
         const userTxtBox = document.getElementById("textBox").value;
@@ -839,7 +853,7 @@ ratingBtns.forEach(rating => {
         }
 
         else {
-   
+
             const box = document.createElement("div");
             box.innerHTML = `
             <div class="conts">
@@ -872,14 +886,17 @@ ratingBtns.forEach(rating => {
 
             })
 
-
-
         }
-
 
     })
 
 
+})
+
+
+const cartBtn=document.getElementById("cartBtn");
+cartBtn.addEventListener("click",()=>{
+  window.location.href=`../carts/cart.html`
 })
 
 

@@ -1,5 +1,4 @@
 
-
 //dropmenu btn for mobile responivenss
 const menuBox = document.getElementById("menuBox");
 function menuBar() {
@@ -856,6 +855,10 @@ btns.addEventListener("click",()=>{
 
 
 
+const cartSection=document.getElementById("carts");
+cartSection.addEventListener("click",()=>{
+  window.location.href=`./carts/cart.html`
+})
 
 
 
