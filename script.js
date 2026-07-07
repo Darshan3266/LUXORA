@@ -65,7 +65,7 @@ fadeContsLeft.forEach((elements) => {
 const products = [
   {
     id: 1,
-    brand: "/assets/rolex logo.png",
+    brand: "./assets/rolex logo.png",
     name: "Rolex Submariner",
     price: 12500,
     about: "An iconic luxury diving watch known for its timeless design and durability.",
@@ -98,7 +98,7 @@ const products = [
 
   {
     id: 2,
-    brand: "/assets/omega logo.png",
+    brand: "./assets/omega logo.png",
     name: "Omega Speedmaster",
     price: 7800,
     taxTxt: `Inclusive of all taxes`,
@@ -132,7 +132,7 @@ const products = [
 
   {
     id: 3,
-    brand: "/assets/patek philppe logo.png",
+    brand: "./assets/patek philppe logo.png",
     name: "Patek Philippe",
     price: 3500,
     taxTxt: `Inclusive of all taxes`,
@@ -167,7 +167,7 @@ const products = [
 
   {
     id: 4,
-    brand: "/assets/tag heuer logo.png",
+    brand: "./assets/tag heuer logo.png",
     name: "TAG Heuer Monaco",
     price: 8500,
     taxTxt: `Inclusive of all taxes`,
@@ -202,7 +202,7 @@ const products = [
 
   {
     id: 5,
-    brand: "/assets/audemars-piguet-logo (1).png",
+    brand: "./assets/audemars-piguet-logo (1).png",
     name: "Royal Oak",
     price: 42000,
     taxTxt: `Inclusive of all taxes`,
@@ -236,7 +236,7 @@ const products = [
 
   {
     id: 6,
-    brand: "/assets/cariter.png",
+    brand: "./assets/cariter.png",
     name: "Cartier Santos",
     price: 7200,
     taxTxt: `Inclusive of all taxes`,
@@ -270,7 +270,7 @@ const products = [
 
   {
     id: 7,
-    brand: "/assets/rolex logo.png",
+    brand: "./assets/rolex logo.png",
     name: "Rolex Daytona",
     price: 18500,
     taxTxt: `Inclusive of all taxes`,
@@ -290,7 +290,7 @@ const products = [
 
   {
     id: 8,
-    brand: "/assets/logo1.png ",
+    brand: "./assets/logo1.png ",
     name: "Luxora Royal Gold",
     price: 5500,
     taxTxt: `Inclusive of all taxes`,
@@ -325,7 +325,7 @@ const products = [
 
   {
     id: 9,
-    brand: "/assets/logo1.png ",
+    brand: "./assets/logo1.png ",
 
     name: "Luxora Midnight Crown",
     price: 4800,
@@ -363,7 +363,7 @@ const products = [
 
   {
     id: 10,
-    brand: "/assets/logo1.png ",
+    brand: "./assets/logo1.png ",
     name: "Luxora Imperial Chrono",
     price: 6200,
     taxTxt: `Inclusive of all taxes`,
@@ -398,7 +398,7 @@ const products = [
 
   {
     id: 11,
-    brand: "/assets/omega logo.png",
+    brand: "./assets/omega logo.png",
     name: "Omega Seamaster Diver",
     price: 6200,
     taxTxt: `Inclusive of all taxes`,
@@ -435,7 +435,7 @@ const products = [
 
   {
     id: 12,
-    brand: "/assets/rolex logo.png",
+    brand: "./assets/rolex logo.png",
     name: "Rolex Cosmograph",
     taxTxt: `Inclusive of all taxes`,
     price: 8499,
@@ -470,7 +470,7 @@ const products = [
 
   {
     id: 13,
-    brand: "/assets/omega logo.png",
+    brand: "./assets/omega logo.png",
     name: "Omega Cosmic",
     price: 4659,
     category: "Classic",
@@ -504,7 +504,7 @@ const products = [
 
   {
     id: 14,
-    brand: "/assets/rolex logo.png",
+    brand: "./assets/rolex logo.png",
 
     name: "Rolex Blue",
     price: 8789,
@@ -539,7 +539,7 @@ const products = [
 
   {
     id: 15,
-    brand: "/assets/omega logo.png",
+    brand: "./assets/omega logo.png",
     name: "Omega Speed",
     price: 4660,
     taxTxt: `Inclusive of all taxes`,
@@ -573,7 +573,7 @@ const products = [
 
   {
     id: 16,
-    brand: "/assets/patek philppe logo.png",
+    brand: "./assets/patek philppe logo.png",
     name: "Patek Philippe",
     price: 7799,
     taxTxt: `Inclusive of all taxes`,
@@ -607,7 +607,7 @@ const products = [
 
   {
     id: 17,
-    brand: "/assets/tag heuer logo.png",
+    brand: "./assets/tag heuer logo.png",
     taxTxt: `Inclusive of all taxes`,
     name: "Monaco Black Edition",
     price: 4890,
@@ -641,7 +641,7 @@ const products = [
 
   {
     id: 18,
-    brand: "/assets/Vacheron_Constantin_logo.png",
+    brand: "./assets/Vacheron_Constantin_logo.png",
     name: "Vacheron Constantin",
     price: 7545,
     taxTxt: `Inclusive of all taxes`,
@@ -675,7 +675,7 @@ const products = [
 
   {
     id: 19,
-    brand: "/assets/patek philppe logo.png",
+    brand: "./assets/patek philppe logo.png",
     name: "Patek Philippe Silver",
     taxTxt: `Inclusive of all taxes`,
     price: 7545,

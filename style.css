@@ -2042,6 +2042,7 @@ body {
     gap: 15px;
     position: absolute;
     top: 100%;
+    right: 0;
     left: 0;
     width: 100%;
     border-radius: 10px;
@@ -2066,7 +2067,8 @@ body {
 } */
 
 #suggestions img {
-    width: 70px;
+    width: 100%;
+    max-width: 70px;
     filter: drop-shadow(2px 3px 5px #fffafa);
     height: 75px;
     object-fit: contain;
@@ -2079,6 +2081,11 @@ body {
     border-radius: 10px;
     border: 1px solid #f0f0f049;
     /* flex-direction: column; */
+}
+
+.itemBox p{
+   font-family: 'Poppins';
+   font-size: 1rem;
 }
 .goldTxt{
     color: #fff5d4;
@@ -2158,10 +2165,10 @@ body {
 
     .searchInput input {
         /* width: 53vw; */
-        width: 180px;
+        width: 190px;
         padding: 9px;
         margin-left: 15px;
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         /* text-align: start; */
         color: #000000;
     }
@@ -2944,10 +2951,20 @@ body {
         /* max-width: 300px; */
     }
 
-    .botttomLinks {
-        justify-content: center;
+    #suggestions{
+        width: 100%;
+        max-width: 220px;
+        
     }
+    .itemBox{
+        gap: 3px;
+    }
+    .itemBox p{
+        font-size: 0.8rem;
+    }
+    
 
+   
 
 
 
