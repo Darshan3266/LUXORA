@@ -188,10 +188,10 @@ body {
 
     width: 100%;
     max-width: 1200px;
-    height: 530px;
+    height: 520px;
     background: #f4f4f4;
     border: 1px solid #002e38;
-    margin: 20px auto;
+    margin: 10px auto;
 
 }
 
@@ -222,7 +222,7 @@ body {
     width: 100%;
     max-width: 380px;
     background: #f5f5f5;
-    min-height: 400px;
+    height: 480px;
     box-shadow: 2px 3px 10px #d0d0d6;
     border-radius: 8px;
     border: 1px solid #c7c4c4be;
@@ -805,26 +805,27 @@ body {
     .boxCont{
         width: 100%;
         max-width: 350px;
-        height: 165vh;
+        height: 155vh;
      
     }
 
     #backBtn{
       
         position: fixed;
-        bottom: 10px;
+        top: 50px;
         left: 20px;
         width: 25px;
         height: 25px;
     }
     .btns p{
         position: fixed;
-        top: 38px;
+        top: 53px;
         left: 62px;
         font-size: 13px;
     }
     #cartBtn{
         position: fixed;
+        top: 50px;
         right: 20px;
         height: 28px;
         z-index: 999;
@@ -834,6 +835,11 @@ body {
         transform: translateX(0);
         
     }
+    #wishBtn{
+        /* top: 0px; */
+        bottom: 35%;
+        position: absolute;
+    }
 
     .cartBtn.scrolled{
         transform: translateX(0);
@@ -842,15 +848,16 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-top: 20px;
     }
     .boxProduct{
+        gap: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin:25px auto;
+        margin:10px auto;
     }
    
     .containerBox{
@@ -859,7 +866,8 @@ body {
         margin: 20px;
     }
     .productDetails{
-        margin: 15px 0px 0px 5px;
+        /* margin:30px 0px 0px 5px; */
+        padding-bottom: 0;
 
     }
     .productDetails img{
@@ -884,7 +892,7 @@ body {
         display: flex;
         width: 100%;
         max-width: 350px;
-        margin: 20px auto;
+        margin: 40px auto;
         flex-direction: column;
     }
     .box{
