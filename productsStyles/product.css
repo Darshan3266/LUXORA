@@ -141,7 +141,7 @@ body {
     z-index: 999;
 }
 
-.backBtn.scrolled{
+.backBtn.scrolled {
     transform: translateX(-20px);
     height: 28px;
     width: 28px;
@@ -158,7 +158,7 @@ body {
 
 }
 
-.cartBtn.scrolled{
+.cartBtn.scrolled {
     transform: translateX(40px);
     height: 25px;
     width: 25px;
@@ -185,10 +185,13 @@ body {
 
 
 .boxCont {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
-    height: 520px;
+    min-height: 92vh;
+
     background: #f4f4f4;
     border: 1px solid #002e38;
     margin: 10px auto;
@@ -200,10 +203,8 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 50px;
-    margin: 30px 0px 0px 50px;
-    /* margin: 20px auto; */
-    /* padding: 20px; */
+    gap: 60px;
+
     border-radius: 10px;
     /* padding-top: 30px; */
 
@@ -211,27 +212,9 @@ body {
 }
 
 
-
-.containerBox {
-    display: flex;
-    flex-direction: column;
-    /* padding:30px 0px 0px 50px; */
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 380px;
-    background: #f5f5f5;
-    height: 480px;
-    box-shadow: 2px 3px 10px #d0d0d6;
-    border-radius: 8px;
-    border: 1px solid #c7c4c4be;
-}
-
-
 .imageCont {
     display: flex;
-    /* flex-wrap: wrap; */
+
     align-items: center;
     justify-content: center;
     /* padding-left: 20px; */
@@ -239,15 +222,28 @@ body {
     position: relative;
 }
 
-#watchimage {
 
-    /* display: block; */
-    box-shadow: 2px 3px 10px #000008;
+
+.watchImgBox {
     width: 100%;
+    max-width: 370px;
+    min-height: 200px;
 
+
+}
+
+.watchImgBox img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    height: auto;
+    filter: drop-shadow(2px 3px 10px rgb(78, 135, 234));
+    /* width: 100%;
+    object-fit: cover;
     border-radius: 10px;
     max-width: 330px;
-    height: 450px;
+    height: 350px; */
+
 }
 
 .sidebar {
@@ -286,17 +282,24 @@ body {
 }
 
 
+.containerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 370px;
+    background: #f5f5f5;
+    min-height: 475px;
+    box-shadow: 2px 3px 10px #707073;
+    border-radius: 8px;
+    border: 1px solid #c7c4c4be;
+}
 
 
 .productDetails {
     display: flex;
-    margin-top: 10px;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-    align-items: self-start;
+    align-items: start;
     justify-content: center;
-    width: 100%;
-    max-width: 300px;
     flex-direction: column;
     gap: 10px;
     color: #000000;
@@ -316,8 +319,6 @@ body {
     /* padding: 0; */
     color: #001b03;
     font-size: 1.5rem;
-    margin-top: 8px;
-    /* white-space: nowrap; */
     font-family: 'Poppins-Extra';
 
 }
@@ -369,21 +370,26 @@ body {
 
 
 .contBox {
-    /* margin-top: 10px; */
+    margin-top: 8px;
     display: flex;
-    margin: 10px 0px;
-    padding-bottom: 10px;
+
+    /* padding-top: 5px; */
+
+
     gap: 30px;
     border-top: 1px solid #b8b8b8;
     border-bottom: 1px solid #b8b8b8;
-    width: 300px;
+    /* border: 1px solid #b8b8b8; */
+    width: 100%;
+    padding: 10px 0px;
+    max-width: 300px;
     font-size: 1rem;
 }
 
 .contBox div {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    /* padding-bottom: 10px; */
+    /* flex-wrap: wrap; */
     flex-direction: column;
     gap: 10px;
 
@@ -485,7 +491,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
+
 
 }
 
@@ -626,12 +632,12 @@ body {
     /* color: #000000; */
 }
 
-.feedBackContainer{
+.feedBackContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-   border-top: 1px solid rgb(75, 71, 75);
+    border-top: 1px solid rgb(75, 71, 75);
     margin: 40px;
     gap: 30px;
     max-width: 1100px;
@@ -668,16 +674,18 @@ body {
     gap: 15px;
     /* transition: 0.5s ease-in-out; */
 }
-.feedbackDetails:hover{
+
+.feedbackDetails:hover {
     background-color: #023942;
 }
-.popup{
+
+.popup {
     position: fixed;
-    top:20%;
+    top: 20%;
     left: 10%;
-    transition:3s ease-in;
+    transition: 3s ease-in;
     /* transform: translate(-50%,-50%); */
-    background: rgba(0,0,0,0,0.2);
+    background: rgba(0, 0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     background-color: #51ff00;
     font-weight: bold;
@@ -688,13 +696,15 @@ body {
     width: 300px;
     font-family: 'Poppins';
     color: rgb(250, 255, 250);
-    
+
 }
+
 .inputsCont {
     position: relative;
     margin-top: 15px;
     min-height: 20px;
 }
+
 .feedbackDetails div label {
     font-size: 1rem;
     font-family: 'Poppins-Bold';
@@ -706,11 +716,12 @@ body {
     padding: 8px 18px;
     border-radius: 5px;
     border: none;
-    border:  2px solid #00f2ff;
+    border: 2px solid #00f2ff;
     width: 100%;
     margin: 10px;
     max-width: 300px;
 }
+
 #errorMsg {
     color: #f90202;
     font-size: 14px;
@@ -749,7 +760,7 @@ body {
 
 
 
-#submitBtn{
+#submitBtn {
     background-color: #ec6e00;
     margin-top: 10px;
     width: 100%;
@@ -762,7 +773,7 @@ body {
     color: #ffffff;
 }
 
-#submitBtn:hover{
+#submitBtn:hover {
     cursor: pointer;
     background-color: #e63407;
 
@@ -780,50 +791,56 @@ body {
     border-radius: 10px;
     max-width: 450px;
     min-height: 500px;
-  
+
 
 }
 
 
-.conts{
+.conts {
     display: flex;
     /* flex-direction: column; */
     gap: 30px;
-   
+
 }
-.conts img{
+
+.conts img {
     border-radius: 50%;
 }
 
-.downConts{
+.downConts {
     margin-top: 20px;
 }
 
 /* Media Queries */
 
 @media (max-width:568px) {
-    .boxCont{
+    .boxCont {
         width: 100%;
-        max-width: 350px;
-        height: 155vh;
-     
+        max-width: 345px;
+
+        margin: 10px auto;
+        min-height: 160vh;
+
+
     }
 
-    #backBtn{
-      
+    #backBtn {
+
         position: fixed;
         top: 50px;
         left: 20px;
         width: 25px;
         height: 25px;
     }
-    .btns p{
+
+    .btns p {
         position: fixed;
         top: 53px;
         left: 62px;
         font-size: 13px;
     }
-    #cartBtn{
+
+    #cartBtn {
         position: fixed;
         top: 50px;
         right: 20px;
@@ -831,75 +848,86 @@ body {
         z-index: 999;
         width: 28px;
     }
-    .backBtn.scrolled{
+
+    .backBtn.scrolled {
         transform: translateX(0);
-        
+
     }
-    #wishBtn{
+
+    #wishBtn {
         /* top: 0px; */
         bottom: 35%;
         position: absolute;
     }
 
-    .cartBtn.scrolled{
+    .cartBtn.scrolled {
         transform: translateX(0);
     }
-    .imageCont{
+
+    .imageCont {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
         margin-top: 20px;
     }
-    .boxProduct{
-        gap: 30px;
+
+    .boxProduct {
+
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
+        gap: 40px;
         flex-direction: column;
-        margin:10px auto;
+      
     }
-   
-    .containerBox{
+
+    .watchImgBox {
         width: 100%;
         max-width: 320px;
-        margin: 20px;
     }
-    .productDetails{
-        /* margin:30px 0px 0px 5px; */
-        padding-bottom: 0;
 
+    .containerBox {
+        justify-content: center;
+        width: 100%;
+        max-width: 320px;
+        /* margin: 10px 0px; */
     }
-    .productDetails img{
+
+
+
+    .productDetails img {
         width: 100%;
         max-width: 90px;
     }
-    .productBtns div{
+
+    .productBtns div {
         gap: 15px;
         margin: 20px auto;
     }
-    .productBtns button{
+
+    .productBtns button {
         width: 100%;
         max-width: 130px;
-        
-    }
-    .cardContainer{
-        display: flex;
-        flex-direction: column;
+
     }
 
-    .cardsBox{
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .cardsBox {
         display: flex;
         width: 100%;
         max-width: 350px;
         margin: 40px auto;
         flex-direction: column;
     }
-    .box{
+
+    .box {
         gap: 10px;
     }
-    
+
 }
-
-
-
