@@ -211,7 +211,7 @@ const products = [
     availability: "In Stock",
     // image: "../productsLists/Watch_assets/5.jpeg",
     about: "Famous for its octagonal bezel and premium finish.",
-    image: "./productsLists/products_assets//audemars piguet5.png",
+    image: "./productsLists/products_assets/audemars piguet5.png",
     ratings: "⭐⭐⭐⭐",
     ratingsNo: "4.8 (124 reviews)",
     cartButton: "Add to Cart",
@@ -784,6 +784,8 @@ searchBtn.addEventListener("click", () => {
   if (products1.length > 0) {
     localStorage.setItem("products1", JSON.stringify(products1));
     window.location.href = `./searchBar/resultsSearch.html`;
+    console.log(products1);
+    
   }
   else {
 
@@ -793,6 +795,7 @@ searchBtn.addEventListener("click", () => {
 
 
 })
+
 
 const viewBtn = document.getElementById("viewAllBtn");
 viewBtn.addEventListener("click", () => {

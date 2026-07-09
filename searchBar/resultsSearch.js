@@ -1,3 +1,7 @@
+
+
+
+
 const products = [
   {
     id: 1,
@@ -147,7 +151,7 @@ const products = [
     availability: "In Stock",
     // image: "../productsLists/Watch_assets/5.jpeg",
     about: "Famous for its octagonal bezel and premium finish.",
-    image: "../productsLists/products_assets//audemars piguet5.png",
+    image: "../productsLists/products_assets/audemars piguet5.png",
     ratings: "⭐⭐⭐⭐",
     ratingsNo: "4.8 (124 reviews)",
     cartButton: "Add to Cart",
@@ -264,7 +268,7 @@ const products = [
     brand: "../assets/logo1.png ",
 
     name: "Luxora Midnight Crown",
-    price: 28345,
+    price:28345 ,
     taxTxt: `Inclusive of all taxes`,
     category: "Luxury Sports",
     collection: "Luxora Elite Collection",
@@ -650,6 +654,8 @@ const getId = parms.get("id");
 if (getId) {
     const product = products.find(item =>
         item.id == getId
+        
+        
     );
 }
 
