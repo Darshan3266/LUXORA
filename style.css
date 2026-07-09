@@ -163,7 +163,7 @@ body {
 
 .container {
 
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(5, 5, 5, 0.731), rgba(0, 0, 0, 0.886)), url("./assets/Luxora_Banners.webp");
+    background: linear-gradient(121deg, rgba(0, 0, 0, 0.89), rgba(5, 5, 5, 0.731), rgba(0, 0, 0, 0.886)), url("./assets/Luxora_Banners.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2129,10 +2129,12 @@ body {
     .container {
         /* width: 100%;
         max-width: 475px; */
+
+           background: linear-gradient(92deg, rgba(0 0 0,0.89), #0000005e, rgb(0 0 0)), url("./assets/Luxora_Banners.webp");
         background-position: 45% center;
         background-attachment: scroll;
         background-repeat: no-repeat;
-        background-size: 450%;
+        background-size: 350%;
         min-height: 100vh;
     }
 
