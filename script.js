@@ -292,7 +292,7 @@ const products = [
     id: 8,
     brand: "./assets/logo1.png ",
     name: "Luxora Royal Gold",
-    price: 5500,
+    price: 29995,
     taxTxt: `Inclusive of all taxes`,
     category: "Classic",
     collection: "Luxora Signature Collection",
@@ -328,7 +328,7 @@ const products = [
     brand: "./assets/logo1.png ",
 
     name: "Luxora Midnight Crown",
-    price: 4800,
+    price:28345 ,
     taxTxt: `Inclusive of all taxes`,
     category: "Luxury Sports",
     collection: "Luxora Elite Collection",
@@ -365,7 +365,7 @@ const products = [
     id: 10,
     brand: "./assets/logo1.png ",
     name: "Luxora Imperial Chrono",
-    price: 6200,
+    price:28345 ,
     taxTxt: `Inclusive of all taxes`,
     category: "Chronograph",
     collection: "Ocean Master Collection",
@@ -643,7 +643,7 @@ const products = [
     id: 18,
     brand: "./assets/Vacheron_Constantin_logo.png",
     name: "Vacheron Constantin",
-    price: 7545,
+    price: 8599,
     taxTxt: `Inclusive of all taxes`,
     category: "Luxury Sports",
     collection: "Silver Prestige Collection",
@@ -706,7 +706,6 @@ const products = [
   }
 
 ];
-
 
 
 const searchInput = document.getElementById("inputDisplay");
