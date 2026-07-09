@@ -149,11 +149,11 @@ body {
 
 #cartBtn {
     position: fixed;
-    right: 70px;
+    right: 60px;
     transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     /* height: 40px; */
     /* width: 40px; */
-    top: 30px;
+    top: 40px;
     cursor: pointer;
 
 }
@@ -619,7 +619,10 @@ body {
 .speclabel,
 .specValue {
     /* text-align: left; */
-    width: 350px;
+    /* width: 100%;
+    max-width: 350px; */
+   
+    width: 400px;
 
     /* color: #000000; */
 }
@@ -637,12 +640,11 @@ body {
 
 .feedbackForm {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    align-items: self-start;
-    justify-content: center;
     width: 100%;
     margin: 40px;
-    max-width: 1200px;
+    max-width: 680px;
     /* margin-bottom: 20px; */
 }
 
@@ -771,17 +773,44 @@ body {
 
 }
 
+.userBox{
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    flex-direction: column;
+    
+}
+
+.userBox div{
+    background-color: rgb(5, 52, 96);
+    /* width: 450px; */
+    margin-bottom: 10px;
+
+}
+.rightBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    max-width: 600px;
+}
+.rightBox h3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Poppins';
+}
 .boxContainer {
     display: flex;
     justify-content: start;
     align-items: start;
     color: white;
     background-color: #001a4e;
-    width: 100%;
+    /* width: 100%; */
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
     border-radius: 10px;
-    max-width: 450px;
+    
+    /* max-width: 250px; */
     min-height: 500px;
 
 
@@ -790,7 +819,11 @@ body {
 
 .conts {
     display: flex;
+    align-items: center;
+    justify-content: start;
     /* flex-direction: column; */
+    width: 100%;
+    max-width: 700px;
     gap: 30px;
 
 }
@@ -834,7 +867,7 @@ body {
     #cartBtn {
         position: fixed;
         top: 50px;
-        right: 80px;
+        right: 20px;
         height: 28px;
         z-index: 999;
         width: 28px;
@@ -935,6 +968,8 @@ body {
     .product{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         gap: 60px;
         max-width: 320px;
@@ -949,16 +984,51 @@ body {
         max-width: 290px;
         /* flex-direction: column; */
     }
-    .specbox.specbox1{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        max-width: 600px;
+    .specbox.specbox1{  
         margin-top: 10px;
         gap: 35px;
  
         
     }
+    .speclabel.specValue{
+        width: 200px;
+    }
+    .feedBackContainer{
+        flex-direction: column;
+        margin: 0;
+       
+        
+    }
+    .feedbackForm{
+        width: 100%;
+        max-width: 400px;
+
+    }
+    .feedbackDetails{
+        width: 100%;
+        max-width: 320px;
+    }
+    .boxContainer{
+        width: 100%;
+        margin-top: 10px;
+        max-width: 320px;
+    }
+    .rightBox{
+    width: 100%;
+    max-width: 300px;
+}
+/* .userBox{
+    width: 100%;
+} */
+
+    .userBox{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    
+   
+
     
 
 }

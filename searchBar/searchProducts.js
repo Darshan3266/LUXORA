@@ -583,7 +583,7 @@ const products = [
         price: 7545,
         taxTxt: `Inclusive of all taxes`,
         category: "Luxury Sports",
-        collection: "Silver Prestige Collection",
+        collection: "Gold Prestige Collection",
         availability: "In Stock",
         image: "../productsLists/Watch_assets/18.jpeg",
         about: "Golden blue edition representing fine Swiss craftsmanship.",
@@ -615,8 +615,10 @@ const products = [
         brand: "../assets/patek philppe logo.png",
         name: "Patek Philippe Silver",
         taxTxt: `Inclusive of all taxes`,
+        collection: "Silver Prestige Collection",
         price: 7545,
         category: "Classic",
+        availability: "In Stock",
         image: "../productsLists/Watch_assets/19.jpeg",
         about: "Golden silver edition with elegant and refined styling.",
         sideImg: "../productsLists/products_assets/pateksliver19.png",
@@ -852,7 +854,7 @@ ratingBtns.forEach(rating => {
             box.innerHTML = `
             <div class="conts">
            <img src="../assets/user_profile.png" width="40px" height="40px">
-              <h3>${userInput.value}</h3></div>
+              <p>${userInput.value}</p></div>
               <div class="downConts">
           <p>${ratingCount}</p>
      
