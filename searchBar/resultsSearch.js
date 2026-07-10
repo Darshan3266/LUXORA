@@ -176,7 +176,7 @@ const products = [
 
   {
     id: 6,
-    brand:"../assets/cartier.png",
+    brand: "../assets/cartier.png",
     name: "Cartier Santos",
     price: 7200,
     taxTxt: `Inclusive of all taxes`,
@@ -268,7 +268,7 @@ const products = [
     brand: "../assets/logo1.png ",
 
     name: "Luxora Midnight Crown",
-    price:28345 ,
+    price: 28345,
     taxTxt: `Inclusive of all taxes`,
     category: "Luxury Sports",
     collection: "Luxora Elite Collection",
@@ -651,30 +651,23 @@ const products = [
 const parms = new URLSearchParams(window.location.search);
 const getId = parms.get("id");
 
-if (getId) {
-    const product = products.find(item =>
-        item.id == getId
-        
-        
-    );
-}
+const productIds = JSON.parse(localStorage.getItem("productIds"))||[];
 
-else {
-    const results = JSON.parse(localStorage.getItem("products1"));
-    const container = document.getElementById("productsCont");
+const container = document.getElementById("productsCont");
 
+productIds.forEach(id => {
 
+  const product = products.find(item =>
+    item.id == id
+
+  );
+  if (!product) return;
 
 
 
-    results.forEach(product => {
-        console.log(product.image);
-        console.log(product.brand);
-        
-
-        const card = document.createElement("div");
-        card.classList.add("card");
-        card.innerHTML = `<img  id="productImg" src="${product.image}">
+  const card = document.createElement("div");
+  card.classList.add("card");
+  card.innerHTML = `<img  id="productImg" src="${product.image}">
         <div>
            <img src="${product.brand}">
             <h2>${product.name}</h2>
@@ -684,19 +677,19 @@ else {
                </div>`
 
 
-        container.appendChild(card);
+  container.appendChild(card);
 
 
-        card.addEventListener("click", () => {
+  card.addEventListener("click", () => {
 
-            window.location.href = `./searchProducts.html?id=${product.id}`
-            container.appendChild(card);
-        })
-
-
-    }
+    window.location.href = `./searchProducts.html?id=${product.id}`
+    container.appendChild(card);
+  })
 
 
-    )
 }
+
+
+)
+
 

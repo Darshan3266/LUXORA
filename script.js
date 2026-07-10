@@ -328,7 +328,7 @@ const products = [
     brand: "./assets/logo1.png ",
 
     name: "Luxora Midnight Crown",
-    price:28345 ,
+    price: 28345,
     taxTxt: `Inclusive of all taxes`,
     category: "Luxury Sports",
     collection: "Luxora Elite Collection",
@@ -365,7 +365,7 @@ const products = [
     id: 10,
     brand: "./assets/logo1.png ",
     name: "Luxora Imperial Chrono",
-    price:28345 ,
+    price: 28345,
     taxTxt: `Inclusive of all taxes`,
     category: "Chronograph",
     collection: "Ocean Master Collection",
@@ -726,7 +726,7 @@ searchInput.addEventListener("input", () => {
 
   results.slice(0, 5).forEach(product => {
 
-  
+
     const itemBox = document.createElement("div");
     itemBox.classList.add("itemBox");
 
@@ -782,10 +782,15 @@ searchBtn.addEventListener("click", () => {
   const products1 = products.filter(item => item.name.toLowerCase().includes(searchValues));
 
   if (products1.length > 0) {
-    localStorage.setItem("products1", JSON.stringify(products1));
-    window.location.href = `./searchBar/resultsSearch.html`;
-    console.log(products1);
+    const productIds = products1.map(product => product.id);
+ 
     
+    
+
+    localStorage.setItem("productIds", JSON.stringify(productIds))
+    window.location.href = `./searchBar/resultsSearch.html`;
+
+
   }
   else {
 
@@ -811,7 +816,7 @@ cards.forEach((card) => {
     const id = card.dataset.id;
     // window.location.href=`products/products.html?id=${id}`;
     // window.location.href = `./redirect-links/product-details.html?id=${id} `
-      window.location.href = `./searchBar/searchProducts.html?id=${id} `
+    window.location.href = `./searchBar/searchProducts.html?id=${id} `
 
 
 
@@ -823,13 +828,10 @@ const cards1 = document.querySelectorAll(".card1");
 
 cards1.forEach((card1) => {
   card1.addEventListener("click", () => {
-    const id1 = card1.dataset.id;    
+    const id1 = card1.dataset.id;
     // window.location.href=`products/products.html?id=${id}`;
     // window.location.href = `./redirect-links/product-details.html?id=${id1} `
-      window.location.href = `./searchBar/searchProducts.html?id=${id1} `
-
-
-
+    window.location.href = `./searchBar/searchProducts.html?id=${id1} `
 
   })
 })
@@ -838,28 +840,28 @@ cards1.forEach((card1) => {
 
 
 
-const exploreBtn=document.querySelectorAll(".exploreBtn");
+const exploreBtn = document.querySelectorAll(".exploreBtn");
 
 
-exploreBtn.forEach((btns)=>{
-btns.addEventListener("click",()=>{
-    const ids3 = btns.dataset.id;    
+exploreBtn.forEach((btns) => {
+  btns.addEventListener("click", () => {
+    const ids3 = btns.dataset.id;
 
-      window.location.href = `./searchBar/searchProducts.html?id=${ids3} `
+    window.location.href = `./searchBar/searchProducts.html?id=${ids3} `
 
 
 
+
+  })
 
 })
 
-})
 
 
 
-
-const cartSection=document.getElementById("carts");
-cartSection.addEventListener("click",()=>{
-  window.location.href=`./carts/cart.html`
+const cartSection = document.getElementById("carts");
+cartSection.addEventListener("click", () => {
+  window.location.href = `./carts/cart.html`
 })
 
 
