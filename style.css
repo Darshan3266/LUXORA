@@ -22,14 +22,17 @@
     font-family: 'Playfairs-MediumItalic';
     src: url(./fonts/PlayfairDisplay-MediumItalic.ttf)
 }
+
 @font-face {
     font-family: 'Playwrite-ExtraLight';
     src: url(./fonts/PlaywriteIE-ExtraLight.ttf)
 }
+
 @font-face {
     font-family: 'Playwrite-Light';
     src: url(./fonts/PlaywriteIE-Light.ttf)
 }
+
 @font-face {
     font-family: 'Playwrite-Thin';
     src: url(./fonts/PlaywriteIE-Thin.ttf)
@@ -101,21 +104,25 @@
     font-family: 'TrioKannada-Italic';
     src: url(./fonts/TiroKannada-Italic.ttf);
 }
+
 @font-face {
 
     font-family: 'TrioKannada-Regular';
     src: url(./fonts/TiroKannada-Regular.ttf);
 }
+
 @font-face {
 
     font-family: 'Playwrite-varaible';
     src: url(./fonts/PlaywriteIE-VariableFont_wght.ttf);
 }
+
 @font-face {
 
     font-family: 'PoppinsMedium';
     src: url(./fonts/Poppins-Medium.ttf);
 }
+
 @font-face {
 
     font-family: '';
@@ -473,26 +480,30 @@ body {
 }
 
 @keyframes bgFade {
-   0%{
-    background-position: 100% 50%;
-   }
-   25%{
-    background-position: 50% 100%;
-   }
-   50%{
-    background-position: 150% 50%;
+    0% {
+        background-position: 100% 50%;
+    }
+
+    25% {
+        background-position: 50% 100%;
+    }
+
+    50% {
+        background-position: 150% 50%;
 
 
-   }
-   75%{
-    background-position: 50% 0%;
-   }
-   100%{
-    background-position: 0% 50%;
-   }
+    }
+
+    75% {
+        background-position: 50% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 
 
-       
+
 }
 
 
@@ -762,6 +773,7 @@ body {
 }
 
 #viewAllBtn {
+    
     padding: 10px 25px;
     border-radius: 10px;
     border: none;
@@ -2015,13 +2027,13 @@ body {
 
 
 
-.fadeLeft{
+.fadeLeft {
     opacity: 0;
     transform: translateX(20px);
     transition: all 1s ease
-
 }
-.fadeLeft.showLeft{
+
+.fadeLeft.showLeft {
     opacity: 1;
     transform: translateY(0);
 }
@@ -2049,7 +2061,7 @@ body {
     /* border: 2px solid #c2a6e4de; */
     margin-top: 10px;
     max-width: 320px;
-    background: linear-gradient(135deg,#66a7e8,#010d27,#094454,#b1d4f8);
+    background: linear-gradient(135deg, #66a7e8, #010d27, #094454, #b1d4f8);
 
 
     /* background-color: #ffd700; */
@@ -2083,18 +2095,20 @@ body {
     /* flex-direction: column; */
 }
 
-.itemBox p{
-   font-family: 'Poppins';
-   font-size: 1rem;
+.itemBox p {
+    font-family: 'Poppins';
+    font-size: 1rem;
 }
-.goldTxt{
+
+.goldTxt {
     color: #fff5d4;
-   
+
     font-size: 1.2rem;
-   
+
     font-family: 'GreatVibes';
     font-weight: bold;
 }
+
 .itemBox:hover {
     /* background:linear-gradient(135deg,#00447b,#001925,#021824); */
     background: linear-gradient(135deg, #13a1ab, #010241, #0384bb, #000b15);
@@ -2127,15 +2141,13 @@ body {
 @media (max-width:568px) {
 
     .container {
-        /* width: 100%;
-        max-width: 475px; */
 
-           background: linear-gradient(92deg, rgba(0 0 0,0.89), #0000005e, rgb(0 0 0)), url("./assets/Luxora_Banners.webp");
+        background: linear-gradient(92deg, rgba(0 0 0, 0.89), #0000005e, rgb(0 0 0)), url("./assets/Luxora_Banners.webp");
         background-position: 45% center;
         background-attachment: scroll;
         background-repeat: no-repeat;
-        background-size: 350%;
-        min-height: 100vh;
+        background-size: 450%;
+        min-height: 120vh;
     }
 
 
@@ -2180,7 +2192,7 @@ body {
         padding-left: 10px;
     }
 
-    .searchLogo img{
+    .searchLogo img {
         height: 13px;
         width: 13px;
         position: absolute;
@@ -2276,17 +2288,14 @@ body {
         height: 450px;
         margin: 50px auto;
         /* margin: 90px 0px 0px 30px; */
-        padding:60px 0px 0px 30px
-       
-
-
+        padding: 60px 0px 0px 30px
     }
- 
+
 
     #bannerHead {
         font-size: 1.8rem;
         line-height: 1.4;
-      
+
 
 
     }
@@ -2954,20 +2963,24 @@ body {
         /* max-width: 300px; */
     }
 
-    #suggestions{
+    #suggestions {
         width: 100%;
-        max-width: 220px;
-        
+        max-width: 200px;
+       position: absolute;
+       right: 90px;
+
     }
-    .itemBox{
+
+    .itemBox {
         gap: 3px;
     }
-    .itemBox p{
+
+    .itemBox p {
         font-size: 0.8rem;
     }
-    
 
-   
+
+
 
 
 

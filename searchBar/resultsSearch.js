@@ -666,7 +666,11 @@ else {
 
 
 
+
     results.forEach(product => {
+        console.log(product.image);
+        console.log(product.brand);
+        
 
         const card = document.createElement("div");
         card.classList.add("card");
