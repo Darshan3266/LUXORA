@@ -187,7 +187,7 @@ body {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1250px;
 
     z-index: 999;
     top: 0;
@@ -196,7 +196,7 @@ body {
 
 .navLinks {
     display: flex;
-    gap: 35px;
+    gap: 30px;
 }
 
 .navLinks a {

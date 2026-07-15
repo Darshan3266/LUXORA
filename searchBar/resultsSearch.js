@@ -633,7 +633,7 @@ productIds.forEach((id) => {
 
   const card = document.createElement("div");
   card.classList.add("card");
-  card.innerHTML = `<img  id="productImg" src="${product.image}">
+  card.innerHTML = `<img  id="productImg"  loading="lazy" src="${product.image}">
         <div>
            <img src="${product.brand}">
             <h2>${product.name}</h2>

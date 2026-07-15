@@ -628,7 +628,7 @@ const product = products.forEach((p) => {
   card.classList.add("card");
 
   card.innerHTML = ` 
-            <img id="productImg"  src="${p.image}">
+            <img id="productImg" loading="lazy" src="${p.image}">
             <div>
             <img src="${p.brand}">
             <h2>${p.name}</h2>
