@@ -1,16 +1,11 @@
-
 //dropmenu btn for mobile responivenss
 const menuBox = document.getElementById("menuBox");
 function menuBar() {
   if (menuBox.style.display === "none") {
     menuBox.style.display = "block";
-
-
+  } else {
+    menuBox.style.display = "none";
   }
-  else {
-    menuBox.style.display = "none"
-  }
-
 }
 
 //scrollBtn in homepage
@@ -19,38 +14,35 @@ const scrollbtn = document.getElementById("scrollBtn");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
     scrollbtn.style.display = "block";
-
-  }
-  else {
+  } else {
     scrollbtn.style.display = "none";
   }
-})
+});
 
 //fade scroll animation
 const fadeConts = document.querySelectorAll(".fade-up");
 const fadeContsLeft = document.querySelectorAll(".fadeLeft");
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-
-      entry.target.classList.add("show");
-      entry.target.classList.add("showLeft");
-    }
-  });
-}, {
-  threshold: 0.3
-})
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        entry.target.classList.add("showLeft");
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  },
+);
 fadeConts.forEach((elements) => {
   observer.observe(elements);
-
 });
 fadeContsLeft.forEach((elements) => {
   observer.observe(elements);
-
 });
 
 //Search functionality
-
 
 //set of products
 //input to lowercase
@@ -59,16 +51,14 @@ fadeContsLeft.forEach((elements) => {
 //shows the product name to div
 //append the values to div
 
-
-
-
 const products = [
   {
     id: 1,
     brand: "./assets/rolex logo.png",
     name: "Rolex Submariner",
     price: 12500,
-    about: "An iconic luxury diving watch known for its timeless design and durability.",
+    about:
+      "An iconic luxury diving watch known for its timeless design and durability.",
     taxTxt: `Inclusive of all taxes`,
     category: "Diving",
     collection: "Submariner",
@@ -84,7 +74,7 @@ const products = [
       caseMaterial: "Oystersteel",
       strapMaterial: "Oyster Bracelet",
       waterResistance: "300m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -92,8 +82,8 @@ const products = [
       "Diving Bezel",
       "Chronometer Certified",
       "Scratch Resistant",
-      "Preminum Quality"
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -117,7 +107,7 @@ const products = [
       caseMaterial: "Stainless Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "50m",
-      glass: "Hesalite Crystal"
+      glass: "Hesalite Crystal",
     },
 
     features: [
@@ -125,9 +115,8 @@ const products = [
       "Chronograph Function",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -151,7 +140,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Integrated Bracelet",
       waterResistance: "120m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -159,10 +148,8 @@ const products = [
       "Swiss Made",
       "Premium Finish",
       "Elegant Styling",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -186,7 +173,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Leather Strap",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -194,10 +181,8 @@ const products = [
       "Square Dial Design",
       "Chronograph Function",
       "Swiss Made",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -221,7 +206,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Integrated Bracelet",
       waterResistance: "50m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -229,9 +214,8 @@ const products = [
       "Swiss Made",
       "Luxury Sports Design",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -255,7 +239,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -263,9 +247,8 @@ const products = [
       "Aviation Heritage",
       "Swiss Made",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -309,7 +292,7 @@ const products = [
       caseMaterial: "Oystersteel",
       strapMaterial: "Oyster Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -317,10 +300,8 @@ const products = [
       "Chronograph Function",
       "Swiss Made",
       "Chronometer Certified",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -347,7 +328,7 @@ const products = [
       caseMaterial: "Stainless Steel",
       strapMaterial: "Premium Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -355,10 +336,8 @@ const products = [
       "Scratch Resistant",
       "5-Year Warranty",
       "Luxury Design",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -382,7 +361,7 @@ const products = [
       caseMaterial: "Stainless Steel",
       strapMaterial: "Premium Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -390,10 +369,8 @@ const products = [
       "Scratch Resistant",
       "5-Year Warranty",
       "Luxury Design",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -417,7 +394,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "300m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -425,10 +402,8 @@ const products = [
       "Helium Escape Valve",
       "Swiss Made",
       "Chronometer Certified",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   // Products of cards
@@ -453,7 +428,7 @@ const products = [
       caseMaterial: "Oystersteel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -461,11 +436,10 @@ const products = [
       "Chronograph Function",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-
+      "Preminum Quality",
     ],
 
-    about: "Modern green edition inspired by luxury motorsport."
+    about: "Modern green edition inspired by luxury motorsport.",
   },
 
   {
@@ -489,7 +463,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "50m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -497,9 +471,8 @@ const products = [
       "Swiss Made",
       "Elegant Styling",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -518,12 +491,13 @@ const products = [
     ratings: "⭐⭐⭐⭐",
     ratingsNo: "4.8 (124 reviews)",
     cartButton: "Add to Cart",
-    buyButton: "Buy Now", specifications: {
+    buyButton: "Buy Now",
+    specifications: {
       movement: "Automatic",
       caseMaterial: "Oystersteel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -531,10 +505,8 @@ const products = [
       "Swiss Made",
       "Premium Finish",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -558,7 +530,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -566,9 +538,8 @@ const products = [
       "Sporty Design",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -592,7 +563,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "120m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -600,9 +571,8 @@ const products = [
       "Swiss Made",
       "Luxury Finish",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -626,7 +596,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Leather Strap",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -634,9 +604,8 @@ const products = [
       "Chronograph Function",
       "Square Dial Design",
       "Swiss Made",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -660,7 +629,7 @@ const products = [
       caseMaterial: "18K Gold",
       strapMaterial: "Steel Bracelet",
       waterResistance: "150m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -668,9 +637,8 @@ const products = [
       "Luxury Sports Design",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -692,7 +660,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "120m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -700,114 +668,89 @@ const products = [
       "Swiss Made",
       "Elegant Styling",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
-  }
-
+      "Preminum Quality",
+    ],
+  },
 ];
-
 
 const searchInput = document.getElementById("inputDisplay");
 const suggest = document.getElementById("suggestions");
 
 searchInput.addEventListener("input", () => {
-
-
   const searchValues = searchInput.value.toLowerCase();
   suggest.innerHTML = "";
   if (searchValues === "") {
-    return
-
+    return;
   }
 
-  const results = products.filter(p => p.name.toLowerCase().includes(searchValues));
+  const results = products.filter((p) =>
+    p.name.toLowerCase().includes(searchValues),
+  );
 
-
-  results.slice(0, 5).forEach(product => {
-
-
+  results.slice(0, 5).forEach((product) => {
     const itemBox = document.createElement("div");
     itemBox.classList.add("itemBox");
 
+    const itemImg = document.createElement("img");
+    itemImg.classList.add("itemImg");
 
-    const itemImg = document.createElement("img")
-    itemImg.classList.add("itemImg")
-
-    itemBox.append(itemImg)
+    itemBox.append(itemImg);
 
     const itemName = document.createElement("p");
     itemName.textContent = product.name;
-    itemImg.src = `${product.image}`
+    itemImg.src = `${product.image}`;
 
     itemBox.addEventListener("click", () => {
-      window.location.href = `./searchBar/searchProducts.html?id=${product.id} `
-      suggest.innerHTML = ""
-    })
-    itemBox.appendChild(itemName)
+      window.location.href = `./searchBar/searchProducts.html?id=${product.id} `;
+      suggest.innerHTML = "";
+    });
+    itemBox.appendChild(itemName);
     suggest.appendChild(itemBox);
     if (product.name.includes("Luxora")) {
       const goldPar = document.createElement("p");
-      goldPar.classList.add("goldTxt")
-      goldPar.textContent = `#Editon Watch`
+      goldPar.classList.add("goldTxt");
+      goldPar.textContent = `#Editon Watch`;
 
-      itemBox.style.background = "linear-gradient(345deg, #8b4104, #f4be0b, #e5be4f, #281c00)";
+      itemBox.style.background =
+        "linear-gradient(345deg, #8b4104, #f4be0b, #e5be4f, #281c00)";
       itemBox.addEventListener("mouseover", () => {
-        itemBox.style.background = 'linear-gradient(135deg, #ff1d1d, #f4be0b, #e06100, #6e4d00)';
-
-      })
+        itemBox.style.background =
+          "linear-gradient(135deg, #ff1d1d, #f4be0b, #e06100, #6e4d00)";
+      });
       itemBox.addEventListener("mouseout", () => {
-        itemBox.style.background = 'linear-gradient(135deg, #ff831d, #f4be0b, #ffd560, #6e4d00)';
-
-
-      })
+        itemBox.style.background =
+          "linear-gradient(135deg, #ff831d, #f4be0b, #ffd560, #6e4d00)";
+      });
 
       itemBox.appendChild(goldPar);
-
     }
-
-
   });
-
-
-
 });
 const searchBtn = document.getElementById("searchBtn");
 searchBtn.addEventListener("click", () => {
-  const searchValues = searchInput.value.trim().toLowerCase()
+  const searchValues = searchInput.value.trim().toLowerCase();
   if (searchValues === "" || searchValues.length < 2) {
     alert("Invalid Inputs");
-    return
+    return;
   }
-  const products1 = products.filter(item => item.name.toLowerCase().includes(searchValues));
+  const products1 = products.filter((item) =>
+    item.name.toLowerCase().includes(searchValues),
+  );
 
   if (products1.length > 0) {
-    const productIds = products1.map(product => product.id);
- 
-    
-    
+    const productIds = products1.map((product) => product.id);
 
-    localStorage.setItem("productIds", JSON.stringify(productIds))
+    localStorage.setItem("productIds", JSON.stringify(productIds));
     window.location.href = `./searchBar/resultsSearch.html`;
-
-
+  } else {
+    alert("Sry!! No watches found.");
   }
-  else {
-
-
-    alert("Sry!! No watches found.")
-  }
-
-
-})
-
+});
 
 const viewBtn = document.getElementById("viewAllBtn");
 viewBtn.addEventListener("click", () => {
-  window.location.href = `productsLists/products.html`
-})
-
-
+  window.location.href = `productsLists/products.html`;
+});
 
 const cards = document.querySelectorAll(".card");
 
@@ -816,13 +759,9 @@ cards.forEach((card) => {
     const id = card.dataset.id;
     // window.location.href=`products/products.html?id=${id}`;
     // window.location.href = `./redirect-links/product-details.html?id=${id} `
-    window.location.href = `./searchBar/searchProducts.html?id=${id} `
-
-
-
-
-  })
-})
+    window.location.href = `./searchBar/searchProducts.html?id=${id} `;
+  });
+});
 
 const cards1 = document.querySelectorAll(".card1");
 
@@ -831,38 +770,21 @@ cards1.forEach((card1) => {
     const id1 = card1.dataset.id;
     // window.location.href=`products/products.html?id=${id}`;
     // window.location.href = `./redirect-links/product-details.html?id=${id1} `
-    window.location.href = `./searchBar/searchProducts.html?id=${id1} `
-
-  })
-})
-
-
-
-
+    window.location.href = `./searchBar/searchProducts.html?id=${id1} `;
+  });
+});
 
 const exploreBtn = document.querySelectorAll(".exploreBtn");
-
 
 exploreBtn.forEach((btns) => {
   btns.addEventListener("click", () => {
     const ids3 = btns.dataset.id;
 
-    window.location.href = `./searchBar/searchProducts.html?id=${ids3} `
-
-
-
-
-  })
-
-})
-
-
-
+    window.location.href = `./searchBar/searchProducts.html?id=${ids3} `;
+  });
+});
 
 const cartSection = document.getElementById("carts");
 cartSection.addEventListener("click", () => {
-  window.location.href = `./carts/cart.html`
-})
-
-
-
+  window.location.href = `./carts/cart.html`;
+});

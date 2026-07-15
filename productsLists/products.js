@@ -1,11 +1,11 @@
-
 const products = [
   {
     id: 1,
     brand: "../assets/rolex logo.png",
     name: "Rolex Submariner",
     price: 12500,
-    about: "An iconic luxury diving watch known for its timeless design and durability.",
+    about:
+      "An iconic luxury diving watch known for its timeless design and durability.",
     taxTxt: `Inclusive of all taxes`,
     category: "Diving",
     collection: "Submariner",
@@ -21,7 +21,7 @@ const products = [
       caseMaterial: "Oystersteel",
       strapMaterial: "Oyster Bracelet",
       waterResistance: "300m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -29,8 +29,8 @@ const products = [
       "Diving Bezel",
       "Chronometer Certified",
       "Scratch Resistant",
-      "Preminum Quality"
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -54,7 +54,7 @@ const products = [
       caseMaterial: "Stainless Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "50m",
-      glass: "Hesalite Crystal"
+      glass: "Hesalite Crystal",
     },
 
     features: [
@@ -62,9 +62,8 @@ const products = [
       "Chronograph Function",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -88,7 +87,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Integrated Bracelet",
       waterResistance: "120m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -96,10 +95,8 @@ const products = [
       "Swiss Made",
       "Premium Finish",
       "Elegant Styling",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -123,7 +120,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Leather Strap",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -131,10 +128,8 @@ const products = [
       "Square Dial Design",
       "Chronograph Function",
       "Swiss Made",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -158,7 +153,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Integrated Bracelet",
       waterResistance: "50m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -166,14 +161,13 @@ const products = [
       "Swiss Made",
       "Luxury Sports Design",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
     id: 6,
-    brand:"../assets/cartier.png",
+    brand: "../assets/cartier.png",
     name: "Cartier Santos",
     price: 7200,
     taxTxt: `Inclusive of all taxes`,
@@ -192,7 +186,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -200,9 +194,8 @@ const products = [
       "Aviation Heritage",
       "Swiss Made",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -246,7 +239,7 @@ const products = [
       caseMaterial: "Oystersteel",
       strapMaterial: "Oyster Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -254,10 +247,8 @@ const products = [
       "Chronograph Function",
       "Swiss Made",
       "Chronometer Certified",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -265,7 +256,7 @@ const products = [
     brand: "../assets/logo1.png ",
 
     name: "Luxora Midnight Crown",
-    price:28345 ,
+    price: 28345,
     taxTxt: `Inclusive of all taxes`,
     category: "Luxury Sports",
     collection: "Luxora Elite Collection",
@@ -284,7 +275,7 @@ const products = [
       caseMaterial: "Stainless Steel",
       strapMaterial: "Premium Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -292,10 +283,8 @@ const products = [
       "Scratch Resistant",
       "5-Year Warranty",
       "Luxury Design",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -319,7 +308,7 @@ const products = [
       caseMaterial: "Stainless Steel",
       strapMaterial: "Premium Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -327,10 +316,8 @@ const products = [
       "Scratch Resistant",
       "5-Year Warranty",
       "Luxury Design",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -354,7 +341,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "300m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -362,10 +349,8 @@ const products = [
       "Helium Escape Valve",
       "Swiss Made",
       "Chronometer Certified",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   // Products of cards
@@ -390,7 +375,7 @@ const products = [
       caseMaterial: "Oystersteel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -398,11 +383,10 @@ const products = [
       "Chronograph Function",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-
+      "Preminum Quality",
     ],
 
-    about: "Modern green edition inspired by luxury motorsport."
+    about: "Modern green edition inspired by luxury motorsport.",
   },
 
   {
@@ -426,7 +410,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "50m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -434,9 +418,8 @@ const products = [
       "Swiss Made",
       "Elegant Styling",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -455,12 +438,13 @@ const products = [
     ratings: "⭐⭐⭐⭐",
     ratingsNo: "4.8 (124 reviews)",
     cartButton: "Add to Cart",
-    buyButton: "Buy Now", specifications: {
+    buyButton: "Buy Now",
+    specifications: {
       movement: "Automatic",
       caseMaterial: "Oystersteel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -468,10 +452,8 @@ const products = [
       "Swiss Made",
       "Premium Finish",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -495,7 +477,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -503,9 +485,8 @@ const products = [
       "Sporty Design",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -529,7 +510,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "120m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -537,9 +518,8 @@ const products = [
       "Swiss Made",
       "Luxury Finish",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -563,7 +543,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Leather Strap",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -571,9 +551,8 @@ const products = [
       "Chronograph Function",
       "Square Dial Design",
       "Swiss Made",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -597,7 +576,7 @@ const products = [
       caseMaterial: "18K Gold",
       strapMaterial: "Steel Bracelet",
       waterResistance: "150m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -605,9 +584,8 @@ const products = [
       "Luxury Sports Design",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -629,7 +607,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "120m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -637,24 +615,19 @@ const products = [
       "Swiss Made",
       "Elegant Styling",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
-  }
-
+      "Preminum Quality",
+    ],
+  },
 ];
 
-const product = products.forEach(p => {
-    const productsCont = document.getElementById("productsCont");
+const product = products.forEach((p) => {
+  const productsCont = document.getElementById("productsCont");
 
+  const card = document.createElement("div");
 
+  card.classList.add("card");
 
-    const card = document.createElement("div");
-
-    card.classList.add("card");
-
-
-    card.innerHTML = ` 
+  card.innerHTML = ` 
             <img id="productImg"  src="${p.image}">
             <div>
             <img src="${p.brand}">
@@ -662,20 +635,12 @@ const product = products.forEach(p => {
              <p id="pricePar">₹ ${p.price.toLocaleString()}</p>
               <p id="categoryPar">${p.category}</p>
                <p id="aboutPar">${p.about}</p>
-               </div>`
+               </div>`;
 
- 
-    card.addEventListener("click", () => {
-        //   window.location.href = `./searchBar/searchProducts.html?id=${p.id} `
-        window.location.href = `/searchBar/searchProducts.html?id=${p.id}`
-       
+  card.addEventListener("click", () => {
+    //   window.location.href = `./searchBar/searchProducts.html?id=${p.id} `
+    window.location.href = `/searchBar/searchProducts.html?id=${p.id}`;
+  });
 
-
-    });
-  
-
-        productsCont.appendChild(card);
-        
-
+  productsCont.appendChild(card);
 });
-

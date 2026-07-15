@@ -1,14 +1,11 @@
-
-
-
-
 const products = [
   {
     id: 1,
     brand: "../assets/rolex logo.png",
     name: "Rolex Submariner",
     price: 12500,
-    about: "An iconic luxury diving watch known for its timeless design and durability.",
+    about:
+      "An iconic luxury diving watch known for its timeless design and durability.",
     taxTxt: `Inclusive of all taxes`,
     category: "Diving",
     collection: "Submariner",
@@ -24,7 +21,7 @@ const products = [
       caseMaterial: "Oystersteel",
       strapMaterial: "Oyster Bracelet",
       waterResistance: "300m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -32,8 +29,8 @@ const products = [
       "Diving Bezel",
       "Chronometer Certified",
       "Scratch Resistant",
-      "Preminum Quality"
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -57,7 +54,7 @@ const products = [
       caseMaterial: "Stainless Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "50m",
-      glass: "Hesalite Crystal"
+      glass: "Hesalite Crystal",
     },
 
     features: [
@@ -65,9 +62,8 @@ const products = [
       "Chronograph Function",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -91,7 +87,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Integrated Bracelet",
       waterResistance: "120m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -99,10 +95,8 @@ const products = [
       "Swiss Made",
       "Premium Finish",
       "Elegant Styling",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -126,7 +120,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Leather Strap",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -134,10 +128,8 @@ const products = [
       "Square Dial Design",
       "Chronograph Function",
       "Swiss Made",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -161,7 +153,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Integrated Bracelet",
       waterResistance: "50m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -169,9 +161,8 @@ const products = [
       "Swiss Made",
       "Luxury Sports Design",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -195,7 +186,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -203,9 +194,8 @@ const products = [
       "Aviation Heritage",
       "Swiss Made",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -249,7 +239,7 @@ const products = [
       caseMaterial: "Oystersteel",
       strapMaterial: "Oyster Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -257,10 +247,8 @@ const products = [
       "Chronograph Function",
       "Swiss Made",
       "Chronometer Certified",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -287,7 +275,7 @@ const products = [
       caseMaterial: "Stainless Steel",
       strapMaterial: "Premium Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -295,10 +283,8 @@ const products = [
       "Scratch Resistant",
       "5-Year Warranty",
       "Luxury Design",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -322,7 +308,7 @@ const products = [
       caseMaterial: "Stainless Steel",
       strapMaterial: "Premium Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -330,10 +316,8 @@ const products = [
       "Scratch Resistant",
       "5-Year Warranty",
       "Luxury Design",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -357,7 +341,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "300m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -365,10 +349,8 @@ const products = [
       "Helium Escape Valve",
       "Swiss Made",
       "Chronometer Certified",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   // Products of cards
@@ -393,7 +375,7 @@ const products = [
       caseMaterial: "Oystersteel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -401,11 +383,10 @@ const products = [
       "Chronograph Function",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-
+      "Preminum Quality",
     ],
 
-    about: "Modern green edition inspired by luxury motorsport."
+    about: "Modern green edition inspired by luxury motorsport.",
   },
 
   {
@@ -429,7 +410,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "50m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -437,9 +418,8 @@ const products = [
       "Swiss Made",
       "Elegant Styling",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -458,12 +438,13 @@ const products = [
     ratings: "⭐⭐⭐⭐",
     ratingsNo: "4.8 (124 reviews)",
     cartButton: "Add to Cart",
-    buyButton: "Buy Now", specifications: {
+    buyButton: "Buy Now",
+    specifications: {
       movement: "Automatic",
       caseMaterial: "Oystersteel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -471,10 +452,8 @@ const products = [
       "Swiss Made",
       "Premium Finish",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
-
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -498,7 +477,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -506,9 +485,8 @@ const products = [
       "Sporty Design",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -532,7 +510,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "120m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -540,9 +518,8 @@ const products = [
       "Swiss Made",
       "Luxury Finish",
       "Scratch Resistant",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -566,7 +543,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Leather Strap",
       waterResistance: "100m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -574,9 +551,8 @@ const products = [
       "Chronograph Function",
       "Square Dial Design",
       "Swiss Made",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -600,7 +576,7 @@ const products = [
       caseMaterial: "18K Gold",
       strapMaterial: "Steel Bracelet",
       waterResistance: "150m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -608,9 +584,8 @@ const products = [
       "Luxury Sports Design",
       "Swiss Made",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
+      "Preminum Quality",
+    ],
   },
 
   {
@@ -632,7 +607,7 @@ const products = [
       caseMaterial: "Steel",
       strapMaterial: "Steel Bracelet",
       waterResistance: "120m",
-      glass: "Sapphire Crystal"
+      glass: "Sapphire Crystal",
     },
 
     features: [
@@ -640,30 +615,21 @@ const products = [
       "Swiss Made",
       "Elegant Styling",
       "Premium Finish",
-      "Preminum Quality"
-
-    ]
-  }
-
+      "Preminum Quality",
+    ],
+  },
 ];
-
 
 const parms = new URLSearchParams(window.location.search);
 const getId = parms.get("id");
 
-const productIds = JSON.parse(localStorage.getItem("productIds"))||[];
+const productIds = JSON.parse(localStorage.getItem("productIds")) || [];
 
 const container = document.getElementById("productsCont");
 
-productIds.forEach(id => {
-
-  const product = products.find(item =>
-    item.id == id
-
-  );
+productIds.forEach((id) => {
+  const product = products.find((item) => item.id == id);
   if (!product) return;
-
-
 
   const card = document.createElement("div");
   card.classList.add("card");
@@ -674,22 +640,12 @@ productIds.forEach(id => {
              <p id="pricePar">₹ ${product.price.toLocaleString()}</p>
               <p id="categoryPar">${product.category}</p>
                <p id="aboutPar">${product.about}</p>
-               </div>`
-
+               </div>`;
 
   container.appendChild(card);
 
-
   card.addEventListener("click", () => {
-
-    window.location.href = `./searchProducts.html?id=${product.id}`
+    window.location.href = `./searchProducts.html?id=${product.id}`;
     container.appendChild(card);
-  })
-
-
-}
-
-
-)
-
-
+  });
+});

@@ -9,115 +9,104 @@ body {
 }
 
 @font-face {
-    font-family: 'Playfairs-Italic';
-    src: url(W/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf)
+    font-family: "Playfairs-Italic";
+    src: url(W/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url(/fonts/NotoSerifKannada-ExtraBold.ttf)
+    font-family: "PlayfairDisplay";
+    src: url(/fonts/NotoSerifKannada-ExtraBold.ttf);
 }
 
 @font-face {
-    font-family: 'Playfairs-Italic';
-    src: url(/fonts/PlayfairDisplay-MediumItalic.ttf)
+    font-family: "Playfairs-Italic";
+    src: url(/fonts/PlayfairDisplay-MediumItalic.ttf);
 }
 
 @font-face {
-    font-family: 'PoppinsBold';
-    src: url(/fonts/Poppins-ExtraBold.ttf)
+    font-family: "PoppinsBold";
+    src: url(/fonts/Poppins-ExtraBold.ttf);
 }
 
 @font-face {
-    font-family: 'PoppinsBoldItalic';
-    src: url(/fonts/Poppins-BoldItalic.ttf)
+    font-family: "PoppinsBoldItalic";
+    src: url(/fonts/Poppins-BoldItalic.ttf);
 }
 
 @font-face {
-    font-family: 'GreatVibes';
-    src: url(/fonts/GreatVibes-Regular.ttf)
+    font-family: "GreatVibes";
+    src: url(/fonts/GreatVibes-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'PlayWrite-Regular';
-    src: url(/fonts/PlaywriteIE-Regular.ttf)
+    font-family: "PlayWrite-Regular";
+    src: url(/fonts/PlaywriteIE-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Allura-Regular';
-    src: url(/fonts/Allura-Regular.ttf)
+    font-family: "Allura-Regular";
+    src: url(/fonts/Allura-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Sekyua-Regular';
-    src: url(/fonts/Sekuya-Regular.ttf)
+    font-family: "Sekyua-Regular";
+    src: url(/fonts/Sekuya-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'NotoSerif';
+    font-family: "NotoSerif";
     src: url(/fonts/NotoSerifKannada-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: 'Poppins-bold';
+    font-family: "Poppins-bold";
     src: url(/fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Thin';
+    font-family: "Thin";
     src: url(/fonts/Poppins-ExtraLight.ttf);
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     src: url(/fonts/Poppins-Light.ttf);
 }
 
 @font-face {
-    font-family: 'Playfair';
+    font-family: "Playfair";
     src: url(/fonts/Poppins-ExtraBoldItalic.ttf);
 }
 
-
-
 @font-face {
-    font-family: 'Poppins-Extra';
+    font-family: "Poppins-Extra";
     src: url(/fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
-
-    font-family: 'Poppins-Extra-Bold';
+    font-family: "Poppins-Extra-Bold";
     src: url(./fonts/Poppins-ExtraBold.ttf);
 }
 
 @font-face {
-
-    font-family: 'TrioKannada-Italic';
+    font-family: "TrioKannada-Italic";
     src: url(./fonts/TiroKannada-Italic.ttf);
 }
 
 @font-face {
-
-    font-family: 'TrioKannada-Regular';
+    font-family: "TrioKannada-Regular";
     src: url(./fonts/TiroKannada-Regular.ttf);
 }
 
 @font-face {
-
-    font-family: 'Playwrite-varaible';
+    font-family: "Playwrite-varaible";
     src: url(./fonts/PlaywriteIE-VariableFont_wght.ttf);
 }
 
 @font-face {
-
-    font-family: 'PoppinsMedium';
+    font-family: "PoppinsMedium";
     src: url(./fonts/Poppins-Medium.ttf);
 }
-
-
-
-
 
 /* Products Styles */
 
@@ -128,8 +117,6 @@ body {
     gap: 20px;
     flex-direction: column;
 }
-
-
 
 @keyframes bgFade {
     0% {
@@ -142,8 +129,6 @@ body {
 
     50% {
         background-position: 100% 50%;
-
-
     }
 
     75% {
@@ -153,9 +138,6 @@ body {
     100% {
         background-position: 0% 50%;
     }
-
-
-
 }
 
 .card {
@@ -182,7 +164,6 @@ body {
     cursor: pointer;
 
     background: linear-gradient(135deg, #012f31, #4bdfdf, #174168);
-
 }
 
 .card div {
@@ -194,36 +175,28 @@ body {
     flex-direction: column;
     margin: 20px 0px 0px 50px;
     /* margin-top: 20px; */
-
 }
 
 @keyframes whiteFade {
     0% {
         filter: drop-shadow(2px 4px 5px #fffdfd);
-
     }
 
     25% {
         filter: drop-shadow(2px 4px 5px #08b1ff);
-
     }
 
     50% {
         filter: drop-shadow(2px 4px 5px #f9d6d6);
-
     }
 
     75% {
         filter: drop-shadow(2px 4px 5px #efb2b2);
-
-
     }
 
     100% {
         filter: drop-shadow(2px 4px 5px #fffdfd);
-
     }
-
 }
 
 #productImg {
@@ -233,27 +206,17 @@ body {
     height: 300px;
     max-width: 300px;
     width: 100%;
-
 }
-
-
 
 @keyframes cardFade {
     from {
         border: 2px solid #000235;
-
-
-
     }
 
     to {
         border: 3px solid #002998;
-
-
-
     }
 }
-
 
 .card div img {
     object-fit: contain;
@@ -266,14 +229,13 @@ body {
     text-shadow: 2px 1px 3px #048f99;
     text-align: center;
     font-size: 3rem;
-    font-family: 'GreatVibes';
+    font-family: "GreatVibes";
 }
 
 .card h2 {
-    font-family: 'GreatVibes';
+    font-family: "GreatVibes";
     font-size: 2.5rem;
     text-shadow: 2px 1px 3px #000000;
-
 }
 
 .card h2::first-letter {
@@ -284,10 +246,9 @@ body {
 }
 
 #pricePar {
-
     font-size: 2rem;
     color: #ffffff;
-    font-family: 'Poppins-bold';
+    font-family: "Poppins-bold";
     font-weight: bolder;
 }
 
@@ -296,20 +257,17 @@ body {
 }
 
 #categoryPar {
-
-    font-family: 'Playfairs-Italic';
+    font-family: "Playfairs-Italic";
     font-size: 1.2rem;
 }
 
 #aboutPar {
-
-
     color: #dfdddd;
     font-weight: 300;
     text-align: center;
     width: 300px;
     line-height: 1.7;
-    font-family: 'Thin';
+    font-family: "Thin";
 }
 
 .removeBtn {
@@ -322,31 +280,29 @@ body {
     background-color: #0127e7;
     border-radius: 100%;
 }
-.removeBtn:hover{
+
+.removeBtn:hover {
     cursor: pointer;
     background-color: #5873f7;
-
-
 }
 
-#cartProductImg{
+#cartProductImg {
     object-fit: contain;
     height: 280px;
     border-radius: 30px;
     width: 100%;
     max-width: 200px;
-
-
-    
 }
 
-#cartHead{
-    font-family: 'GreatVibes';
+#cartHead {
+    font-family: "GreatVibes";
     text-align: center;
     font-size: 2.4rem;
     margin: 10px 0px 10px 0px;
 }
-.cardContainer,.productsCont{
+
+.cardContainer,
+.productsCont {
     border: 1px solid black;
     border-radius: 20px;
     margin: 10px;
@@ -354,12 +310,12 @@ body {
 
 /* /------------------------------------------/ */
 
-@media (max-width:568px) {
-    .productsCont{
-        
+@media (max-width: 568px) {
+    .productsCont {
         margin: 0 auto;
     }
-    .card{
+
+    .card {
         display: flex;
         gap: 20px;
         flex-direction: column;
@@ -367,27 +323,27 @@ body {
         align-items: center;
         width: 100%;
         max-width: 320px;
-        margin:20px  auto;
+        margin: 20px auto;
         padding: 0;
         height: 700px;
         border-radius: 20px;
     }
 
-    .card div img{
+    .card div img {
         width: 70px;
     }
-    .card h2{
+
+    .card h2 {
         font-size: 1.8rem;
     }
 
-    #productImg{
+    #productImg {
         height: 250px;
         width: 250px;
-       
     }
-    .card div{
+
+    .card div {
         margin: 0 auto;
         gap: 20px;
     }
-
 }

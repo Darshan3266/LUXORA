@@ -7,139 +7,128 @@
     /* outline: 1px solid #ed1414; */
 }
 
-
 @font-face {
-    font-family: 'Playfairs-Italic';
-    src: url(./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf)
+    font-family: "Playfairs-Italic";
+    src: url(./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url(./fonts/NotoSerifKannada-ExtraBold.ttf)
+    font-family: "PlayfairDisplay";
+    src: url(./fonts/NotoSerifKannada-ExtraBold.ttf);
 }
 
 @font-face {
-    font-family: 'Playfairs-MediumItalic';
-    src: url(./fonts/PlayfairDisplay-MediumItalic.ttf)
+    font-family: "Playfairs-MediumItalic";
+    src: url(./fonts/PlayfairDisplay-MediumItalic.ttf);
 }
 
 @font-face {
-    font-family: 'Playwrite-ExtraLight';
-    src: url(./fonts/PlaywriteIE-ExtraLight.ttf)
+    font-family: "Playwrite-ExtraLight";
+    src: url(./fonts/PlaywriteIE-ExtraLight.ttf);
 }
 
 @font-face {
-    font-family: 'Playwrite-Light';
-    src: url(./fonts/PlaywriteIE-Light.ttf)
+    font-family: "Playwrite-Light";
+    src: url(./fonts/PlaywriteIE-Light.ttf);
 }
 
 @font-face {
-    font-family: 'Playwrite-Thin';
-    src: url(./fonts/PlaywriteIE-Thin.ttf)
+    font-family: "Playwrite-Thin";
+    src: url(./fonts/PlaywriteIE-Thin.ttf);
 }
 
 @font-face {
-    font-family: 'PoppinsBold';
-    src: url(./fonts/Poppins-ExtraBold.ttf)
-}
-
-@font-face {
-    font-family: 'GreatVibes';
-    src: url(./fonts/GreatVibes-Regular.ttf)
-}
-
-@font-face {
-    font-family: 'PlayWrite-Regular';
-    src: url(./fonts/PlaywriteIE-Regular.ttf)
-}
-
-@font-face {
-    font-family: 'Allura-Regular';
-    src: url(./fonts/Allura-Regular.ttf)
-}
-
-@font-face {
-    font-family: 'Sekyua-Regular';
-    src: url(./fonts/Sekuya-Regular.ttf)
-}
-
-@font-face {
-    font-family: 'NotoSerif';
-    src: url(./fonts/Poppins-Italic.ttf);
-}
-
-@font-face {
-    font-family: 'Poppins-bold';
-    src: url(./fonts/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Thin';
-    src: url(./fonts/Poppins-ExtraLight.ttf);
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url(./fonts/Poppins-Light.ttf);
-}
-
-@font-face {
-    font-family: 'Playfair';
-    src: url(./fonts/Poppins-ExtraBoldItalic.ttf);
-}
-
-@font-face {
-    font-family: 'Poppins-Extra';
-    src: url(./fonts/Poppins-Medium.ttf);
-}
-
-@font-face {
-
-    font-family: 'Poppins-Extra-Bold';
+    font-family: "PoppinsBold";
     src: url(./fonts/Poppins-ExtraBold.ttf);
 }
 
 @font-face {
-
-    font-family: 'TrioKannada-Italic';
-    src: url(./fonts/TiroKannada-Italic.ttf);
+    font-family: "GreatVibes";
+    src: url(./fonts/GreatVibes-Regular.ttf);
 }
 
 @font-face {
-
-    font-family: 'TrioKannada-Regular';
-    src: url(./fonts/TiroKannada-Regular.ttf);
+    font-family: "PlayWrite-Regular";
+    src: url(./fonts/PlaywriteIE-Regular.ttf);
 }
 
 @font-face {
-
-    font-family: 'Playwrite-varaible';
-    src: url(./fonts/PlaywriteIE-VariableFont_wght.ttf);
+    font-family: "Allura-Regular";
+    src: url(./fonts/Allura-Regular.ttf);
 }
 
 @font-face {
+    font-family: "Sekyua-Regular";
+    src: url(./fonts/Sekuya-Regular.ttf);
+}
 
-    font-family: 'PoppinsMedium';
+@font-face {
+    font-family: "NotoSerif";
+    src: url(./fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-bold";
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Thin";
+    src: url(./fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url(./fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Extra";
     src: url(./fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
+    font-family: "Poppins-Extra-Bold";
+    src: url(./fonts/Poppins-ExtraBold.ttf);
+}
 
-    font-family: '';
+@font-face {
+    font-family: "TrioKannada-Italic";
+    src: url(./fonts/TiroKannada-Italic.ttf);
+}
+
+@font-face {
+    font-family: "TrioKannada-Regular";
+    src: url(./fonts/TiroKannada-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Playwrite-varaible";
+    src: url(./fonts/PlaywriteIE-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsMedium";
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "";
     src: url(./fonts/Poppins-SemiBold.ttf);
 }
 
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
-
     background: linear-gradient(155deg, #000000, #012c38);
     color: white;
-
-
 }
 
 #scrollBtn {
@@ -165,12 +154,15 @@ body {
 #scrollBtn:hover {
     cursor: pointer;
     background-color: #053fd1bd;
-
 }
 
 .container {
-
-    background: linear-gradient(121deg, rgba(0, 0, 0, 0.89), rgba(5, 5, 5, 0.731), rgba(0, 0, 0, 0.886)), url("./assets/Luxora_Banners.webp");
+    background:
+        linear-gradient(121deg,
+            rgba(0, 0, 0, 0.89),
+            rgba(5, 5, 5, 0.731),
+            rgba(0, 0, 0, 0.886)),
+        url("./assets/Luxora_Banners.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -182,14 +174,10 @@ body {
     min-height: 120vh;
 }
 
-
-
-
 .logo img {
     width: 100%;
     max-width: 130px;
     height: 83px;
-
 }
 
 .navBar {
@@ -206,12 +194,9 @@ body {
     left: 0;
 }
 
-
 .navLinks {
     display: flex;
     gap: 35px;
-
-
 }
 
 .navLinks a {
@@ -219,8 +204,7 @@ body {
     text-decoration: none;
     font-size: 1rem;
     color: white;
-    font-family: 'Poppins';
-
+    font-family: "Poppins";
 }
 
 .navLinks a:hover {
@@ -235,17 +219,14 @@ body {
 }
 
 .contacts a {
-
     position: relative;
     text-decoration: none;
     font-size: 1rem;
     color: white;
-    font-family: 'Poppins';
-
+    font-family: "Poppins";
 }
 
 .contacts a:hover {
-
     background-color: rgba(128, 128, 128, 0.596);
     color: white;
     transform: translateY(-2px) scale(1);
@@ -254,7 +235,6 @@ body {
 
 .lists {
     display: none;
-
 
     position: absolute;
     flex-direction: column;
@@ -274,12 +254,12 @@ body {
     text-align: center;
     display: flex;
     gap: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:
+        "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+        Arial, sans-serif;
     font-weight: bold;
     font-size: 0.9rem;
     margin-top: 10px;
-
-
 }
 
 .lists a:hover {
@@ -288,7 +268,6 @@ body {
 }
 
 .searchInput {
-
     position: relative;
 }
 
@@ -301,9 +280,7 @@ body {
     border-radius: 18px;
     border: none;
     color: rgba(104, 102, 102, 0.664);
-
 }
-
 
 .searchLogo img {
     position: absolute;
@@ -314,17 +291,14 @@ body {
     color: rgba(70, 68, 68, 0.847);
     cursor: pointer;
     font-size: 1.4rem;
-
-
 }
 
 .searchInput input::placeholder {
     color: #737070;
     font-weight: 500;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     padding-left: 18px;
 }
-
 
 .searchLogo img:hover {
     opacity: 0.4;
@@ -332,7 +306,6 @@ body {
     color: rgba(0, 140, 255, 0.689);
     transition: 3ms ease-in-out;
 }
-
 
 .searchInput input:hover {
     border: 1px solid rgb(0, 39, 72);
@@ -343,9 +316,6 @@ body {
 .contLists {
     display: flex;
     gap: 20px;
-
-
-
 }
 
 .contLists button {
@@ -357,19 +327,17 @@ body {
     background: linear-gradient(135deg, #e1efae, #fe7b00);
     color: white;
     border: none;
-    font-family: 'Poppins-Extra';
+    font-family: "Poppins-Extra";
     font-size: 12px;
     animation: Fade 2s infinite;
     border-radius: 20px;
-
 }
 
 .contLists button:hover {
-    transform: translateY(-5px)scaleX(1);
+    transform: translateY(-5px) scaleX(1);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in-out;
     box-shadow: 2px 2px 30px #f1fe00;
     background: linear-gradient(25deg, rgb(247, 119, 84), #eedb6d);
-
 }
 
 .bannerCont {
@@ -384,36 +352,28 @@ body {
     min-height: 500px;
     margin: 30px 0px 0px 90px;
     padding: 50px 0 0 50px;
-
-
 }
 
 #bannerHead {
-
     /* animation: headFade 3s infinite; */
     color: #ffffff;
-    font-family: 'PoppinsMedium';
+    font-family: "PoppinsMedium";
     width: 100%;
     max-width: 370px;
     font-size: 2.5rem;
     text-shadow: 2px 2px 5px #001330;
     align-self: flex-start;
     line-height: 1.1;
-
-
 }
-
-
 
 #bannerPar {
     color: rgb(255, 255, 255);
-    font-family: 'Poppins-Extra';
+    font-family: "Poppins-Extra";
     font-size: 1.2rem;
     width: 100%;
     max-width: 370px;
     align-self: flex-start;
     margin-top: 10px;
-
 
     text-shadow: 0px 1px 5px rgb(1, 2, 48);
 }
@@ -426,20 +386,17 @@ body {
     font-size: 14px;
     width: 100%;
     max-width: 450px;
-    font-family: 'Thin';
-
-
+    font-family: "Thin";
 }
 
 #boldBlue {
     color: rgb(0, 85, 205);
 }
 
-
 #parColor {
     color: #04b0ff;
 
-    font-family: 'Poppins-bold';
+    font-family: "Poppins-bold";
 
     font-weight: bold;
 }
@@ -453,7 +410,7 @@ body {
     padding: 13px 15px;
     background: linear-gradient(135deg, #230047, #0173fe, #002325);
     border: none;
-    font-family: 'Poppins-Extra';
+    font-family: "Poppins-Extra";
     box-shadow: 0px 1px 62px rgb(255, 1, 1);
     color: rgb(255, 255, 255);
     animation: colorfade 3s ease-in-out infinite;
@@ -465,8 +422,6 @@ body {
     color: rgb(255, 255, 255);
     font-size: 5vw;
     display: none;
-
-
 }
 
 .dropMenuBox {
@@ -476,7 +431,6 @@ body {
     border-radius: 5px;
     width: 85px;
     display: none;
-
 }
 
 @keyframes bgFade {
@@ -490,8 +444,6 @@ body {
 
     50% {
         background-position: 150% 50%;
-
-
     }
 
     75% {
@@ -501,48 +453,35 @@ body {
     100% {
         background-position: 0% 50%;
     }
-
-
-
 }
-
 
 @keyframes hoverd {
     100% {
         box-shadow: 0px 2px 30px #fee507;
-
     }
 
     50% {
         box-shadow: 0px 2px 30px #fe0707;
-
-
     }
 }
 
 @keyframes headFade {
     100% {
         text-shadow: 2px 12px 40px #ff0000;
-
     }
 
     85% {
         text-shadow: 2px 12px 40px #370145;
-
     }
-
 }
 
 @keyframes Fade {
     100% {
         box-shadow: 2px 2px 20px rgb(255, 179, 1);
-
     }
 
     0% {
-
         box-shadow: 2px 2px 20px rgb(255, 38, 0);
-
     }
 }
 
@@ -553,103 +492,78 @@ body {
 
     75% {
         box-shadow: 2px 3px 50px rgb(55, 0, 255);
-
     }
 
     50% {
         box-shadow: 2px 3px 50px #3f0156;
     }
-
-
 }
 
 @keyframes cardFade {
     from {
         box-shadow: 2px 2px 30px rgb(0, 255, 213);
         border-radius: 30px;
-
-
     }
 
     to {
         box-shadow: 2px 5px 40px rgb(0, 81, 255);
         border-radius: 25px;
-
     }
-
 }
 
 @keyframes cardFade1 {
     from {
         box-shadow: 2px 2px 30px rgb(0, 72, 255);
         border-radius: 30px;
-
-
     }
 
     to {
         box-shadow: 2px 5px 40px rgb(0, 255, 234);
         border-radius: 25px;
-
     }
-
 }
 
 @keyframes imgShadow {
     100% {
         filter: drop-shadow(2px 10px 10px #ff0000dd);
-
     }
 
     75% {
         filter: drop-shadow(2px 10px 10px #ff2600e7);
-
     }
 
     50% {
         filter: drop-shadow(2px 10px 10px #770000fd);
-
     }
 
     25% {
         filter: drop-shadow(2px 10px 10px #fd3508);
-
     }
 
     0% {
         filter: drop-shadow(2px 10px 10px #ff0000dd);
-
     }
-
-
-
 }
 
 @keyframes imgFade {
     100% {
         filter: drop-shadow(2px 3px 10px #f39302);
-
     }
 
     80% {
         filter: drop-shadow(2px 3px 10px #f3bb02);
-
     }
 
     60% {
         filter: drop-shadow(2px 3px 10px #f35e02);
-
     }
 
     40% {
         filter: drop-shadow(2px 3px 10px #ffd82d);
-
     }
 
     20% {
         filter: drop-shadow(2px 3px 10px #f32202);
-
-
     }
 
     0% {
@@ -660,28 +574,22 @@ body {
 @keyframes imgFade1 {
     100% {
         filter: drop-shadow(2px 3px 10px #001f68);
-
     }
 
     80% {
         filter: drop-shadow(2px 3px 10px #000000);
-
     }
 
     60% {
         filter: drop-shadow(2px 3px 10px #f0f0f0);
-
     }
 
     40% {
         filter: drop-shadow(2px 3px 10px #0f002b);
-
     }
 
     20% {
         filter: drop-shadow(2px 3px 10px #0293f3);
-
-
     }
 
     0% {
@@ -692,28 +600,22 @@ body {
 @keyframes imgFade2 {
     100% {
         filter: drop-shadow(2px 3px 10px #000105);
-
     }
 
     80% {
         filter: drop-shadow(2px 3px 10px #ffffff);
-
     }
 
     60% {
         filter: drop-shadow(2px 3px 10px #f6bd02);
-
     }
 
     40% {
         filter: drop-shadow(2px 3px 10px #d22203);
-
     }
 
     20% {
         filter: drop-shadow(2px 3px 10px #0293f3);
-
-
     }
 
     0% {
@@ -729,24 +631,15 @@ body {
     animation: hoverd 2s infinite;
     /* background: linear-gradient(135deg, rgb(1, 49, 83), rgb(119, 208, 238)); */
     background: linear-gradient(135deg, #002d22, #00bbff, #003639);
-
-
 }
 
 #orderBtn:active {
     background: linear-gradient(45deg, rgb(14, 86, 1), rgb(159, 255, 142));
-
 }
-
-
 
 .heading {
     position: relative;
-
 }
-
-
-
 
 /* Cards section */
 
@@ -757,7 +650,6 @@ body {
 
     to {
         box-shadow: 2px 3px 17px #ffa200;
-
     }
 }
 
@@ -769,30 +661,25 @@ body {
     padding-right: 20px;
     justify-content: center;
     align-items: center;
-
 }
 
 #viewAllBtn {
-    
     padding: 10px 25px;
     border-radius: 10px;
     border: none;
     background: linear-gradient(135deg, #2401c0, #08a8dd, #00c7b3);
     margin: 0px 60px 0px auto;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: bold;
     color: #f0f0f0;
     animation: goldSine 2s infinite;
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-
 }
 
 #viewAllBtn:hover {
     transform: translateY(-8px);
     cursor: pointer;
     background: linear-gradient(135deg, #9e08d9, #070bf0, #25000e);
-
-
 }
 
 #cardHead {
@@ -800,16 +687,12 @@ body {
     font-size: 4.5vw;
     margin-top: 40px;
     text-shadow: 2px 3px 20px rgb(0, 252, 218);
-    font-family: 'GreatVibes';
+    font-family: "GreatVibes";
     text-align: center;
-
-
 }
-
 
 .cardContainer,
 .cardContainer1 {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -828,11 +711,7 @@ body {
 .cardContainer1 {
     animation: cardFade1 2s ease-in-out infinite;
     background: linear-gradient(136deg, #024f5bcd, #05317c7a, #013539);
-
-
 }
-
-
 
 .cardsList,
 .cardsList1 {
@@ -842,7 +721,6 @@ body {
     /* display: flex;
     flex-wrap: wrap;
     gap: 70px; */
-
 }
 
 .card,
@@ -863,14 +741,11 @@ body {
     background: linear-gradient(135deg, #05c7e4, #013dad8a, #1800408e);
 }
 
-
 .card img {
     width: 130px;
     height: 160px;
     object-fit: contain;
 }
-
-
 
 .card:hover,
 .cardUp:hover {
@@ -881,14 +756,11 @@ body {
     filter: drop-shadow(2px 8px 30px rgb(82, 1, 97));
 
     cursor: pointer;
-    transition: 1ms cubic-bezier(0.19, 1, 0.22, 1)
+    transition: 1ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .card1 {
-
     background: linear-gradient(135deg, #ffff, #028e9888, #002422);
-
-
 }
 
 .card1:hover {
@@ -910,20 +782,19 @@ body {
     font-weight: bold;
     /* margin-top: 5px; */
 
-    font-family: 'Poppins';
+    font-family: "Poppins";
     text-shadow: 2px 2px 20px rgb(2, 22, 78);
 }
 
 .priceP,
 .priceP1 {
-
     font-size: 13px;
     margin: 0;
 
     font-weight: bold;
     color: #ffbb00;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
 
 .aboutP,
@@ -931,7 +802,7 @@ body {
     font-size: 12px;
 
     text-align: center;
-    font-family: 'Poppins-bold';
+    font-family: "Poppins-bold";
     color: rgba(213, 234, 207, 0.801);
     font-weight: bolder;
 }
@@ -941,23 +812,18 @@ body {
     width: 180px;
     height: 230px;
     filter: drop-shadow(2px 8px 20px rgb(3, 250, 233));
-
-
 }
 
 #omega img {
     width: 180px;
     height: 240px;
     filter: drop-shadow(2px 8px 20px rgb(3, 250, 233));
-
 }
 
 #rolexBlue img {
-
     filter: drop-shadow(2px 8px 20px rgb(3, 250, 233));
     height: 210px;
     width: 180px;
-
 }
 
 #omg2 img {
@@ -965,46 +831,32 @@ body {
     height: 190px;
     margin-bottom: 10px;
     filter: drop-shadow(2px 8px 20px rgb(3, 250, 233));
-
-
 }
-
-
 
 #patter img {
     width: 180px;
     height: 190px;
     filter: drop-shadow(2px 3px 20px #02e3f3);
-
 }
 
 #monaco img {
     width: 210px;
     height: 210px;
     filter: drop-shadow(2px 3px 20px #02e3f3);
-
-
-
 }
 
 #vachreon img {
     filter: drop-shadow(2px 3px 20px #02e3f3);
     width: 160px;
     height: 210px;
-
-
-
 }
 
 #parek img {
-
     /* filter: drop-shadow(2px 3px 20px #ffff); */
     filter: drop-shadow(2px 3px 20px #02e3f3);
     width: 240px;
     height: 235px;
-
 }
-
 
 .aboutSection {
     background: linear-gradient(35deg, #000000, #01b5c2d0, #010234e2, #003a5e);
@@ -1013,37 +865,31 @@ body {
     border-radius: 25px;
     margin: 80px 40px 0px 40px;
     box-shadow: 5px 10px 30px #03c8ffe5;
-
 }
 
 .aboutCont {
     display: flex;
     margin: 0px auto auto 50px;
     flex-direction: column;
-
 }
 
 .aboutCont h1 {
-
     align-self: center;
     font-size: 4rem;
     padding: 20px 0px;
     color: rgb(253, 253, 253);
     text-shadow: 2px 2px 20px rgb(2, 248, 178);
-    font-family: 'Allura-Regular';
+    font-family: "Allura-Regular";
 }
 
-
 #aboutHead {
-    font-family: 'PlayWrite-Regular';
+    font-family: "PlayWrite-Regular";
     font-size: 1.5rem;
     text-shadow: 2px 2px 10px rgb(0, 2, 3);
     padding-left: 40px;
-
 }
 
 .watchBox {
-
     width: 350px;
     background-color: white;
     border-radius: 20px;
@@ -1066,50 +912,40 @@ body {
     gap: 30px;
 }
 
-
 #aboutPar {
     color: rgb(255, 255, 255);
     margin: 50px;
     font-size: 1rem;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     width: 100%;
     max-width: 550px;
     line-height: 1.9;
-
-
 }
 
 .watchBox:hover {
     transform: translateY(-25px) scale(1.1);
     transition: 1s ease-in-out;
     box-shadow: 2px 3px 20px rgb(255, 255, 255);
-
 }
 
 .aboutBox {
     display: flex;
     flex-direction: row;
     margin: 20px auto 40px 50px;
-
 }
 
 .aboutBox ul {
-
     margin: auto;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 1.3vw;
 
     line-height: 2.6rem;
 
     font-weight: bold;
     color: rgb(253, 255, 255);
-
-
 }
 
 .greenBanner img {
-
-
     height: 200px;
     width: 320px;
     margin-left: 50px;
@@ -1117,20 +953,16 @@ body {
     border: 7px solid white;
     box-shadow: 2px 3px 20px black;
     border-radius: 20px;
-
 }
 
 .greenBanner img:hover {
     transform: translateY(25px) scale(1.1);
     transition: 1s ease-in-out;
     box-shadow: 2px 3px 20px rgb(255, 255, 255);
-
-
 }
 
 .aboutBox li::marker {
     color: #001a5c;
-
 }
 
 .aboutContainer {
@@ -1138,7 +970,6 @@ body {
     align-items: center;
     margin-top: 60px;
     justify-content: space-evenly;
-
 }
 
 .aboutCard {
@@ -1164,24 +995,20 @@ body {
     border: 2px solid rgb(176, 181, 255);
     background: linear-gradient(175deg, #012b3e, #0d36eb, #00cca3, #050024);
     transform: translateY(-10px) scale(1.1);
-
-
 }
 
 .aboutCard h3 {
     font-size: 1rem;
-    font-family: 'Poppins-Extra';
+    font-family: "Poppins-Extra";
     line-height: 20px;
     width: 130px;
-
 }
 
 .aboutCard p {
     color: hsl(235, 100%, 10%);
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 1vw;
     font-weight: bold;
-
 }
 
 .aboutCard img {
@@ -1190,21 +1017,23 @@ body {
     height: 65px;
 }
 
-
 #about1 {
     color: rgb(255, 255, 255);
     width: 100px;
     font-size: 1.5vw;
-
 }
-
 
 .menBanner {
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(135deg, #1a003c, #004ebc, #013247, #0076a4, #00171c);
+    background: linear-gradient(135deg,
+            #1a003c,
+            #004ebc,
+            #013247,
+            #0076a4,
+            #00171c);
     max-width: 1000px;
     border-radius: 30px;
     box-shadow: 2px 3px 20px whitesmoke;
@@ -1213,7 +1042,7 @@ body {
 }
 
 .menBanner h1 {
-    font-family: 'GreatVibes';
+    font-family: "GreatVibes";
     text-align: center;
     margin: 40px;
     text-shadow: 2px 3px 5px #28e5efa1;
@@ -1222,10 +1051,7 @@ body {
 
 #txtColor {
     color: #050051;
-
 }
-
-
 
 .suit img {
     position: absolute;
@@ -1242,11 +1068,9 @@ body {
     flex-direction: row;
 
     align-items: center;
-
 }
 
 .menAbout img {
-
     animation: colorfade 3s infinite;
     width: 220px;
     border: 10px solid white;
@@ -1255,28 +1079,23 @@ body {
     border-radius: 50px;
     height: 320px;
     align-self: flex-end;
-
-
 }
 
 #menPar {
     width: 500px;
     margin: auto;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 1.1rem;
     line-height: 35px;
-
-
 }
 
 #menPar1 {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     width: 450px;
     margin: 25px;
     font-size: 1.1rem;
     line-height: 35px;
 }
-
 
 .menAbout1 img {
     /* margin: auto; */
@@ -1286,9 +1105,7 @@ body {
     height: 300px;
     border: 10px solid white;
     border-radius: 50px;
-
 }
-
 
 .aboutFooter {
     /* background: linear-gradient(#0120b9, #3682f3, #02001f); */
@@ -1296,12 +1113,9 @@ body {
     border-radius: 20px;
 }
 
-
 .aboutFooter h1 {
     font-size: 3vw;
     text-shadow: 2px 5px 3px #f90505ee;
-
-
 }
 
 .chooseSection {
@@ -1319,15 +1133,14 @@ body {
 
 .chooseSection h1 {
     text-align: center;
-    font-family: 'Allura-Regular';
+    font-family: "Allura-Regular";
     margin-top: 20px;
     font-size: 2.5rem;
     text-shadow: 2px 4px 5px #001018;
-
 }
 
 #styleTxt {
-    font-family: 'Playfairs-Italic';
+    font-family: "Playfairs-Italic";
     text-shadow: 2px 4px 5px #00122c;
     margin-left: 10px;
 
@@ -1344,7 +1157,6 @@ body {
     gap: 40px;
 }
 
-
 .chooseCont img {
     animation: imgShadow 3s ease-in-out infinite;
     filter: drop-shadow(2px 10px 10px #ff0000dd);
@@ -1353,7 +1165,6 @@ body {
     height: 320px;
     max-width: 380px;
     width: 100%;
-
 }
 
 .chooseCont p {
@@ -1361,7 +1172,7 @@ body {
 
     text-align: start;
     margin-left: 30px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 1.2rem;
     max-width: 550px;
     line-height: 1.9;
@@ -1379,10 +1190,9 @@ body {
     line-height: 1.9;
     text-align: left;
     font-size: 1.1rem;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     max-width: 450px;
 }
-
 
 .chooseContainer {
     padding: 20px;
@@ -1397,7 +1207,6 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(22px);
-
 }
 
 .choosenCard {
@@ -1413,15 +1222,11 @@ body {
     max-width: 240px;
     border-radius: 20px;
     height: 270px;
-
-
-
 }
 
 .choosenCard:hover {
     background: linear-gradient(15deg, #fa7202, #8f710d, #f4d37a, #c48900);
     transition: cubic-bezier(1, 0, 0, 1) ease-in-out;
-
 }
 
 .choosenCard img {
@@ -1431,18 +1236,16 @@ body {
 .chooseHead {
     font-size: 1.3rem;
     text-shadow: 2px 2px 3px #bd9718;
-    font-family: 'NotoSerif';
+    font-family: "NotoSerif";
 }
 
 .choosenCard p {
-
     font-size: 1rem;
     width: 100%;
     max-width: 180px;
     text-align: center;
     margin: 20px;
 }
-
 
 .mainCont {
     display: flex;
@@ -1454,21 +1257,19 @@ body {
 }
 
 .mainCont p {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     /* margin: 40px auto; */
     width: 100%;
     font-size: 1.2rem;
     text-align: justify;
     line-height: 1.9;
     max-width: 890px;
-
 }
 
 .wathImgs {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #mainWatch {
@@ -1476,7 +1277,6 @@ body {
     height: 350px;
     z-index: 4;
 }
-
 
 #tranformWatch {
     width: 350px;
@@ -1502,7 +1302,6 @@ body {
 }
 
 .chooseItems {
-
     padding: 20px 20px;
     display: flex;
     margin: 30px;
@@ -1514,7 +1313,6 @@ body {
     backdrop-filter: blur(40px);
     padding: 15px 20px;
     border-radius: 20px;
-
 }
 
 .watchesContainer {
@@ -1532,22 +1330,20 @@ body {
     border-radius: 30px;
     max-width: 1200px;
     min-height: 100vh;
-
 }
 
 .watchesContainer h1 {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     text-shadow: 2px 2px 10px #000000;
     font-weight: 700;
     color: #fad56e;
     font-size: 2.2rem;
     margin-top: 30px;
-
 }
 
 .watchesContainer p {
     color: rgb(243, 241, 241);
-    font-family: 'Thin';
+    font-family: "Thin";
     font-size: 1.1rem;
 }
 
@@ -1555,7 +1351,10 @@ body {
 .watch2Conts,
 .watch3Conts {
     border: 1px solid #ffff;
-    background: radial-gradient(circle at 75% 30%, #ac7f14cc, #491200 35%, #000000 75%);
+    background: radial-gradient(circle at 75% 30%,
+            #ac7f14cc,
+            #491200 35%,
+            #000000 75%);
     border-radius: 20px;
     /* padding: 40px 0px 40px 50px; */
     box-shadow: 2px 3px 30px #f72b07;
@@ -1581,7 +1380,6 @@ body {
     gap: 25px;
 }
 
-
 .watch1Info h2,
 .watch2Info h2,
 .watch3Info h2 {
@@ -1596,7 +1394,7 @@ body {
     margin-top: 30px;
     /* text-shadow: 2px 2px 4px #000000; */
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
 
 .watch1Info h1 {
@@ -1605,26 +1403,22 @@ body {
     font-size: 3rem;
     /* white-space: nowrap; */
     font-weight: 850;
-    font-family: 'GreatVibes';
+    font-family: "GreatVibes";
 }
 
 #gold {
     color: rgb(255, 187, 0);
     text-shadow: 2px 5px 10px #e4884a;
-
-
-
 }
 
 .watch1Info h3,
 .watch3Info h3 {
-    font-family: 'Playfairs-Italic';
+    font-family: "Playfairs-Italic";
     text-align: center;
-
 }
 
 .watch1Info p {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 1.1rem;
     line-height: 1.9;
     max-width: 800px;
@@ -1640,19 +1434,16 @@ body {
     color: #fffb01;
     font-weight: bolder;
     text-align: center;
-    font-family: 'NotoSerif';
-
+    font-family: "NotoSerif";
 }
-
 
 #discount,
 #discount1,
 #discount2 {
-
     margin-left: 50px;
     text-align: start;
     color: #ffffff58;
-    font-family: 'NotoSerif';
+    font-family: "NotoSerif";
     font-size: 1rem;
     text-decoration: line-through;
 
@@ -1666,13 +1457,12 @@ body {
     margin: 30px 0px 0px 20px;
     gap: 25px;
     flex-direction: column;
-
 }
 
 .feautureLists li,
 .feautureLists1 li,
 .feautureLists2 li {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: bold;
     background: linear-gradient(135deg, #ff5500d9, #f2b91c, #fa7d00);
     border-radius: 20px;
@@ -1685,10 +1475,7 @@ body {
 .feautureLists1 li::marker,
 .feautureLists2 li::marker {
     color: #4b0000;
-
-
 }
-
 
 .watch1Conts img {
     /* position: absolute; */
@@ -1730,18 +1517,15 @@ body {
     transform: translateY(-5px) scale(1.1);
     transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background: linear-gradient(137deg, #110000, #eb0303e9, #ff9e43, #4a0000);
-
-
 }
 
 .watch2Conts {
-    background: radial-gradient(circle at 75% 50%, #0f5a4a, #031411 35%, #050505 85%);
+    background: radial-gradient(circle at 75% 50%,
+            #0f5a4a,
+            #031411 35%,
+            #050505 85%);
     /* text-align: center; */
-
 }
-
-
-
 
 .watch2Info h1 {
     /* white-space: nowrap; */
@@ -1752,11 +1536,11 @@ body {
 .watch2Info h3 {
     font-size: 1.5rem;
     text-align: center;
-    font-family: 'GreatVibes';
+    font-family: "GreatVibes";
 }
 
 .watch2Info p {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     line-height: 1.9;
     text-align: start;
     font-size: 1.1rem;
@@ -1770,15 +1554,12 @@ body {
 }
 
 #priceWatch1 {
-
     color: #82f0ff;
-
 }
 
 #exploreBtn1 {
     background: linear-gradient(135deg, #00261d, #04afdfe9, #01435f, #000000);
     animation: colorfade 2s infinite normal;
-
 }
 
 #exploreBtn1:hover {
@@ -1787,16 +1568,11 @@ body {
     transform: translateY(-10px) scale(1.1);
     transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background: linear-gradient(37deg, #002249, #14002de9, #3e1edb, #000000);
-
-
-
 }
 
 .feautureLists1 li {
-
     background: linear-gradient(135deg, #00255b, #06a9ce, #021b42);
 }
-
 
 #imperialWatch {
     /* width: 580px;
@@ -1807,30 +1583,26 @@ body {
     margin-bottom: 40px;
     height: 470px;
     animation: imgFade1 5s ease-in-out infinite normal;
-
 }
 
 #chronoMobile {
     display: none;
 }
 
-
-
 #imperialWatch:hover,
 #royalGoldImg:hover,
 #crownImg:hover {
-
     cursor: pointer;
     transform: translateY(10px) scale(1.1);
     transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .watch3Conts {
-
-    background: radial-gradient(circle at 75% 50%, #ba4450, #3f0c13 35%, #0a0a0a 85%);
-
+    background: radial-gradient(circle at 75% 50%,
+            #ba4450,
+            #3f0c13 35%,
+            #0a0a0a 85%);
 }
-
 
 #crownImg {
     width: 100%;
@@ -1840,7 +1612,6 @@ body {
 
     align-self: center;
     height: 480px;
-
 }
 
 #crownMobile {
@@ -1849,19 +1620,18 @@ body {
 
 .watch3Info h1 {
     white-space: nowrap;
-    font-family: 'GreatVibes';
+    font-family: "GreatVibes";
     color: #efb8e9;
     font-size: 3rem;
 }
 
 .watch3Info h3 {
     text-align: center;
-
 }
 
 .watch3Info p {
     text-align: start;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     line-height: 1.9;
     width: 100%;
     max-width: 600px;
@@ -1877,8 +1647,6 @@ body {
 
 #exploreBtn2 {
     background: linear-gradient(135deg, #18001f, #f3038f, #000315);
-
-
 }
 
 #exploreBtn2:hover {
@@ -1887,13 +1655,9 @@ body {
     box-shadow: 2px 2px 20px #fde4a9;
     transform: translateY(-5px) scale(1.1);
     transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-
 }
 
 /* footer */
-
-
 
 .footerContainer {
     display: flex;
@@ -1913,7 +1677,6 @@ body {
     /* align-items: center; */
     gap: 50px;
     margin-right: 30px;
-
 }
 
 .footerLinks {
@@ -1930,7 +1693,7 @@ body {
     font-weight: bold;
     color: #fad56e;
 
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
 
 .footerContainer a,
@@ -1942,7 +1705,7 @@ body {
     width: 100%;
     color: #ffffff;
     font-size: 15px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
 
 .footerContainer a:hover {
@@ -1951,11 +1714,9 @@ body {
 }
 
 .leftCont {
-
     align-items: center;
     width: 300px;
     margin-right: 50px;
-
 }
 
 .leftCont img {
@@ -1970,9 +1731,8 @@ body {
     text-align: center;
     font-size: 15px;
     margin-top: 8px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
-
 
 .botttomLinks {
     display: flex;
@@ -1983,9 +1743,8 @@ body {
 }
 
 .botttomLinks h3 {
-    font-family: 'Thin';
+    font-family: "Thin";
     font-size: 1.3rem;
-
 }
 
 .logoImg {
@@ -2010,27 +1769,23 @@ body {
     width: 70px;
 }
 
-
 .btmConts p {
     text-align: center;
-    font-family: 'Thin';
+    font-family: "Thin";
     margin-top: 10px;
 }
-
 
 /* animation */
 .fade-up {
     opacity: 0;
     transform: translateY(100px) translateZ(20px);
-    transition: all 1s ease
+    transition: all 1s ease;
 }
-
-
 
 .fadeLeft {
     opacity: 0;
     transform: translateX(20px);
-    transition: all 1s ease
+    transition: all 1s ease;
 }
 
 .fadeLeft.showLeft {
@@ -2063,15 +1818,12 @@ body {
     max-width: 320px;
     background: linear-gradient(135deg, #66a7e8, #010d27, #094454, #b1d4f8);
 
-
     /* background-color: #ffd700; */
     font-size: 1.1rem;
     box-shadow: 2px 3px 30px #03d4a079;
     color: #ffffff;
     transition: 1ms ease-in-out;
 }
-
-
 
 /* #suggestions img {
     width: 80px;
@@ -2096,7 +1848,7 @@ body {
 }
 
 .itemBox p {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 1rem;
 }
 
@@ -2105,7 +1857,7 @@ body {
 
     font-size: 1.2rem;
 
-    font-family: 'GreatVibes';
+    font-family: "GreatVibes";
     font-weight: bold;
 }
 
@@ -2114,42 +1866,25 @@ body {
     background: linear-gradient(135deg, #13a1ab, #010241, #0384bb, #000b15);
     /* background: linear-gradient(135deg, #043336, #0a0b29, #1a4457, #020202); */
 
-
     /* background:linear-gradient(135deg,#0a04a0c8,#1e61a0,#000930,#00111b); */
 
-
     cursor: pointer;
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* -----------------------Responsivne------------------------------- */
 /* --------------------__________________------------------------------- */
 
-
-
-@media (max-width:568px) {
-
+@media (max-width: 568px) {
     .container {
-
-        background: linear-gradient(92deg, rgba(0 0 0, 0.89), #0000005e, rgb(0 0 0)), url("./assets/Luxora_Banners.webp");
+        background:
+            linear-gradient(92deg, rgba(0 0 0, 0.89), #0000005e, rgb(0 0 0)),
+            url("./assets/Luxora_Banners.webp");
         background-position: 45% center;
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-size: 450%;
         min-height: 120vh;
     }
-
 
     .navBar {
         display: flex;
@@ -2160,7 +1895,6 @@ body {
         position: fixed;
         left: 0;
         right: 0;
-
     }
 
     .logo img {
@@ -2201,8 +1935,6 @@ body {
         font-size: 1rem;
     }
 
-
-
     .navLinks {
         display: none;
         gap: 5px;
@@ -2219,7 +1951,6 @@ body {
         flex-direction: column;
         gap: 10px;
         text-align: center;
-
     }
 
     .dropMenu div {
@@ -2228,7 +1959,6 @@ body {
         font-size: 1.5rem;
         margin-left: 20px;
         color: #ffae00cc;
-
     }
 
     .dropMenuBox {
@@ -2250,7 +1980,7 @@ body {
         font-weight: bold;
         padding: 2px;
         color: rgb(255, 255, 255);
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-size: 0.7rem;
     }
 
@@ -2264,9 +1994,6 @@ body {
         position: absolute;
         top: 75px;
         left: 50%;
-
-
-
     }
 
     .contLists button {
@@ -2288,16 +2015,12 @@ body {
         height: 450px;
         margin: 50px auto;
         /* margin: 90px 0px 0px 30px; */
-        padding: 60px 0px 0px 30px
+        padding: 60px 0px 0px 30px;
     }
-
 
     #bannerHead {
         font-size: 1.8rem;
         line-height: 1.4;
-
-
-
     }
 
     #bannerPar {
@@ -2314,20 +2037,15 @@ body {
     }
 
     #orderBtn {
-
-
         padding: 15px 18px;
         font-size: 12px;
         margin: 27px 0px 0px 40px;
-
-
     }
 
     #cardHead {
         text-align: center;
         margin: 50px 0px;
         font-size: 3rem;
-
     }
 
     .cardContainer,
@@ -2337,19 +2055,14 @@ body {
         margin: 20px auto 40px auto;
 
         min-height: 600px;
-
     }
 
     .cardsList,
     .cardsList1 {
-
         display: grid;
         gap: 25px;
         /* margin: 10px; */
         grid-template-columns: repeat(2, 1fr);
-
-
-
     }
 
     .card,
@@ -2367,7 +2080,6 @@ body {
 
         text-align: center;
         white-space: nowrap;
-
     }
 
     .priceP {
@@ -2385,14 +2097,12 @@ body {
         height: 190px;
         /* width: 170px;
     height: 230px; */
-
     }
 
     #omega img {
         width: 210px;
         padding-top: 10px;
         height: 180px;
-
     }
 
     #rolexBlue img {
@@ -2405,15 +2115,12 @@ body {
         margin-bottom: 5px;
         width: 120px;
         height: 130px;
-
     }
 
     #patter img {
         width: 120px;
         height: 130px;
     }
-
-
 
     #monaco img {
         width: 150px;
@@ -2428,8 +2135,6 @@ body {
     #parek img {
         width: 170px;
         height: 160px;
-
-
     }
 
     .aboutSection {
@@ -2446,23 +2151,17 @@ body {
         display: flex;
         gap: 5px;
         margin: 0;
-
-
     }
 
     .aboutCont h1 {
         text-align: center;
         font-size: 3rem;
-
     }
 
     #aboutHead {
         text-align: center;
         font-size: 1rem;
         padding: 0px 0px 0px 10px;
-
-
-
     }
 
     .bannerWatch {
@@ -2503,9 +2202,7 @@ body {
         height: 150px;
     }
 
-
     .aboutBox ul {
-
         font-size: 1rem;
         margin: 40px auto auto;
         line-height: 2.4;
@@ -2515,7 +2212,6 @@ body {
         display: flex;
         align-items: center;
         margin-bottom: 30px;
-
     }
 
     .aboutCard {
@@ -2523,11 +2219,9 @@ body {
         margin-top: 30px;
         height: 135px;
         width: 88px;
-
     }
 
     .aboutCard h3 {
-
         font-size: 9px;
         line-height: 12px;
         width: 70px;
@@ -2555,13 +2249,10 @@ body {
     }
 
     .menBanner h1 {
-
         font-size: 2rem;
     }
 
-
     .suit img {
-
         /* position: absolute;
         top: 58px;
         bottom: 60%; */
@@ -2572,18 +2263,15 @@ body {
         left: 70px;
 
         height: 30px;
-
     }
 
     .menAbout {
-
         display: flex;
         flex-direction: column;
         padding: 20px;
     }
 
     .menAbout1 {
-
         display: flex;
         /* gap: 5px; */
         padding: 30px;
@@ -2615,21 +2303,19 @@ body {
     #menPar {
         font-size: 1rem;
         line-height: 1.9;
-        font-family: 'Poppins';
+        font-family: "Poppins";
         text-align: left;
         margin-top: 40px;
         max-width: 280px;
         width: 100%;
-
     }
 
     #menPar1 {
         font-size: 1rem;
-        font-family: 'Poppins';
+        font-family: "Poppins";
         text-align: left;
         line-height: 1.9;
         width: 280px;
-
     }
 
     .aboutFooter {
@@ -2639,7 +2325,6 @@ body {
 
     .aboutFooter h1 {
         font-size: 1.5rem;
-
     }
 
     .chooseSection {
@@ -2676,7 +2361,6 @@ body {
     }
 
     .chooseCont p {
-
         width: 100%;
         max-width: 310px;
         text-align: start center;
@@ -2711,14 +2395,12 @@ body {
         gap: 35px;
         margin: auto;
         grid-template-columns: 1fr;
-
-
     }
 
     .choosenCard {
         margin: auto;
         width: 220px;
-        height: 250px
+        height: 250px;
     }
 
     .mainCont {
@@ -2739,7 +2421,6 @@ body {
     #tranformWatch1 {
         width: 300px;
         height: 200px;
-
     }
 
     .mainCont p {
@@ -2780,14 +2461,12 @@ body {
         text-align: center;
         font-size: 1.6rem;
         margin-top: 30px;
-
     }
 
     .watchesContainer p {
         text-align: center;
         margin-top: 20px;
         font-size: 1rem;
-
     }
 
     .watch1Conts,
@@ -2824,7 +2503,6 @@ body {
     #chronoMobile,
     #crownMobile {
         display: block;
-
     }
 
     .watch1Info h2,
@@ -2833,8 +2511,6 @@ body {
         font-size: 1rem;
         align-self: center;
         /* margin: 30px; */
-
-
     }
 
     .watch1Info h1 {
@@ -2850,10 +2526,7 @@ body {
     .watch3Info h3 {
         font-size: 1rem;
         margin-top: 12px;
-
-
     }
-
 
     .watch1Info p,
     .watch2Info p,
@@ -2870,7 +2543,6 @@ body {
         width: 250px;
     }
 
-
     #royalGoldMobile,
     #chronoMobile,
     #crownMobile {
@@ -2879,8 +2551,6 @@ body {
         width: 100%;
         filter: drop-shadow(2px 5px 20px #f6a337);
         overflow: hidden;
-
-
     }
 
     #royalGoldMobile {
@@ -2889,7 +2559,6 @@ body {
         height: 220px;
         animation: imgFade 5s ease-in-out infinite normal;
         margin-top: 30px;
-
     }
 
     #chronoMobile {
@@ -2898,7 +2567,6 @@ body {
         height: 220px;
         animation: imgFade1 5s ease-in-out infinite normal;
         margin-top: 30px;
-
     }
 
     #crownMobile {
@@ -2907,7 +2575,6 @@ body {
         height: 220px;
         animation: imgFade1 5s ease-in-out infinite normal;
         margin-top: 30px;
-
     }
 
     #royalGoldMobile:hover,
@@ -2921,7 +2588,6 @@ body {
     .feautureLists li,
     .feautureLists1 li,
     .feautureLists2 li {
-
         padding: 5px 8px;
         font-size: 16px;
     }
@@ -2966,9 +2632,8 @@ body {
     #suggestions {
         width: 100%;
         max-width: 200px;
-       position: absolute;
-       right: 90px;
-
+        position: absolute;
+        right: 90px;
     }
 
     .itemBox {
@@ -2978,13 +2643,4 @@ body {
     .itemBox p {
         font-size: 0.8rem;
     }
-
-
-
-
-
-
-
-
-
 }
