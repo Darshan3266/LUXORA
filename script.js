@@ -788,3 +788,22 @@ const cartSection = document.getElementById("carts");
 cartSection.addEventListener("click", () => {
   window.location.href = `./carts/cart.html`;
 });
+
+const themeBtn = document.getElementById("themeBtn");
+const changeTheme = localStorage.getItem("theme");
+console.log(changeTheme);
+
+if (changeTheme === "themeChange") {
+  document.body.classList.add("themeChange");
+}
+
+themeBtn.addEventListener("click", () => {
+  console.log("clicked");
+
+  document.body.classList.toggle("themeChange");
+  if (document.body.classList.contains("themeChange")) {
+    localStorage.setItem("theme", "themeChange");
+  } else {
+    localStorage.setItem("theme", "low");
+  }
+});

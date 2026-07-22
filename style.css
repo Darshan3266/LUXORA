@@ -318,6 +318,13 @@ body {
     gap: 20px;
 }
 
+.themeChange {
+    color: #ffffff;
+    background: linear-gradient(135deg, #060128, #051d7a, #00211d);
+
+
+}
+
 .contLists button {
     padding: 8px 18px;
     text-align: center;
